@@ -1,7 +1,7 @@
 # progress-timeline
 
 
-## *Love and compassion are necessities, not luxuries. Without them, humanity cannot survive.* - __Dalai Lama__
+## *Love and compassion are necessities, not luxuries. Without them, humanity cannot survive* - __Dalai Lama__
 
 
 This Repository will be dedicated to timeline of LGBTQ+, where we will do our best to represent impact they have made to our world throughout history and how world has impacted them. There is numerous facts of history, what has happened to people, who think, believe or love in different way, not according to society standards of that time. And no matter how world was cruel to them, they still loved and shared it to world. There is enormous number of famous quotes, but at this point i remember this one:
