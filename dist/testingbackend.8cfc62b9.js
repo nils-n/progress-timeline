@@ -591,6 +591,7 @@ const firebaseConfig = {
 };
 const app = (0, _app.initializeApp)(firebaseConfig);
 const auth = (0, _auth.getAuth)(app);
+// user sign up
 const userSignUp = async ()=>{
     const signUpEmail = document.getElementById("signup-email").value;
     const signUpPassword = document.getElementById("signup-password").value;
@@ -603,6 +604,7 @@ const userSignUp = async ()=>{
         console.log(errorCode + errorMessage);
     }
 };
+// user sign in
 const userSignIn = async ()=>{
     const signInEmail = document.getElementById("login-email").value;
     const signInPassword = document.getElementById("login-password").value;
@@ -615,19 +617,37 @@ const userSignIn = async ()=>{
         console.log(errorCode + errorMessage);
     }
 };
+// user sign out
 const userSignOut = async ()=>{
     await (0, _auth.signOut)(auth);
 };
+// check user auth state
 const checkAuthState = async ()=>{
     (0, _auth.onAuthStateChanged)(auth, (user)=>{
         if (user) console.log(user);
         else alert("no user");
     });
 };
+const googleBtn = document.getElementById("google");
+// sign in with google
+const signInWithGoogle = async ()=>{
+    const provider = new (0, _auth.GoogleAuthProvider)();
+    try {
+        const result = await (0, _auth.signInWithPopup)(auth, provider);
+        const user = result.user;
+        console.log(user);
+        alert("You have signed in with Google successfully!");
+    } catch (error) {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode + errorMessage);
+    }
+};
 checkAuthState();
 signUpBtn.addEventListener("click", userSignUp);
 loginBtn.addEventListener("click", userSignIn);
 logoutBtn.addEventListener("click", userSignOut);
+googleBtn.addEventListener("click", signInWithGoogle);
 
 },{"firebase/app":"aM3Fo","firebase/auth":"79vzg","firebase/database":"SJ4UY"}],"aM3Fo":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");

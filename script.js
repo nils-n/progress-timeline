@@ -5,6 +5,8 @@ import {
   signInWithEmailAndPassword,
   onAuthStateChanged,
   signOut,
+  GoogleAuthProvider,
+  signInWithPopup,
 } from "firebase/auth";
 import "firebase/database";
 
@@ -25,6 +27,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
+// user sign up
 const userSignUp = async () => {
   const signUpEmail = document.getElementById("signup-email").value;
   const signUpPassword = document.getElementById("signup-password").value;
@@ -39,6 +42,7 @@ const userSignUp = async () => {
   }
 };
 
+// user sign in
 const userSignIn = async () => {
   const signInEmail = document.getElementById("login-email").value;
   const signInPassword = document.getElementById("login-password").value;
@@ -52,10 +56,12 @@ const userSignIn = async () => {
   }
 };
 
+// user sign out
 const userSignOut = async () => {
   await signOut(auth);
 };
 
+// check user auth state
 const checkAuthState = async () => {
   onAuthStateChanged(auth, (user) => {
     if (user) {
@@ -66,8 +72,27 @@ const checkAuthState = async () => {
   });
 };
 
+const googleBtn = document.getElementById("google");
+
+// sign in with google
+const signInWithGoogle = async () => {
+  const provider = new GoogleAuthProvider();
+
+  try {
+    const result = await signInWithPopup(auth, provider);
+    const user = result.user;
+    console.log(user);
+    alert("You have signed in with Google successfully!");
+  } catch (error) {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    console.log(errorCode + errorMessage);
+  }
+};
+
 checkAuthState();
 
 signUpBtn.addEventListener("click", userSignUp);
 loginBtn.addEventListener("click", userSignIn);
 logoutBtn.addEventListener("click", userSignOut);
+googleBtn.addEventListener("click", signInWithGoogle);
