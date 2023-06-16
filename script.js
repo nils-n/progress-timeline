@@ -1,4 +1,5 @@
 import { initializeApp } from "firebase/app";
+import { getFirestore, doc, setDoc, getDoc } from "firebase/firestore";
 import {
   getAuth,
   createUserWithEmailAndPassword,
@@ -6,7 +7,6 @@ import {
   onAuthStateChanged,
   signOut,
 } from "firebase/auth";
-import "firebase/database";
 
 const signUpBtn = document.getElementById("sign-up");
 const loginBtn = document.getElementById("login");
@@ -24,13 +24,19 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+const db = getFirestore(app);
 
 const userSignUp = async () => {
   const signUpEmail = document.getElementById("signup-email").value;
   const signUpPassword = document.getElementById("signup-password").value;
 
   try {
-    createUserWithEmailAndPassword(auth, signUpEmail, signUpPassword);
+    const { user } = await createUserWithEmailAndPassword(
+      auth,
+      signUpEmail,
+      signUpPassword
+    );
+    createUserDocumentFromAuth(user);
     alert("You have signed up successfully!");
   } catch (error) {
     const errorCode = error.code;
@@ -64,6 +70,32 @@ const checkAuthState = async () => {
       alert("no user");
     }
   });
+};
+
+// Creating a user in the db
+export const createUserDocumentFromAuth = async (userAuth) => {
+  if (!userAuth) return;
+
+  const userDocRef = doc(db, "users", userAuth.uid);
+
+  const userSnapShot = await getDoc(userDocRef);
+
+  if (!userSnapShot.exists()) {
+    const { email } = userAuth;
+
+    const createAt = new Date();
+
+    try {
+      await setDoc(userDocRef, {
+        email,
+        createAt,
+      });
+    } catch (err) {
+      console.log(`error creating user`, err.message);
+    }
+  }
+
+  return userSnapShot;
 };
 
 checkAuthState();
