@@ -137,7 +137,8 @@
     flex-direction: column;
   }
   .hero-container-text {
-    font-size: 51px;
+    font-size: 39px;
+    padding-bottom: var(--dl-space-space-unit);
   }
   .hero-container-text1 {
     font-size: 20px;
@@ -163,5 +164,6 @@
   }
   .hero-container-button1 {
     width: 80%;
+    align-self: flex-start;
   }
 }

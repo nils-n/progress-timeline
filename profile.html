@@ -38,6 +38,8 @@
       href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One:wght@400&amp;display=swap"
       data-tag="font"
     />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -45,30 +47,85 @@
       <link href="./profile.css" rel="stylesheet" />
 
       <div class="profile-container">
-        <div class="profile-header">
-          <div class="profile-container1">
-            <a
-              href="https://testingbackend.html"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="profile-link button"
-            >
-              <span>About</span>
-              <br />
-              <br />
-            </a>
-            <a
-              href="https://testingbackend.html"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="profile-link1 button"
-            >
-              <span>Login</span>
-              <br />
-            </a>
+        <header data-role="Header" class="profile-header">
+          <a href="index.html" class="profile-navlink">
+            <img
+              alt="image"
+              src="public/rainbow-1500h.png"
+              class="profile-image"
+            />
+          </a>
+          <div class="profile-nav">
+            <nav class="profile-nav1">
+              <a href="index.html" class="profile-navlink1">
+                Back to Home Page
+              </a>
+            </nav>
           </div>
-        </div>
+          <div class="profile-btn-group">
+            <a
+              href="https://nils-n.github.io/progress-timeline/testingbackend.html"
+              id="link-to-login"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="profile-login button"
+            >
+              Login
+            </a>
+            <a href="signup.html" class="profile-register button">Register</a>
+          </div>
+          <div data-role="BurgerMenu" class="profile-burger-menu">
+            <svg viewBox="0 0 1024 1024" class="profile-icon">
+              <path
+                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+              ></path>
+            </svg>
+          </div>
+          <div data-role="MobileMenu" class="profile-mobile-menu">
+            <div class="profile-nav2">
+              <div class="profile-container1">
+                <div data-role="CloseMobileMenu" class="profile-menu-close">
+                  <svg viewBox="0 0 1024 1024" class="profile-icon2">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    ></path>
+                  </svg>
+                </div>
+                <a href="index.html" class="profile-navlink2">
+                  <img
+                    alt="image"
+                    src="public/rainbow-1500h.png"
+                    class="profile-image1"
+                  />
+                </a>
+                <a
+                  href="https://nils-n.github.io/progress-timeline/testingbackend.html"
+                  id="link-to-login"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="profile-login1 button"
+                >
+                  Login
+                </a>
+                <a href="signup.html" class="profile-register1 button">
+                  Register
+                </a>
+              </div>
+              <nav
+                class="navigation-links-nav navigation-links-root-class-name13"
+              >
+                <a href="about.html" class="navigation-links-navlink">
+                  <span>About Us</span>
+                </a>
+              </nav>
+            </div>
+          </div>
+        </header>
       </div>
     </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
   </body>
 </html>
