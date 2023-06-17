@@ -1,4 +1,11 @@
-import { doc, setDoc, getDoc, getDocs, collection, updateDoc } from "firebase/firestore";
+import {
+  doc,
+  setDoc,
+  getDoc,
+  getDocs,
+  collection,
+  updateDoc,
+} from "firebase/firestore";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -14,6 +21,8 @@ import { firebaseAuth, firebaseDB } from "../../config/firebase-config";
 const signUpBtn = document.getElementById("sign-up");
 const loginBtn = document.getElementById("login");
 const logoutBtn = document.getElementById("logout");
+const filterBtn = document.getElementById("filter");
+const contentContainer = document.getElementById("demo-content-container");
 
 // user sign up
 const userSignUp = async () => {
@@ -39,7 +48,6 @@ const userSignUp = async () => {
 // create story
 const createStory = async (title, content, decade, publishDate) => {
   const user = firebaseAuth.currentUser;
-  console.log(firebaseAuth.currentUser)
 
   if (user) {
     try {
@@ -129,7 +137,9 @@ const handleLikeButton = async (storyId) => {
     await updateDoc(storyRef, { likeCounter: updatedLikeCounter });
 
     // Update like counter in DOM
-    const likeCounterElement = document.querySelector(`[data-story-id="${storyId}"] .like-counter`);
+    const likeCounterElement = document.querySelector(
+      `[data-story-id="${storyId}"] .like-counter`
+    );
     likeCounterElement.textContent = `Like Count: ${updatedLikeCounter}`;
 
     alert("Liked the story!");
@@ -204,11 +214,53 @@ createStoryBtn.addEventListener("click", () => {
   createStory(title, content, decade, publishDate);
 });
 
+async function filterContent() {
+  let category = filterBtn.value;
+
+  try {
+    const contentDocuments = [];
+    const contentSnapshotRef = await getDocs(collection(firebaseDB, "content"));
+
+    contentSnapshotRef.forEach((contentSnap) => {
+      const contentDocument = contentSnap.data();
+      contentDocuments.push(contentDocument);
+    });
+
+    const filteredDocuments = contentDocuments.filter(
+      (document) => document.category === category
+    );
+
+    filteredDocuments.forEach((doc) => {
+      const contentElement = document.createElement("div");
+
+      contentElement.classList.add("content-box");
+
+      const html = ` 
+      <h2 class="content-header">${doc.title}</h2>
+      <h3 class="content-decade">${doc.decade}</h3>
+      <p class="content">
+      ${doc.content}
+      </p>
+    `;
+
+      contentElement.innerHTML = html;
+
+      contentContainer.innerHTML = "";
+
+      contentContainer.appendChild(contentElement);
+    });
+  } catch (error) {
+    console.error("Error retrieving content:", error);
+    alert("Failed to retrieve stories. Please try again.");
+  }
+}
+
 checkAuthState();
 
 signUpBtn.addEventListener("click", userSignUp);
 loginBtn.addEventListener("click", userSignIn);
 logoutBtn.addEventListener("click", userSignOut);
 googleBtn.addEventListener("click", signInWithGoogle);
+filterBtn.addEventListener("change", filterContent);
 
 // event listener for create story button
