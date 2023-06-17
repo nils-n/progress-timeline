@@ -1,0 +1,1 @@
+{"mappings":"AAAA,MAAM,aAAa,SAAS,eAAe","sources":["assets/js/auth.js"],"sourcesContent":["const accountBtn = document.getElementById(\"account-btn\");\n"],"names":[],"version":3,"file":"index.214e57f2.js.map","sourceRoot":"/__parcel_source_root/"}
