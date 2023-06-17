@@ -584,6 +584,8 @@ var _firebaseConfig = require("../../config/firebase-config");
 const signUpBtn = document.getElementById("sign-up");
 const loginBtn = document.getElementById("login");
 const logoutBtn = document.getElementById("logout");
+const filterBtn = document.getElementById("filter");
+const contentContainer = document.getElementById("demo-content-container");
 // user sign up
 const userSignUp = async ()=>{
     const signUpEmail = document.getElementById("signup-email").value;
@@ -601,7 +603,6 @@ const userSignUp = async ()=>{
 // create story
 const createStory = async (title, content, decade, publishDate)=>{
     const user = (0, _firebaseConfig.firebaseAuth).currentUser;
-    console.log((0, _firebaseConfig.firebaseAuth).currentUser);
     if (user) try {
         const storyRef = (0, _firestore.doc)((0, _firebaseConfig.firebaseDB), "stories", generateUniqueID());
         const newStory = {
@@ -737,11 +738,44 @@ createStoryBtn.addEventListener("click", ()=>{
     const publishDate = document.getElementById("story-publish-date").value;
     createStory(title, content, decade, publishDate);
 });
+async function filterContent() {
+    let category = filterBtn.value;
+    try {
+        const contentDocuments = [];
+        const contentSnapshotRef = await (0, _firestore.getDocs)((0, _firestore.collection)((0, _firebaseConfig.firebaseDB), "content"));
+        contentSnapshotRef.forEach((contentSnap)=>{
+            const contentDocument = contentSnap.data();
+            contentDocuments.push(contentDocument);
+        });
+        const filteredDocuments = contentDocuments.filter((document1)=>{
+            if (document1.category !== category) return document1.decade.toString() === category;
+            else return document1.category === category;
+        });
+        contentContainer.innerHTML = "";
+        filteredDocuments.forEach((doc)=>{
+            const contentElement = document.createElement("div");
+            contentElement.classList.add("content-box");
+            const html = ` 
+      <h2 class="content-header">${doc.title}</h2>
+      <h3 class="content-decade">${doc.decade}</h3>
+      <p class="content">
+      ${doc.content}
+      </p>
+    `;
+            contentElement.innerHTML = html;
+            contentContainer.appendChild(contentElement);
+        });
+    } catch (error) {
+        console.error("Error retrieving content:", error);
+        alert("Failed to retrieve stories. Please try again.");
+    }
+}
 checkAuthState();
 signUpBtn.addEventListener("click", userSignUp);
 loginBtn.addEventListener("click", userSignIn);
 logoutBtn.addEventListener("click", userSignOut);
-googleBtn.addEventListener("click", signInWithGoogle); // event listener for create story button
+googleBtn.addEventListener("click", signInWithGoogle);
+filterBtn.addEventListener("change", filterContent); // event listener for create story button
 
 },{"firebase/firestore":"8A4BC","firebase/auth":"79vzg","firebase/database":"SJ4UY","../../config/firebase-config":"4WWUW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"SJ4UY":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
