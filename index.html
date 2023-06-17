@@ -38,6 +38,8 @@
       href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One:wght@400&amp;display=swap"
       data-tag="font"
     />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -45,25 +47,82 @@
       <link href="./home.css" rel="stylesheet" />
 
       <div class="home-container">
-        <div class="home-header">
-          <img alt="image" src="public/rainbow-200h.png" class="home-image" />
-          <div class="home-container01">
-            <a href="signup.html" class="home-navlink">
-              <span>About</span>
-              <br />
-              <br />
-            </a>
+        <header data-role="Header" class="home-header">
+          <a href="index.html" class="home-navlink">
+            <img
+              alt="image"
+              src="public/rainbow-1500h.png"
+              class="home-image"
+            />
+          </a>
+          <div class="home-nav">
+            <nav
+              class="navigation-links-nav navigation-links-root-class-name10"
+            >
+              <a href="about.html" class="navigation-links-navlink">
+                <span>About Us</span>
+              </a>
+            </nav>
+          </div>
+          <div class="home-btn-group">
             <a
               href="https://nils-n.github.io/progress-timeline/testingbackend.html"
+              id="link-to-login"
               target="_blank"
               rel="noreferrer noopener"
-              class="home-link"
+              class="home-login button"
             >
-              <span>Login</span>
-              <br />
+              Login
             </a>
+            <a href="signup.html" class="home-register button">Register</a>
           </div>
-        </div>
+          <div data-role="BurgerMenu" class="home-burger-menu">
+            <svg viewBox="0 0 1024 1024" class="home-icon">
+              <path
+                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+              ></path>
+            </svg>
+          </div>
+          <div data-role="MobileMenu" class="home-mobile-menu">
+            <div class="home-nav1">
+              <div class="home-container01">
+                <div data-role="CloseMobileMenu" class="home-menu-close">
+                  <svg viewBox="0 0 1024 1024" class="home-icon2">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    ></path>
+                  </svg>
+                </div>
+                <a href="index.html" class="home-navlink1">
+                  <img
+                    alt="image"
+                    src="public/rainbow-1500h.png"
+                    class="home-image1"
+                  />
+                </a>
+                <a
+                  href="https://nils-n.github.io/progress-timeline/testingbackend.html"
+                  id="link-to-login"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-login1 button"
+                >
+                  Login
+                </a>
+                <a href="signup.html" class="home-register1 button">Register</a>
+              </div>
+              <a href="about.html" class="home-navlink2"></a>
+              <nav
+                class="navigation-links-nav navigation-links-root-class-name11"
+              >
+                <a href="about.html" class="home-navlink2"></a>
+                <a href="about.html" class="navigation-links-navlink">
+                  <span>About Us</span>
+                </a>
+              </nav>
+            </div>
+          </div>
+        </header>
         <div class="hero-container-hero-container">
           <div class="hero-container-container">
             <h1 class="hero-container-text"><span>PROGRESS</span></h1>
@@ -94,7 +153,7 @@
         <main class="home-main-container">
           <div class="home-container02">
             <div class="home-container03">
-              <span class="home-text05">
+              <span class="home-text">
                 Welcome to our site, a timeline journey through the significant
                 milestones in gay rights history. As you navigate this site,
                 you'll experience a timeline detailing pivotal moments that
@@ -107,18 +166,20 @@
             </div>
             <div class="home-container04">
               <div class="home-container05">
-                <button
-                  id="filter-stories"
-                  type="button"
-                  class="home-button button"
-                >
-                  Filter Timeline
-                </button>
+                <div class="app-component-container">
+                  <button
+                    id="filter-stories"
+                    type="button"
+                    class="app-component-button button"
+                  >
+                    <span>Filter Timeline</span>
+                  </button>
+                </div>
                 <select id="filter" class="home-select button">
                   <option value="all">All</option>
                   <option value="artist">Artist</option>
-                  <option value="political">Political</option>
                   <option value="science">Science</option>
+                  <option value="political">Political</option>
                   <option value="1960">1960s</option>
                   <option value="1970">1960s</option>
                   <option value="1980">1980s</option>
@@ -131,7 +192,7 @@
             <div class="home-filter-container"></div>
             <div class="home-timeline-l-container">
               <div class="home-year-container">
-                <h2 class="home-text06 h2">1967</h2>
+                <h2 class="home-text01 h2">1967</h2>
               </div>
               <div class="home-line-container">
                 <div class="home-line-container1">
@@ -146,14 +207,14 @@
                   <img
                     alt="image"
                     src="https://play.teleporthq.io/static/svg/default-img.svg"
-                    class="home-image1"
+                    class="home-image2"
                   />
                 </div>
               </div>
               <div class="home-event-text-container">
                 <div class="home-container06">
-                  <span class="home-text07">Resistance</span>
-                  <span class="home-text08">
+                  <span class="home-text02">Resistance</span>
+                  <span class="home-text03">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy text ever since the 1500s, when an unknown
@@ -164,14 +225,14 @@
             </div>
             <div class="home-timeline-r-container">
               <div class="home-year-container1">
-                <h2 class="home-text09">1967</h2>
+                <h2 class="home-text04">1967</h2>
               </div>
               <div class="home-line-container2">
                 <div class="home-image-container1">
                   <img
                     alt="image"
                     src="https://play.teleporthq.io/static/svg/default-img.svg"
-                    class="home-image2"
+                    class="home-image3"
                   />
                 </div>
                 <div class="home-container07">
@@ -187,11 +248,11 @@
               </div>
               <div class="home-event-text-container1">
                 <div class="home-container08">
-                  <span class="home-text10">
-                    <span class="home-text11">Disobedience</span>
+                  <span class="home-text05">
+                    <span class="home-text06">Disobedience</span>
                     <br />
                   </span>
-                  <span class="home-text13">
+                  <span class="home-text08">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy text ever since the 1500s, when an unknown
@@ -202,7 +263,7 @@
             </div>
             <div class="home-timeline-l-container1">
               <div class="home-year-container2">
-                <h2 class="home-text14 h2">1967</h2>
+                <h2 class="home-text09 h2">1967</h2>
               </div>
               <div class="home-line-container4">
                 <div class="home-line-container5">
@@ -217,14 +278,14 @@
                   <img
                     alt="image"
                     src="https://play.teleporthq.io/static/svg/default-img.svg"
-                    class="home-image3"
+                    class="home-image4"
                   />
                 </div>
               </div>
               <div class="home-event-text-container2">
                 <div class="home-container09">
-                  <span class="home-text15">Resistance</span>
-                  <span class="home-text16">
+                  <span class="home-text10">Resistance</span>
+                  <span class="home-text11">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy text ever since the 1500s, when an unknown
@@ -235,14 +296,14 @@
             </div>
             <div class="home-timeline-r-container1">
               <div class="home-year-container3">
-                <h2 class="home-text17">1967</h2>
+                <h2 class="home-text12">1967</h2>
               </div>
               <div class="home-line-container6">
                 <div class="home-image-container3">
                   <img
                     alt="image"
                     src="https://play.teleporthq.io/static/svg/default-img.svg"
-                    class="home-image4"
+                    class="home-image5"
                   />
                 </div>
                 <div class="home-line-container7">
@@ -256,8 +317,8 @@
               </div>
               <div class="home-event-text-container3">
                 <div class="home-container10">
-                  <span class="home-text18">LEGALize</span>
-                  <span class="home-text19">
+                  <span class="home-text13">LEGALize</span>
+                  <span class="home-text14">
                     Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy text ever since the 1500s, when an unknown
@@ -279,8 +340,8 @@
             src="public/external/ellipse122917-4c1-400h.png"
             class="home-ellipse12"
           />
-          <span class="home-text20">1969</span>
-          <span class="home-text21"><span>2004</span></span>
+          <span class="home-text15">1969</span>
+          <span class="home-text16"><span>2004</span></span>
           <img
             alt="Line312911"
             src="public/external/line312911-sas9.svg"
@@ -301,8 +362,8 @@
             src="public/external/ellipse202913-261b-200w.png"
             class="home-ellipse20"
           />
-          <span class="home-text23"><span>1982</span></span>
-          <span class="home-text25">
+          <span class="home-text18"><span>1982</span></span>
+          <span class="home-text20">
             <span>
               <span>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -319,7 +380,7 @@
               <span>typesetting, remaining essentially unchanged.</span>
             </span>
           </span>
-          <span class="home-text32">
+          <span class="home-text27">
             <span>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the
@@ -359,9 +420,9 @@
             src="public/external/ellipse182915-1ox-200w.png"
             class="home-ellipse18"
           />
-          <span class="home-text38">DISOBEDIENCE</span>
-          <span class="home-text39"><span>COMMUNICATION</span></span>
-          <span class="home-text41">
+          <span class="home-text33">DISOBEDIENCE</span>
+          <span class="home-text34"><span>COMMUNICATION</span></span>
+          <span class="home-text36">
             <span>
               <span>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -378,7 +439,7 @@
               <span>typesetting, remaining essentially unchanged.</span>
             </span>
           </span>
-          <span class="home-text48"><span>RESEARCH</span></span>
+          <span class="home-text43"><span>RESEARCH</span></span>
           <img
             alt="Line202916"
             src="public/external/line202916-xif.svg"
@@ -389,7 +450,7 @@
             src="public/external/line333243-mkii.svg"
             class="home-line33"
           />
-          <span class="home-text50">1974</span>
+          <span class="home-text45">1974</span>
           <img
             alt="Ellipse152916"
             src="public/external/ellipse152916-x2b-200h.png"
@@ -400,7 +461,7 @@
             src="public/external/ellipse162916-lma-300h.png"
             class="home-ellipse16"
           />
-          <span class="home-text51">
+          <span class="home-text46">
             <span>
               <span>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -417,7 +478,7 @@
               <span>typesetting, remaining essentially unchanged.</span>
             </span>
           </span>
-          <span class="home-text58"><span>LEGAL RIGHTS</span></span>
+          <span class="home-text53"><span>LEGAL RIGHTS</span></span>
           <img
             alt="Line242917"
             src="public/external/line242917-cbk.svg"
@@ -433,7 +494,7 @@
             src="public/external/line262917-gu4.svg"
             class="home-line26"
           />
-          <span class="home-text60"><span>1997</span></span>
+          <span class="home-text55"><span>1997</span></span>
           <img
             alt="Ellipse192917"
             src="public/external/ellipse192917-o77j-200h.png"
@@ -449,7 +510,7 @@
             src="public/external/line232914-vik9.svg"
             class="home-line23"
           />
-          <span class="home-text62">
+          <span class="home-text57">
             <span>
               <span>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -466,7 +527,7 @@
               <span>typesetting, remaining essentially unchanged.</span>
             </span>
           </span>
-          <span class="home-text69"><span>MARRIAGE</span></span>
+          <span class="home-text64"><span>MARRIAGE</span></span>
           <img
             alt="Ellipse152917"
             src="public/external/ellipse152917-vl78-300h.png"
@@ -482,5 +543,9 @@
         <div class="home-container11"></div>
       </div>
     </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
   </body>
 </html>
