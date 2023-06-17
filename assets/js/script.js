@@ -9,7 +9,7 @@ import {
 } from "firebase/auth";
 import "firebase/database";
 
-import { firebaseAuth, firebaseDB } from "./config/firebase-config";
+import { firebaseAuth, firebaseDB } from "../../config/firebase-config";
 
 const signUpBtn = document.getElementById("sign-up");
 const loginBtn = document.getElementById("login");
