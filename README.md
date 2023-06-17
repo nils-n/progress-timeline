@@ -8,7 +8,7 @@ This Repository will be dedicated to timeline of LGBTQ+, where we will do our be
 
 *It takes great deal of courage t see the world in its tainted glory, and still to love it* - __Oscar Wilde.__
 
-Oscar would is well known writer, who had to suffer just because of his love, love to man. and he was not alone, there were many, many others... But there was a time, when our society had to change, and those changes were made. 
+Oscar Wilde is well known writer, who had to suffer just because of his love, love to man. and he was not alone, there were many, many others... But there was a time, when our society had to change, and those changes were made. 
 
 
 <details>  <summary> 1897: Magnus Hirschfeld founds the Scientific-Humanitarian Committee (WhK), one of the first gay rights organizations. 1910s:</summary>
@@ -57,54 +57,32 @@ American Psychiatric Association (APA) has voted for removal of homosexuality fr
 
 <details><summary>1981: The first cases of what would later be identified as AIDS are reported, leading to a devastating impact on the LGBTQ+ community.</summary>
 <p>
-</p><details>
 
-1. 1907: Magnus Hirschfeld founds the Scientific-Humanitarian Committee, one of the first gay rights organizations. 1910s:
-2. 1936 was opened first lesbian and gay bar
-3. Robert Duncan, was the first American who revealed his homosexuality in 1944.
-4. Alan Turing, who created machine "__bombe__" and made possible to decode Enigma, but was charged with indecency, had to undergo hormonal therapy, after what he chose to leave this world on 1954.
-5. 1961 was the year, when word "__homosexual__" was used first time on film "__Victim__"
-6. 1969 June 28 - __The Stone Riots__ ignited after police took raid at the place Stonewall Inn and lasted for six days. Now it is called __Gay Pride__ and memmorialized annualy around the world.
-7. "__Don't Ask, Don't Tell__" - First policy was instituted in USA military in 1993, what permitted gays to serve in army.
-8. Netherlands were the first country in the world to legalize same-sex marriage on 2001.
+</p></details>
 
 
-Here is a list of significant LGBTQ+ history events for each decade from 1900 to 2020:
-1900s:
-- 1907: Magnus Hirschfeld founds the Scientific-Humanitarian Committee, one of the first gay rights organizations.
-1910s:
-- 1919: Magnus Hirschfeld opens the Institute for Sexual Research in Berlin, promoting the understanding and acceptance of homosexuality.
-1920s:
-- 1924: The Society for Human Rights is established in Chicago, marking the first recognized gay rights organization in the United States.
-1930s:
-- 1933: The Nazi regime in Germany initiates the persecution of LGBTQ+ individuals, leading to arrests, imprisonment, and violence.
-1940s:
-- 1948: Alfred Kinsey publishes “Sexual Behavior in the Human Male,” a groundbreaking study that includes research on homosexuality.
-1950s:
-- 1952: The American Psychiatric Association includes homosexuality in the first edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM).
-1960s:
-- 1969: The Stonewall riots in New York City ignite the modern LGBTQ+ rights movement, marking a turning point for activism.
-1970s:
-- 1973: The American Psychiatric Association removes homosexuality from the list of mental disorders in the DSM.
-1980s:
-- 1981: The first cases of what would later be identified as AIDS are reported, leading to a devastating impact on the LGBTQ+ community.
-1990s:
-- 1996: President Bill Clinton signs the Defense of Marriage Act (DOMA), which denies federal recognition of same-sex marriages.
-2000s:
-- 2003: The Supreme Court of the United States strikes down sodomy laws in Lawrence v. Texas, decriminalizing same-sex sexual activity.
-2010s:
-- 2010: The “Don’t Ask, Don’t Tell” policy, which prohibited openly gay individuals from serving in the U.S. military, is repealed.
-2020s:
-- 2020: The Supreme Court of the United States rules in Bostock v. Clayton County that federal employment discrimination protections extend to LGBTQ+ individuals.
-Please note that this list provides a brief overview and does not encompass all LGBTQ+ history events during these decades.
+<details><summary>1996: President Bill Clinton signs the Defense of Marriage Act (DOMA), which denies federal recognition of same-sex marriages.</summary>
+<p>
+
+</p></details>
+
+<details><summary>2003: The Supreme Court of the United States strikes down sodomy laws in Lawrence v. Texas, decriminalizing same-sex sexual activity. 2010s:</summary>
+<p>
+
+</p></details>
+
+<details><summary>2010: The “Don’t Ask, Don’t Tell” policy, which prohibited openly gay individuals from serving in the U.S. military, is repealed.</summary>
+<p>
+
+</p></details>
+
+<details><summary>2020: The Supreme Court of the United States rules in Bostock v. Clayton County that federal employment discrimination protections extend to LGBTQ+ individuals.
+Please note that this list provides a brief overview and does not encompass all LGBTQ+ history events during these decades.</summary>
+<p>
+
+</p></details>
 
 
-<details>
-  <summary>Code example</summary>
-  <p>
-    ...
-  </p>
-</details>
 
 ## 🌈 Pride Representation 🥳
 ![Pride Representation Banner](https://res.cloudinary.com/djdefbnij/image/upload/v1685616402/pride2023banner_s33wvv.jpg)
