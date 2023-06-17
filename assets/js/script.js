@@ -1,4 +1,4 @@
-import { doc, setDoc, getDoc } from "firebase/firestore";
+import { doc, setDoc, getDoc, getDocs, collection, updateDoc } from "firebase/firestore";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -39,6 +39,7 @@ const userSignUp = async () => {
 // create story
 const createStory = async (title, content, decade, publishDate) => {
   const user = firebaseAuth.currentUser;
+  console.log(firebaseAuth.currentUser)
 
   if (user) {
     try {
@@ -88,11 +89,62 @@ const userSignOut = async () => {
   await signOut(firebaseAuth);
 };
 
+// display stories
+const displayStories = async () => {
+  const storiesContainer = document.getElementById("stories-container");
+
+  try {
+    const storiesSnapshot = await getDocs(collection(firebaseDB, "stories"));
+    storiesSnapshot.forEach((storyDoc) => {
+      const storyData = storyDoc.data();
+      const storyElement = document.createElement("div");
+      storyElement.innerHTML = `
+        <h2>${storyData.title}</h2>
+        <p>${storyData.content}</p>
+        <p>Author: ${storyData.author}</p>
+        <p class="like-counter">Like Count: ${storyData.likeCounter}</p>
+        <button class="like-button" data-story-id="${storyDoc.id}">Like</button>
+      `;
+      storiesContainer.appendChild(storyElement);
+
+      const likeButton = storyElement.querySelector(".like-button");
+      likeButton.addEventListener("click", () => {
+        handleLikeButton(storyDoc.id);
+      });
+    });
+  } catch (error) {
+    console.error("Error retrieving stories:", error);
+    alert("Failed to retrieve stories. Please try again.");
+  }
+};
+
+// handle like button
+const handleLikeButton = async (storyId) => {
+  const storyRef = doc(firebaseDB, "stories", storyId);
+
+  try {
+    const storyDoc = await getDoc(storyRef);
+    const storyData = storyDoc.data();
+    const updatedLikeCounter = storyData.likeCounter + 1;
+    await updateDoc(storyRef, { likeCounter: updatedLikeCounter });
+
+    // Update like counter in DOM
+    const likeCounterElement = document.querySelector(`[data-story-id="${storyId}"] .like-counter`);
+    likeCounterElement.textContent = `Like Count: ${updatedLikeCounter}`;
+
+    alert("Liked the story!");
+  } catch (error) {
+    console.error("Error updating like counter:", error);
+    alert("Failed to update like counter. Please try again.");
+  }
+};
+
 // check user auth state
 const checkAuthState = async () => {
   onAuthStateChanged(firebaseAuth, (user) => {
     if (user) {
       console.log(user);
+      displayStories();
     } else {
       alert("no user");
     }
