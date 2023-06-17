@@ -51,6 +51,44 @@ const userSignUp = async () => {
   }
 };
 
+// create story
+const createStory = async (title, content, decade, publishDate) => {
+  const user = auth.currentUser;
+
+  if (user) {
+    try {
+      const storyRef = doc(db, "stories", generateUniqueID());
+      const newStory = {
+        title,
+        content,
+        author: user.uid,
+        likeCounter: 0,
+        decade,
+        publishDate,
+        createdAt: new Date(),
+      };
+      await setDoc(storyRef, newStory);
+
+      alert("Story created successfully!");
+    } catch (error) {
+      console.error("Error creating story: ", error);
+      alert("Failed to create story. Please try again.");
+    }
+  } else {
+    alert("You need to be logged in to create a story.");
+  }
+};
+
+// generate unique id
+const generateUniqueID = () => {
+  return (
+    "_" +
+    Math.random()
+      .toString(36)
+      .substr(2, 9)
+  );
+};
+
 // user sign in
 const userSignIn = async () => {
   const signInEmail = document.getElementById("login-email").value;
@@ -130,3 +168,14 @@ signUpBtn.addEventListener("click", userSignUp);
 loginBtn.addEventListener("click", userSignIn);
 logoutBtn.addEventListener("click", userSignOut);
 googleBtn.addEventListener("click", signInWithGoogle);
+
+// event listener for create story button
+const createStoryBtn = document.getElementById("create-story");
+createStoryBtn.addEventListener("click", () => {
+  const title = document.getElementById("story-title").value;
+  const content = document.getElementById("story-content").value;
+  const decade = document.getElementById("story-decade").value;
+  const publishDate = document.getElementById("story-publish-date").value;
+
+  createStory(title, content, decade, publishDate);
+});
