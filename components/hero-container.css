@@ -39,15 +39,20 @@
 }
 .hero-container-container1 {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: row;
 }
 .hero-container-button {
   color: #ea3387;
+  height: 2rem;
   display: flex;
+  align-self: center;
   transition: 0.3s;
+  align-items: center;
   border-width: 0px;
   margin-right: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
   background-color: var(--dl-color-primary-bg);
 }
 .hero-container-button:hover {
@@ -60,8 +65,12 @@
 }
 .hero-container-button1 {
   color: rgb(255, 0, 137);
+  height: 2rem;
+  align-self: center;
   transition: 0.3s;
   border-width: 0px;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
   background-color: #fae24d;
 }
 .hero-container-button1:hover {
