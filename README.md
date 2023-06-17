@@ -1,6 +1,5 @@
 # progress-timeline
 
-
 ## *Love and compassion are necessities, not luxuries. Without them, humanity cannot survive* - __Dalai Lama__
 
 
@@ -35,19 +34,37 @@ In this section, we will briefly discuss how our team addressed the applicable c
 - ✨ Was the GitHub Project used to plan and execute the project?
 - ✨ Is the project completed and deployed?
 
-## Intro
-One or two paragraphs providing an overview of our project, including the theme - whether it is one of the 7 themes or our own team's theme.
+
+## Intro 
+This project aims to be a helpful resource to the LGBTQ+ movement. in order to fight prejudices and intolerance towards marginalized groups in our society we find that knowledge and education, together with love and support, are the best tools. The website of this project serves as both a source of knowledge about the hardships and obstacles that the movement has had to overcome thoughout modern history, as well as a platform for making LGBTQ+ voices heard and for offering support and inspiration to the members of the LGBTQ+ community.
+
+Due to the importance of both education and support for this cause this project stretches over a few themes: namely Empowering Queer Voices and Fostering Inclusive Allyship by giving the users the incredibly valuable possibility of sharing their stories, and to be heard by others, who in turn can offer support and advice through the comment feature; and through knowledge and education by the LGBTQ+ timeline which offers an easy-to-grasp overview of the movement as well as more in-depth descriptions it helps to serve Advocacy and Activism for the community. 
+
 
 ## Goal
-The goal section provides a concise summary of the main objective or purpose of the project or software described in this README. It addresses the following aspects:
 
-- ➡️ Problem Statement
-- ➡️ Objective(s)
-- ➡️ Target Audience
-- ➡️ Benefits
+### Problem Statement: 
+
+Prejudices can cause stigmas which are hard to overcome as a member of the LGBTQ+ community. It can lead to people feeling isolated and can have serious consequences. People need access to supportive social structures where they can feel seen and understood. 
+
+### Objectives:
+
+1. This website can through its LGBTQ+ timeline feature educate and inspire people so as to fight prejudices and help marginalized people feel part of the community.
+
+2. Through the story feature users can empower themselves by posting their LGBTQ+ stories, sharing their experiences with others and help inspire other users with everyday examples of the joys and hardships that permeates the lives of people in the LGBTQ+ community. The comment feature can further help the users to a feeling of being part of something bigger than themselves and is a powerful way to connect people to offer support and advice to one another.
+
+### Target audiences:
+
+The primary target audience is people of all ages who are in some way part of the LGBTQ+ community. Secondary target audiences are knowledge seeking individuals or organizations such as schools or other learning institutions. 
+
+### Benefits:
+
+By giving the general public more education regarding the LGBTQ+ movement it will increase the understanding and acceptance of this marginalized group. Furthermore, the story and comment sections of the website can contribute with a safe environment which is essential to the well-being and in the identity-building process of people. 
+
 
 ## Tech
 In the tech section, we provide information about the technology stack, dependencies, and any technical details related to the project.
+
 
 ## Credits
 We would like to give credit to the following individuals, organizations, and resources that have contributed to the project or provided inspiration:
