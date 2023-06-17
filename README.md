@@ -10,7 +10,56 @@ This Repository will be dedicated to timeline of LGBTQ+, where we will do our be
 
 Oscar would is well known writer, who had to suffer just because of his love, love to man. and he was not alone, there were many, many others... But there was a time, when our society had to change, and those changes were made. 
 
-1. 1924 - First Gay rights organization in United States.
+
+<details>  <summary> 1897: Magnus Hirschfeld founds the Scientific-Humanitarian Committee (WhK), one of the first gay rights organizations. 1910s:</summary>
+<p>
+Comitee was founded on 1897 15<sup>th</sup> of May in Germany, just three days before [ __Oscar Wilde__ ](http://www.cmgww.com/historic/wilde/) was released from prison for homosexuality by Magnus Hirschfield. The reasons for starting such committee that he noticed his homosexual patients were  leaning towards suicide, as society believed they were unnatural and criminalized them for their natural desires. They gathered over 5.000 signatures to repeal the law (Paragraph 175), between signatories were: Leo Tolstoy and Albert Einstein. 
+</p></details>
+
+<details>  <summary> 1919: Magnus Hirschfeld opens the Institute for Sexual Research in Berlin, promoting the understanding and acceptance of homosexuality. </summary>
+<p>
+Magnus opens "Institute of Sexual Science" on 6<sup>th</sup> of July in Berlin (Tiergarten district), the first of its kind in the World. There was more than 40 working people in many different fields: research, sexual counseling, treatment of venereal deceases and public sexual education. It also included museum of sexual artifacts, exam rooms and lecture hall. Usually advices were for free, thus in first year over 3.500 people had over 18.000 consultations. People who were poorer, received medical treatment for free.
+</p></details>
+
+<details>  <summary> 1924: The Society for Human Rights is established in Chicago, marking the first recognized gay rights organization in the United States. </summary>
+<p>
+Henry Gerber inspired by Magnus (Henry was born in Bavaria and in 1913 moved to USA), filled application to establish Society for Human Rights on 1924 10<sup>th</sup> of December in Chicago. He managed to publish just few issues before he had to shut down Society after charter was presented by local police on 1925, even charges later were dropped, but legal fees bankrupted Gerber. After all of this he continued writing about homosexuality for several publications.
+</p></details>
+
+<details>  <summary> 1933: The Nazi regime in Germany initiates the persecution of LGBTQ+ individuals, leading to arrests, imprisonment, and violence.</summary>
+<p>
+Nazi regime student group marched to Institute for Sexual Science, looted library and archives. Later books, files were burned. Within few months Institute was forced to close. Gerber left Germany and moved to France. Nazi regime continued campaign against male homosexuality between 1933 and 1945. Over 100.000 men were arrested and about 50% of them were convicted, in some cases that led to imprisonments in concentration camps. June 1935 Nazis revised Paragraph 175 by banning sexual relationships between men. 1936 campaign intensified led by SS leader Heinich Himmler.
+</p></details>
+
+<details>  <summary> 1948: Alfred Kinsey publishes “Sexual Behavior in the Human Male,” a groundbreaking study that includes research on homosexuality. 1950s </summary>
+<p>
+Alfred Kinsley is known as as sexologist, and his work on human sexuality, as he believed everyone was bisexual and he measured that on scale 0 (heterosexual) to 6 (homosexual). He published 2 books, known as "The Kensley Reports" consisting on 2 books:
+<li>1948 - "Sexual Behavior in the Human male" - based on 5300 interviews</li>
+<li>1953 - "Sexual Behavior in the Human female" - based on 6000 interviews</li>
+He has found that 11.6% of males had rating 3 (on his scale) aged between 20-35, and females accordingly 7%. 
+</p></details>
+
+<details> <summary>1952: The American Psychiatric Association includes homosexuality in the first edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM).</summary>
+<p>
+The aim of this manual was to standardize criteria and nomenclature for psychiatric conditions, thus homosexuality was classified under <em>"sociopathic personality disturbance"</em>. Sexual deviation included different types of behavior including "homosexuality, transvestism, fetishism and etc". Including  these "behaviour" in DSM was to recognize them as disorder not a sin. This was a foundation of future studies of homosexuality clinicians. 
+</p></details>
+
+<details><summary>1969: The Stonewall riots in New York City ignite the modern LGBTQ+ rights movement, marking a turning point for activism.</summary>
+<p>
+Stonewall Inn was known as a gay bar, where they could meet on dance floor and jukebox, the had "protection" for regular payoffs demanded my Mafia, who has previousley invested in this bar. Bar was raided by police, as bar was suspected in bootlegging spirits. Patrons had to show documents, if you were not arrested, you were sent out. Crowd slowly formed outside. When more patrons arrived, they were "greeted" with beer bottles. slowly it all turned into riot, actually few of them, peop,e who were arrested were recaptured back by mobs. next night riot had died, although  there were smaller altercations between LGBT and police. People who were present became members of <b>Gay Liberation Front</b> and fought further for queer community and equality.
+</p></details>
+
+<details><summary>1973: The American Psychiatric Association removes homosexuality from the list of mental disorders in the DSM.</summary>
+<p>
+American Psychiatric Association (APA) has voted for removal of homosexuality from mental disorders (5.854 voted to remove, 3.810 to retain) on 1973. This made homosexuality to be moved from DSM and placed it in effect with "sexual orientation disturbance" until 1987 it was completely removed. Spitzer's new definition was homophobic bias. Years later Spitzer made public resignation from APA nomenclature commitee, as his views where homophobic.
+</p></details>
+
+
+<details><summary>1981: The first cases of what would later be identified as AIDS are reported, leading to a devastating impact on the LGBTQ+ community.</summary>
+<p>
+</p><details>
+
+1. 1907: Magnus Hirschfeld founds the Scientific-Humanitarian Committee, one of the first gay rights organizations. 1910s:
 2. 1936 was opened first lesbian and gay bar
 3. Robert Duncan, was the first American who revealed his homosexuality in 1944.
 4. Alan Turing, who created machine "__bombe__" and made possible to decode Enigma, but was charged with indecency, had to undergo hormonal therapy, after what he chose to leave this world on 1954.
@@ -20,7 +69,42 @@ Oscar would is well known writer, who had to suffer just because of his love, lo
 8. Netherlands were the first country in the world to legalize same-sex marriage on 2001.
 
 
+Here is a list of significant LGBTQ+ history events for each decade from 1900 to 2020:
+1900s:
+- 1907: Magnus Hirschfeld founds the Scientific-Humanitarian Committee, one of the first gay rights organizations.
+1910s:
+- 1919: Magnus Hirschfeld opens the Institute for Sexual Research in Berlin, promoting the understanding and acceptance of homosexuality.
+1920s:
+- 1924: The Society for Human Rights is established in Chicago, marking the first recognized gay rights organization in the United States.
+1930s:
+- 1933: The Nazi regime in Germany initiates the persecution of LGBTQ+ individuals, leading to arrests, imprisonment, and violence.
+1940s:
+- 1948: Alfred Kinsey publishes “Sexual Behavior in the Human Male,” a groundbreaking study that includes research on homosexuality.
+1950s:
+- 1952: The American Psychiatric Association includes homosexuality in the first edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM).
+1960s:
+- 1969: The Stonewall riots in New York City ignite the modern LGBTQ+ rights movement, marking a turning point for activism.
+1970s:
+- 1973: The American Psychiatric Association removes homosexuality from the list of mental disorders in the DSM.
+1980s:
+- 1981: The first cases of what would later be identified as AIDS are reported, leading to a devastating impact on the LGBTQ+ community.
+1990s:
+- 1996: President Bill Clinton signs the Defense of Marriage Act (DOMA), which denies federal recognition of same-sex marriages.
+2000s:
+- 2003: The Supreme Court of the United States strikes down sodomy laws in Lawrence v. Texas, decriminalizing same-sex sexual activity.
+2010s:
+- 2010: The “Don’t Ask, Don’t Tell” policy, which prohibited openly gay individuals from serving in the U.S. military, is repealed.
+2020s:
+- 2020: The Supreme Court of the United States rules in Bostock v. Clayton County that federal employment discrimination protections extend to LGBTQ+ individuals.
+Please note that this list provides a brief overview and does not encompass all LGBTQ+ history events during these decades.
 
+
+<details>
+  <summary>Code example</summary>
+  <p>
+    ...
+  </p>
+</details>
 
 ## 🌈 Pride Representation 🥳
 ![Pride Representation Banner](https://res.cloudinary.com/djdefbnij/image/upload/v1685616402/pride2023banner_s33wvv.jpg)
