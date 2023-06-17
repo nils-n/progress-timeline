@@ -585,6 +585,7 @@ const signUpBtn = document.getElementById("sign-up");
 const loginBtn = document.getElementById("login");
 const logoutBtn = document.getElementById("logout");
 const filterBtn = document.getElementById("filter");
+const sortBtn = document.getElementById("sort-btn");
 const contentContainer = document.getElementById("demo-content-container");
 // user sign up
 const userSignUp = async ()=>{
@@ -748,6 +749,7 @@ async function filterContent() {
             contentDocuments.push(contentDocument);
         });
         const filteredDocuments = contentDocuments.filter((document1)=>{
+            if (category === "all") return document1;
             if (document1.category !== category) return document1.decade.toString() === category;
             else return document1.category === category;
         });
@@ -770,12 +772,27 @@ async function filterContent() {
         alert("Failed to retrieve stories. Please try again.");
     }
 }
+function sortContent() {
+    const isAscending = sortBtn.classList.contains("asc");
+    const order = isAscending ? "ascending" : "descending";
+    isAscending ? sortBtn.classList.remove("asc") : sortBtn.classList.add("asc");
+    const content = Array.from(contentContainer.querySelectorAll(".content-box"));
+    content.sort((a, b)=>{
+        const dateA = parseInt(a.querySelector(".content-decade").textContent);
+        const dateB = parseInt(b.querySelector(".content-decade").textContent);
+        if (order === "ascending") return dateA - dateB;
+        else if (order === "descending") return dateB - dateA;
+    });
+    contentContainer.innerHTML = "";
+    content.forEach((data)=>contentContainer.appendChild(data));
+}
 checkAuthState();
 signUpBtn.addEventListener("click", userSignUp);
 loginBtn.addEventListener("click", userSignIn);
 logoutBtn.addEventListener("click", userSignOut);
 googleBtn.addEventListener("click", signInWithGoogle);
-filterBtn.addEventListener("change", filterContent); // event listener for create story button
+filterBtn.addEventListener("change", filterContent);
+sortBtn.addEventListener("click", sortContent); // event listener for create story button
 
 },{"firebase/firestore":"8A4BC","firebase/auth":"79vzg","firebase/database":"SJ4UY","../../config/firebase-config":"4WWUW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"SJ4UY":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
