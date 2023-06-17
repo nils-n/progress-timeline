@@ -1,8 +1,5 @@
-import { initializeApp } from "firebase/app";
-import { getFirestore, doc, setDoc, getDoc } from "firebase/firestore";
-
+import { doc, setDoc, getDoc } from "firebase/firestore";
 import {
-  getAuth,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   onAuthStateChanged,
@@ -12,23 +9,11 @@ import {
 } from "firebase/auth";
 import "firebase/database";
 
+import { firebaseAuth, firebaseDB } from "./config/firebase-config";
+
 const signUpBtn = document.getElementById("sign-up");
 const loginBtn = document.getElementById("login");
 const logoutBtn = document.getElementById("logout");
-
-// Initialize Firebase
-const firebaseConfig = {
-  apiKey: "AIzaSyD7w6h9rZgPzHXjxn1XAAEvsvEyokkhx0c",
-  authDomain: "testing-node-auth.firebaseapp.com",
-  projectId: "testing-node-auth",
-  storageBucket: "testing-node-auth.appspot.com",
-  messagingSenderId: "834539674456",
-  appId: "1:834539674456:web:717fcc42c8ceb22a40e32d",
-};
-
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const db = getFirestore(app);
 
 // user sign up
 const userSignUp = async () => {
@@ -37,7 +22,7 @@ const userSignUp = async () => {
 
   try {
     const { user } = await createUserWithEmailAndPassword(
-      auth,
+      firebaseAuth,
       signUpEmail,
       signUpPassword
     );
@@ -53,11 +38,11 @@ const userSignUp = async () => {
 
 // create story
 const createStory = async (title, content, decade, publishDate) => {
-  const user = auth.currentUser;
+  const user = firebaseAuth.currentUser;
 
   if (user) {
     try {
-      const storyRef = doc(db, "stories", generateUniqueID());
+      const storyRef = doc(firebaseDB, "stories", generateUniqueID());
       const newStory = {
         title,
         content,
@@ -81,12 +66,7 @@ const createStory = async (title, content, decade, publishDate) => {
 
 // generate unique id
 const generateUniqueID = () => {
-  return (
-    "_" +
-    Math.random()
-      .toString(36)
-      .substr(2, 9)
-  );
+  return "_" + Math.random().toString(36).substr(2, 9);
 };
 
 // user sign in
@@ -94,7 +74,7 @@ const userSignIn = async () => {
   const signInEmail = document.getElementById("login-email").value;
   const signInPassword = document.getElementById("login-password").value;
   try {
-    signInWithEmailAndPassword(auth, signInEmail, signInPassword);
+    signInWithEmailAndPassword(firebaseAuth, signInEmail, signInPassword);
     alert("You have signed in successfully!");
   } catch (error) {
     const errorCode = error.code;
@@ -105,12 +85,12 @@ const userSignIn = async () => {
 
 // user sign out
 const userSignOut = async () => {
-  await signOut(auth);
+  await signOut(firebaseAuth);
 };
 
 // check user auth state
 const checkAuthState = async () => {
-  onAuthStateChanged(auth, (user) => {
+  onAuthStateChanged(firebaseAuth, (user) => {
     if (user) {
       console.log(user);
     } else {
@@ -126,7 +106,7 @@ const signInWithGoogle = async () => {
   const provider = new GoogleAuthProvider();
 
   try {
-    const result = await signInWithPopup(auth, provider);
+    const result = await signInWithPopup(firebaseAuth, provider);
     const user = result.user;
     console.log(user);
     alert("You have signed in with Google successfully!");
@@ -140,7 +120,7 @@ const signInWithGoogle = async () => {
 export const createUserDocumentFromAuth = async (userAuth) => {
   if (!userAuth) return;
 
-  const userDocRef = doc(db, "users", userAuth.uid);
+  const userDocRef = doc(firebaseDB, "users", userAuth.uid);
 
   const userSnapShot = await getDoc(userDocRef);
 
@@ -162,14 +142,6 @@ export const createUserDocumentFromAuth = async (userAuth) => {
   return userSnapShot;
 };
 
-checkAuthState();
-
-signUpBtn.addEventListener("click", userSignUp);
-loginBtn.addEventListener("click", userSignIn);
-logoutBtn.addEventListener("click", userSignOut);
-googleBtn.addEventListener("click", signInWithGoogle);
-
-// event listener for create story button
 const createStoryBtn = document.getElementById("create-story");
 createStoryBtn.addEventListener("click", () => {
   const title = document.getElementById("story-title").value;
@@ -179,3 +151,12 @@ createStoryBtn.addEventListener("click", () => {
 
   createStory(title, content, decade, publishDate);
 });
+
+checkAuthState();
+
+signUpBtn.addEventListener("click", userSignUp);
+loginBtn.addEventListener("click", userSignIn);
+logoutBtn.addEventListener("click", userSignOut);
+googleBtn.addEventListener("click", signInWithGoogle);
+
+// event listener for create story button
