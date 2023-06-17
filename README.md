@@ -46,22 +46,22 @@ The aim of this manual was to standardize criteria and nomenclature for psychiat
 
 <details><summary>1969: The Stonewall riots in New York City ignite the modern LGBTQ+ rights movement, marking a turning point for activism.</summary>
 <p>
-Stonewall Inn was known as a gay bar, where they could meet on dance floor and jukebox, the had "protection" for regular payoffs demanded my Mafia, who has previousley invested in this bar. Bar was raided by police, as bar was suspected in bootlegging spirits. Patrons had to show documents, if you were not arrested, you were sent out. Crowd slowly formed outside. When more patrons arrived, they were "greeted" with beer bottles. slowly it all turned into riot, actually few of them, peop,e who were arrested were recaptured back by mobs. next night riot had died, although  there were smaller altercations between LGBT and police. People who were present became members of <b>Gay Liberation Front</b> and fought further for queer community and equality.
+Stonewall Inn was known as a gay bar, where they could meet on dance floor and jukebox, the had "protection" for regular payoffs demanded my Mafia, who has previously invested in this bar. Bar was raided by police, as bar was suspected in bootlegging spirits. Patrons had to show documents, if you were not arrested, you were sent out. Crowd slowly formed outside. When more patrons arrived, they were "greeted" with beer bottles. slowly it all turned into riot, actually few of them, peop,e who were arrested were recaptured back by mobs. next night riot had died, although  there were smaller altercations between LGBT and police. People who were present became members of <b>Gay Liberation Front</b> and fought further for queer community and equality.
 </p></details>
 
 <details><summary>1973: The American Psychiatric Association removes homosexuality from the list of mental disorders in the DSM.</summary>
 <p>
-American Psychiatric Association (APA) has voted for removal of homosexuality from mental disorders (5.854 voted to remove, 3.810 to retain) on 1973. This made homosexuality to be moved from DSM and placed it in effect with "sexual orientation disturbance" until 1987 it was completely removed. Spitzer's new definition was homophobic bias. Years later Spitzer made public resignation from APA nomenclature commitee, as his views where homophobic.
+American Psychiatric Association (APA) has voted for removal of homosexuality from mental disorders (5.854 voted to remove, 3.810 to retain) on 1973. This made homosexuality to be moved from DSM and placed it in effect with "sexual orientation disturbance" until 1987 it was completely removed. Spitzer's new definition was homophobic bias. Years later Spitzer made public resignation from APA nomenclature committee, as his views where homophobic.
 </p></details>
 
 <details><summary>The first cases of what would later be identified as AIDS are reported, leading to a devastating impact on the LGBTQ+ community.</summary>
 <p>
-June 5<sup>th</sup> of 1981 CDC has published about five gay men infected with Pheumocystis Pneumonia, although such diseace was already known between LGBT+ community. Lawrence Mass was the first journalist to write about epidemic entitling it "Disease Rumors Largely Unfounded" in gay newspaper <em>The New York Native</em>. By the end on 1981, there were already 270 cases of severe immune deficiency where 121 of reported gay men had died. At that moment disease still was not understood and did not have its name. September 24<sup>th</sup>  CDC named it AIDS (Acquired Immune Deficiency Syndrome). By 1985 at least one HIV infection had been reported in every region of the world.
+June 5<sup>th</sup> of 1981 CDC has published about five gay men infected with Pheumocystis Pneumonia, although such disease was already known between LGBT+ community. Lawrence Mass was the first journalist to write about epidemic entitling it "Disease Rumors Largely Unfounded" in gay newspaper <em>The New York Native</em>. By the end on 1981, there were already 270 cases of severe immune deficiency where 121 of reported gay men had died. At that moment disease still was not understood and did not have its name. September 24<sup>th</sup>  CDC named it AIDS (Acquired Immune Deficiency Syndrome). By 1985 at least one HIV infection had been reported in every region of the world.
 </p></details>
 
 <details><summary>1996: President Bill Clinton signs the Defense of Marriage Act (DOMA), which denies federal recognition of same-sex marriages.</summary>
 <p>
-"DOMA" (Defence of Marriage Act) was signed by Bill Clinton (yes, yes, the same one - most decent and "with high morals and core values"), where marriage was defined as the union of one woman and one man, what allowed states to refuse of recognition of same-sex marriages. This led to denial of federal protections, privilages even to access to partner's employment benefits, rights of inheritance, immigration and residency, plus on top issues with joint tax returns. Putting it simply: one person with one hand stroke crossed off rights of millions of people.
+"DOMA" (Defense of Marriage Act) was signed by Bill Clinton (yes, yes, the same one - most decent and "with high morals and core values"), where marriage was defined as the union of one woman and one man, what allowed states to refuse of recognition of same-sex marriages. This led to denial of federal protections, privileges even to access to partner's employment benefits, rights of inheritance, immigration and residency, plus on top issues with joint tax returns. Putting it simply: one person with one hand stroke crossed off rights of millions of people.
 </p></details>
 
 <details><summary>The Supreme Court of the United States strikes down sodomy laws in Lawrence v. Texas, decriminalizing same-sex sexual activity.</summary>
@@ -71,12 +71,12 @@ June 5<sup>th</sup> of 1981 CDC has published about five gay men infected with P
 
 <details><summary>The “Don’t Ask, Don’t Tell” (DADT) policy, which prohibited openly gay individuals from serving in the U.S. military, is repealed.</summary>
 <p>
-Untill 2011 20<sup>th</sup> of September DADT policy ended. DADT was suppressing gay, lesbian and bisexuals, where they had to keep their sexual identity, otherwise they found to have engaged in "homosexual conduct", what led to discharge. Lifting this policy ment that gay servicemen and servicewoman would be protected from discrimination. 
+Until 2011 20<sup>th</sup> of September DADT policy ended. DADT was suppressing gay, lesbian and bisexuals, where they had to keep their sexual identity, otherwise they found to have engaged in "homosexual conduct", what led to discharge. Lifting this policy meant that gay servicemen and servicewoman would be protected from discrimination. 
 </p></details>
 
 <details><summary>2020: The Supreme Court of the United States rules in Bostock v. Clayton County that federal employment discrimination protections extend to LGBTQ+ individuals.</summary>
 <p>
-
+Civil Rights Act (US) was to protect employees against discrimination, but was still in dispute but not in all states (only 21 has done so). Thus Gerald Bostock was fired from Clayton County (Georgia), because he showed interest in gay softball league. This case decision makes it illegal for employer to discriminate against someone being transgender or homosexual (based on Title VII and Civil Rights Act 1964). This victory was was huge achievement for LGBTQ+, as people should not be judged on who they are or whom they love. 
 </p></details>
 
 
