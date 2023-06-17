@@ -6,12 +6,12 @@
 
 This Repository will be dedicated to timeline of LGBTQ+, where we will do our best to represent impact they have made to our world throughout history and how world has impacted them. There is numerous facts of history, what has happened to people, who think, believe or love in different way, not according to society standards of that time. And no matter how world was cruel to them, they still loved and shared it to world. There is enormous number of famous quotes, but at this point i remember this one:
 
-*It takes great deal of courage t see the world in its tainted glory, and still to love it* - __Oscar Wilde.__
+*It takes great deal of courage to see the world in its tainted glory, and still to love it* - __Oscar Wilde.__
 
 Oscar Wilde is well known writer, who had to suffer just because of his love, love to man. and he was not alone, there were many, many others... But there was a time, when our society had to change, and those changes were made. 
 
 
-<details>  <summary> 1897: Magnus Hirschfeld founds the Scientific-Humanitarian Committee (WhK), one of the first gay rights organizations. 1910s:</summary>
+<details>  <summary> Magnus Hirschfeld founds the Scientific-Humanitarian Committee (WhK), one of the first gay rights organizations. 1910s:</summary>
 <p>
 Comitee was founded on 1897 15<sup>th</sup> of May in Germany, just three days before [ __Oscar Wilde__ ](http://www.cmgww.com/historic/wilde/) was released from prison for homosexuality by Magnus Hirschfield. The reasons for starting such committee that he noticed his homosexual patients were  leaning towards suicide, as society believed they were unnatural and criminalized them for their natural desires. They gathered over 5.000 signatures to repeal the law (Paragraph 175), between signatories were: Leo Tolstoy and Albert Einstein. 
 </p></details>
@@ -54,30 +54,27 @@ Stonewall Inn was known as a gay bar, where they could meet on dance floor and j
 American Psychiatric Association (APA) has voted for removal of homosexuality from mental disorders (5.854 voted to remove, 3.810 to retain) on 1973. This made homosexuality to be moved from DSM and placed it in effect with "sexual orientation disturbance" until 1987 it was completely removed. Spitzer's new definition was homophobic bias. Years later Spitzer made public resignation from APA nomenclature commitee, as his views where homophobic.
 </p></details>
 
-
-<details><summary>1981: The first cases of what would later be identified as AIDS are reported, leading to a devastating impact on the LGBTQ+ community.</summary>
+<details><summary>The first cases of what would later be identified as AIDS are reported, leading to a devastating impact on the LGBTQ+ community.</summary>
 <p>
-
+June 5<sup>th</sup> of 1981 CDC has published about five gay men infected with Pheumocystis Pneumonia, although such diseace was already known between LGBT+ community. Lawrence Mass was the first journalist to write about epidemic entitling it "Disease Rumors Largely Unfounded" in gay newspaper <em>The New York Native</em>. By the end on 1981, there were already 270 cases of severe immune deficiency where 121 of reported gay men had died. At that moment disease still was not understood and did not have its name. September 24<sup>th</sup>  CDC named it AIDS (Acquired Immune Deficiency Syndrome). By 1985 at least one HIV infection had been reported in every region of the world.
 </p></details>
-
 
 <details><summary>1996: President Bill Clinton signs the Defense of Marriage Act (DOMA), which denies federal recognition of same-sex marriages.</summary>
 <p>
-
+"DOMA" (Defence of Marriage Act) was signed by Bill Clinton (yes, yes, the same one - most decent and "with high morals and core values"), where marriage was defined as the union of one woman and one man, what allowed states to refuse of recognition of same-sex marriages. This led to denial of federal protections, privilages even to access to partner's employment benefits, rights of inheritance, immigration and residency, plus on top issues with joint tax returns. Putting it simply: one person with one hand stroke crossed off rights of millions of people.
 </p></details>
 
-<details><summary>2003: The Supreme Court of the United States strikes down sodomy laws in Lawrence v. Texas, decriminalizing same-sex sexual activity. 2010s:</summary>
+<details><summary>The Supreme Court of the United States strikes down sodomy laws in Lawrence v. Texas, decriminalizing same-sex sexual activity.</summary>
 <p>
-
+2003 landmark case was <b>Lawrence v. Texas</b> (by this year only 36 states had done away with anti-sodomy laws). This case officially decriminalized homosexuality in US. State of Louisiana still managed to keep their legal definition of crime as "unnatural carnal copulation by human with another of the same sex". This changed on 2005 June 26<sup>th</sup>, case <b>Obergefell v. Hodges</b>. Marriage equality was official law in all 50 states, American Samoa took 2 more years to do the same. This was the start of Journey
 </p></details>
 
-<details><summary>2010: The “Don’t Ask, Don’t Tell” policy, which prohibited openly gay individuals from serving in the U.S. military, is repealed.</summary>
+<details><summary>The “Don’t Ask, Don’t Tell” (DADT) policy, which prohibited openly gay individuals from serving in the U.S. military, is repealed.</summary>
 <p>
-
+Untill 2011 20<sup>th</sup> of September DADT policy ended. DADT was suppressing gay, lesbian and bisexuals, where they had to keep their sexual identity, otherwise they found to have engaged in "homosexual conduct", what led to discharge. Lifting this policy ment that gay servicemen and servicewoman would be protected from discrimination. 
 </p></details>
 
-<details><summary>2020: The Supreme Court of the United States rules in Bostock v. Clayton County that federal employment discrimination protections extend to LGBTQ+ individuals.
-Please note that this list provides a brief overview and does not encompass all LGBTQ+ history events during these decades.</summary>
+<details><summary>2020: The Supreme Court of the United States rules in Bostock v. Clayton County that federal employment discrimination protections extend to LGBTQ+ individuals.</summary>
 <p>
 
 </p></details>
