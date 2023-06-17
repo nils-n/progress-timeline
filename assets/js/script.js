@@ -226,9 +226,15 @@ async function filterContent() {
       contentDocuments.push(contentDocument);
     });
 
-    const filteredDocuments = contentDocuments.filter(
-      (document) => document.category === category
-    );
+    const filteredDocuments = contentDocuments.filter((document) => {
+      if (document.category !== category) {
+        return document.decade.toString() === category;
+      } else {
+        return document.category === category;
+      }
+    });
+
+    contentContainer.innerHTML = "";
 
     filteredDocuments.forEach((doc) => {
       const contentElement = document.createElement("div");
@@ -244,8 +250,6 @@ async function filterContent() {
     `;
 
       contentElement.innerHTML = html;
-
-      contentContainer.innerHTML = "";
 
       contentContainer.appendChild(contentElement);
     });

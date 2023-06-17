@@ -747,7 +747,11 @@ async function filterContent() {
             const contentDocument = contentSnap.data();
             contentDocuments.push(contentDocument);
         });
-        const filteredDocuments = contentDocuments.filter((document1)=>document1.category === category);
+        const filteredDocuments = contentDocuments.filter((document1)=>{
+            if (document1.category !== category) return document1.decade.toString() === category;
+            else return document1.category === category;
+        });
+        contentContainer.innerHTML = "";
         filteredDocuments.forEach((doc)=>{
             const contentElement = document.createElement("div");
             contentElement.classList.add("content-box");
@@ -759,7 +763,6 @@ async function filterContent() {
       </p>
     `;
             contentElement.innerHTML = html;
-            contentContainer.innerHTML = "";
             contentContainer.appendChild(contentElement);
         });
     } catch (error) {
