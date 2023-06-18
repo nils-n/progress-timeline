@@ -23,6 +23,7 @@ const signUpBtn = document.getElementById("sign-up");
 const loginBtn = document.getElementById("login");
 const logoutBtn = document.getElementById("logout");
 const filterBtn = document.getElementById("filter");
+const sortBtn = document.getElementById("sort-btn");
 const contentContainer = document.getElementById("demo-content-container");
 
 // user sign up
@@ -238,6 +239,9 @@ async function filterContent() {
     });
 
     const filteredDocuments = contentDocuments.filter((document) => {
+      if (category === "all") {
+        return document;
+      }
       if (document.category !== category) {
         return document.decade.toString() === category;
       } else {
@@ -270,6 +274,30 @@ async function filterContent() {
   }
 }
 
+function sortContent() {
+  const isAscending = sortBtn.classList.contains("asc");
+
+  const order = isAscending ? "ascending" : "descending";
+  isAscending ? sortBtn.classList.remove("asc") : sortBtn.classList.add("asc");
+
+  const content = Array.from(contentContainer.querySelectorAll(".content-box"));
+
+  content.sort((a, b) => {
+    const dateA = parseInt(a.querySelector(".content-decade").textContent);
+    const dateB = parseInt(b.querySelector(".content-decade").textContent);
+
+    if (order === "ascending") {
+      return dateA - dateB;
+    } else if (order === "descending") {
+      return dateB - dateA;
+    }
+  });
+
+  contentContainer.innerHTML = "";
+
+  content.forEach((data) => contentContainer.appendChild(data));
+}
+
 checkAuthState();
 
 signUpBtn.addEventListener("click", userSignUp);
@@ -277,5 +305,6 @@ loginBtn.addEventListener("click", userSignIn);
 logoutBtn.addEventListener("click", userSignOut);
 googleBtn.addEventListener("click", signInWithGoogle);
 filterBtn.addEventListener("change", filterContent);
+sortBtn.addEventListener("click", sortContent);
 
 // event listener for create story button
