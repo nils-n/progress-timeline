@@ -170,7 +170,7 @@ Oscar Wilde, the renowned Irish playwright, poet, and novelist, remains an iconi
 </p></details>
 
 
- Scientists
+ <h1>Scientists</h1>
 
 <details><summary>Alan Turing</summary>
 <p>
