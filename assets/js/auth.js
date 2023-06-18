@@ -52,7 +52,7 @@ submitChangesBtn.addEventListener("click", async (event) => {
   }
 });
 
-const checkAuthState = async () => {
+export const checkAuthState = async () => {
   onAuthStateChanged(firebaseAuth, (user) => {
     if (user) {
       accountBtn.textContent = user.displayName;
@@ -115,3 +115,4 @@ export const checkAuthState2 = async () => {
     }
   });
 };
+
