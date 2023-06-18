@@ -121,11 +121,77 @@
             </div>
           </div>
         </header>
+        <form autocomplete="on" class="profile-form">
+          <h1 class="profile-text">USer Details</h1>
+          <div id="signup-wrapper" class="profile-form-container">
+            <div class="profile-name-container">
+              <div class="profile-label-container">
+                <span class="profile-text1">Name:</span>
+              </div>
+              <div class="profile-input-container">
+                <input
+                  type="text"
+                  id="signup-name"
+                  required=""
+                  placeholder="Name from BD"
+                  class="profile-textinput input"
+                />
+              </div>
+            </div>
+            <div class="profile-email-container">
+              <div class="profile-label-container1">
+                <span class="profile-text2">EMail:</span>
+              </div>
+              <div class="profile-input-container1">
+                <input
+                  type="email"
+                  id="signup-email"
+                  required=""
+                  placeholder="Email from DB"
+                  class="profile-textinput1 input"
+                />
+              </div>
+            </div>
+            <div class="profile-username-container">
+              <div class="profile-label-container2">
+                <span class="profile-text3">User Name:</span>
+              </div>
+              <div class="profile-input-container2">
+                <input
+                  type="text"
+                  id="signup-username"
+                  required=""
+                  placeholder="User Name from DB"
+                  class="profile-textinput2 input"
+                />
+              </div>
+            </div>
+            <div class="profile-container2">
+              <button
+                id="submit-changes-btn"
+                type="submit"
+                class="profile-button button"
+              >
+                SUbmit Changes
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="profile-image-container">
+          <img
+            src="https://play.teleporthq.io/static/svg/default-img.svg"
+            alt="image"
+            class="profile-image2"
+          />
+          <button id="upload-foto" type="submit" class="profile-button1 button">
+            UPLOAD PHOTO
+          </button>
+        </div>
         <img
           alt="bg-rainbow-image"
           src="public/background-rainbow-1000w.png"
           loading="lazy"
-          class="profile-image2"
+          class="profile-image3"
         />
       </div>
     </div>
