@@ -144,7 +144,6 @@
 .about-login {
   border-width: 0px;
   margin-right: var(--dl-space-space-twounits);
-  text-decoration: none;
 }
 .about-register {
   text-decoration: none;
@@ -475,7 +474,7 @@
 }
 .about-image8 {
   width: 1000px;
-  height: 1000px;
+  height: 500px;
   align-self: flex-end;
   object-fit: cover;
   object-position: top;

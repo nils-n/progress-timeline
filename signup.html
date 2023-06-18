@@ -61,18 +61,9 @@
             </nav>
           </div>
           <div class="signup-btn-group">
-            <a
-              href="https://nils-n.github.io/progress-timeline/testingbackend.html"
-              id="link-to-login"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="signup-login button"
-            >
-              Login
-            </a>
+            <button id="login-signup" class="signup-login button">Login</button>
             <a href="signup.html" class="signup-register button">Register</a>
-            <a href="testingbackend.html" class="signup-register button">TestingBackend</a>
-            
+          </div>
           <div data-role="BurgerMenu" class="signup-burger-menu">
             <svg viewBox="0 0 1024 1024" class="signup-icon">
               <path
@@ -193,19 +184,17 @@
                   Sign Up
                 </button>
               </div>
-              <div class="signup-container3">
-                <button
-                  id="signup-google-btn"
-                  type="submit"
-                  class="signup-button1 button"
-                >
-                  Sign Up with Google
-                </button>
-              </div>
+              <div class="signup-container3"></div>
             </div>
           </form>
-      
         </div>
+        <button
+          id="signup-google-btn"
+          type="submit"
+          class="signup-button1 button"
+        >
+          Sign Up with Google
+        </button>
         <div class="signup-rainbow-bg-container">
           <img
             alt="bg-rainbow-image"
@@ -216,10 +205,6 @@
         </div>
       </div>
     </div>
-    <script type="module" src="./config/firebase-config.js"></script>
-    <script type="module" src="/assets/js/signup.js"></script>
-
- 
     <script
       data-section-id="navbar"
       src="https://unpkg.com/@teleporthq/teleport-custom-scripts"

@@ -81,7 +81,6 @@
 .signup-login {
   border-width: 0px;
   margin-right: var(--dl-space-space-twounits);
-  text-decoration: none;
 }
 .signup-register {
   text-decoration: none;
@@ -396,6 +395,9 @@
   display: flex;
   position: relative;
   padding-top: var(--dl-space-space-unit);
+  border-color: transparent;
+  border-style: dashed;
+  border-width: 2px;
   padding-left: var(--dl-space-space-unit);
   padding-right: var(--dl-space-space-unit);
 }
@@ -405,14 +407,14 @@
   cursor: pointer;
   height: 2rem;
   display: flex;
-  align-self: center;
+  align-self: flex-start;
   transition: 0.3s;
   align-items: center;
-  margin-left: Unit;
+  margin-left: var(--dl-space-space-threeunits);
   padding-top: var(--dl-space-space-halfunit);
   border-color: var(--dl-color-primary-bg);
   border-width: 0px;
-  margin-right: var(--dl-space-space-unit);
+  margin-right: var(--dl-space-space-threeunits);
   padding-left: var(--dl-space-space-unit);
   padding-right: var(--dl-space-space-unit);
   flex-direction: row;
@@ -429,7 +431,7 @@
 }
 .signup-rainbow-bg-container {
   width: auto;
-  height: 602px;
+  height: auto;
   display: flex;
   align-self: stretch;
   align-items: center;
@@ -438,7 +440,7 @@
 }
 .signup-image2 {
   width: 1000px;
-  height: 1000px;
+  height: 500px;
   z-index: -0;
   align-self: flex-end;
   object-fit: cover;
