@@ -1,12 +1,62 @@
 import { onAuthStateChanged } from "firebase/auth";
-import { firebaseAuth } from "../../config/firebase-config";
+import { firebaseAuth, firebaseDB } from "../../config/firebase-config";
+import { doc, getDoc, updateDoc } from "firebase/firestore";
 
 const accountBtn = document.getElementById("account-btn");
 
-const checkAuthState = async () => {
+// create user document from firebase auth
+const getUserData = async (userId) => {
+  try {
+    const docRef = doc(firebaseDB, "users", userId);
+    const docSnapshot = await getDoc(docRef);
+    if (docSnapshot.exists()) {
+      const userData = docSnapshot.data();
+      const nameInput = document.getElementById("signup-name");
+      const emailInput = document.getElementById("signup-email");
+      const usernameInput = document.getElementById("signup-username");
+
+      // Update input fields with user data
+      nameInput.value = userData.name;
+      emailInput.value = userData.email;
+      usernameInput.value = userData.username;
+    } else {
+      console.log("User document does not exist");
+    }
+  } catch (error) {
+    console.log("Error retrieving user data:", error);
+  }
+};
+
+// change user data
+const submitChangesBtn = document.getElementById("submit-changes-btn");
+
+submitChangesBtn.addEventListener("click", async (event) => {
+  event.preventDefault();
+
+  const userId = firebaseAuth.currentUser.uid;
+  const nameInput = document.getElementById("signup-name").value;
+  const emailInput = document.getElementById("signup-email").value;
+  const usernameInput = document.getElementById("signup-username").value;
+
+  try {
+    const docRef = doc(firebaseDB, "users", userId);
+    await updateDoc(docRef, {
+      name: nameInput,
+      email: emailInput,
+      username: usernameInput,
+    });
+
+    alert("Changes submitted successfully!");
+  } catch (error) {
+    console.log("Error submitting changes:", error);
+  }
+});
+
+export const checkAuthState = async () => {
   onAuthStateChanged(firebaseAuth, (user) => {
     if (user) {
       accountBtn.textContent = user.displayName;
+      getUserData(user.uid);
     } else {
       accountBtn.textContent = "Login";
     }
@@ -65,3 +115,4 @@ export const checkAuthState2 = async () => {
     }
   });
 };
+
