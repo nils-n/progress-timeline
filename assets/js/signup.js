@@ -1,8 +1,13 @@
 import { doc, getDoc, setDoc } from "firebase/firestore";
-import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-import { firebaseAuth } from "../../config/firebase-config";
+import {
+  GoogleAuthProvider,
+  createUserWithEmailAndPassword,
+  signInWithPopup,
+} from "firebase/auth";
+import { firebaseAuth, firebaseDB } from "../../config/firebase-config";
 
 const googleSignUpButton = document.getElementById("signup-google-btn");
+const emailSignInButton = document.getElementById("signup-submit-btn");
 
 const userSignUp = async () => {
   const signUpEmail = document.getElementById("signup-email").value;
@@ -23,7 +28,6 @@ const userSignUp = async () => {
     console.log(errorCode + errorMessage);
   }
 };
-console.log(firebaseAuth);
 
 const signInWithGoogle = async () => {
   const provider = new GoogleAuthProvider();
@@ -64,3 +68,4 @@ export const createUserDocumentFromAuth = async (userAuth) => {
 };
 
 googleSignUpButton.addEventListener("click", signInWithGoogle);
+emailSignInButton.addEventListener("click", userSignUp);
