@@ -146,6 +146,13 @@
 .about-navigation-links {
   text-decoration: none;
 }
+.about-image2 {
+  width: 1000px;
+  height: 1000px;
+  align-self: flex-end;
+  object-fit: cover;
+  object-position: top;
+}
 @media(max-width: 991px) {
   .about-image {
     left: 80px;
