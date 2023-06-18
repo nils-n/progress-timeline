@@ -4,8 +4,9 @@ core.python*
 env.py
 __pycache__/
 *.py[cod]
-node_modules
+node_modules/
 .github/
 cloudinary_python.txt
 .DS_STORE
 .parcel-cache/
+dist/
