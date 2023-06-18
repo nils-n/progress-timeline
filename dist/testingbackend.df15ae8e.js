@@ -660,9 +660,13 @@ const displayStories = async ()=>{
         <button class="like-button" data-story-id="${storyDoc.id}">Like</button>
       `;
             storiesContainer.appendChild(storyElement);
-            const likeButton = storyElement.querySelector(".like-button");
-            likeButton.addEventListener("click", ()=>{
-                handleLikeButton(storyDoc.id);
+        });
+        // Add event listeners for like buttons
+        const likeButtons = document.querySelectorAll(".like-button");
+        likeButtons.forEach((likeButton)=>{
+            likeButton.addEventListener("click", async (event)=>{
+                const storyId = event.target.getAttribute("data-story-id");
+                await handleLikeButton(storyId);
             });
         });
     } catch (error) {
@@ -674,21 +678,26 @@ const displayStories = async ()=>{
 const handleLikeButton = async (storyId)=>{
     const storyRef = (0, _firestore.doc)((0, _firebaseConfig.firebaseDB), "stories", storyId);
     try {
-        const storyDoc = await (0, _firestore.getDoc)(storyRef);
-        const storyData = storyDoc.data();
-        const updatedLikeCounter = storyData.likeCounter + 1;
         await (0, _firestore.updateDoc)(storyRef, {
-            likeCounter: updatedLikeCounter
+            likeCounter: (0, _firestore.increment)(1)
         });
-        // Update like counter in DOM
-        const likeCounterElement = document.querySelector(`[data-story-id="${storyId}"] .like-counter`);
-        likeCounterElement.textContent = `Like Count: ${updatedLikeCounter}`;
         alert("Liked the story!");
     } catch (error) {
         console.error("Error updating like counter:", error);
         alert("Failed to update like counter. Please try again.");
     }
 };
+// Wait for DOMContentLoaded event
+document.addEventListener("DOMContentLoaded", ()=>{
+    // Add event listener for each like button
+    const likeButtons = document.querySelectorAll(".like-button");
+    likeButtons.forEach((likeButton)=>{
+        likeButton.addEventListener("click", ()=>{
+            const storyId = likeButton.getAttribute("data-story-id");
+            handleLikeButton(storyId);
+        });
+    });
+});
 // check user auth state
 const checkAuthState = async ()=>{
     (0, _auth.onAuthStateChanged)((0, _firebaseConfig.firebaseAuth), (user)=>{
