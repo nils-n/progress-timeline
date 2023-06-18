@@ -207,6 +207,7 @@
 }
 .app-component-button {
   color: #ea3387;
+  cursor: pointer;
   height: 2rem;
   display: flex;
   align-self: center;
@@ -448,24 +449,24 @@
   position: relative;
   align-self: flex-end;
   align-items: center;
-  padding-top: var(--dl-space-space-twounits);
+  padding-top: 0px;
   padding-left: 0px;
   padding-right: 0px;
-  padding-bottom: var(--dl-space-space-twounits);
+  padding-bottom: 0px;
   justify-content: flex-end;
   background-color: #FFF9C2;
 }
 .home-container04 {
   flex: 0 0 auto;
   width: 100%;
-  height: 4572px;
+  height: 5956px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   padding-bottom: 56px;
   background-size: cover;
   justify-content: flex-start;
-  background-image: url("public/background-rainbow-1500w.png");
+  background-image: url("public/background-rainbow2-6000h.png");
 }
 .home-container05 {
   width: 100%;
@@ -517,6 +518,7 @@
 }
 .home-button1 {
   color: #ea3387;
+  cursor: pointer;
   height: 2rem;
   display: flex;
   align-self: center;
@@ -956,6 +958,7 @@
 }
 .home-button4 {
   color: #ea3387;
+  cursor: pointer;
   height: 2rem;
   display: flex;
   align-self: flex-start;
@@ -1382,7 +1385,7 @@
 .home-vertical-draft {
   width: 100%;
   height: 4377px;
-  display: flex;
+  display: none;
   overflow: hidden;
   position: relative;
   align-items: flex-start;
@@ -2052,7 +2055,7 @@
   }
   .home-container04 {
     background-size: cover;
-    background-image: url("public/background-rainbow-1500w.png");
+    background-image: b64bf3a0-f4df-4b76-a04f-fb6714297907;
     background-position: left;
   }
   .home-text {
