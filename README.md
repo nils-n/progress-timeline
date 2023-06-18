@@ -40,7 +40,7 @@ During the Nazi regime, a student group aligned with the regime marched to the I
 
 <details>  <summary> 1948: Alfred Kinsey publishes “Sexual Behavior in the Human Male,” a groundbreaking study that includes research on homosexuality. 1950s </summary>
 <p padding="5px">
-<img src="assets/images/Sexual_Behavior in_the_Human_Male.jpeg" alt="Front page of book: Sexua Behaviour in the Human Male" align="right" width="20%">
+<img src="assets/images/Sexual_Behavior_in_the_Human_Male.jpeg" alt="Front page of book: Sexua Behaviour in the Human Male" align="right" width="20%">
 Alfred Kinsey, a renowned sexologist, gained recognition for his groundbreaking work on human sexuality. He proposed that everyone falls on a bisexual scale ranging from 0 (heterosexual) to 6 (homosexual). Kinsey published two influential books known as "The Kinsey Reports":
 
 In 1948, "Sexual Behavior in the Human Male" was released, based on 5,300 interviews.
