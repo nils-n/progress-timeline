@@ -32,8 +32,12 @@ Inspired by Magnus Hirschfield, Henry Gerber, originally from Bavaria and later 
 </p></details>
 
 <details>  <summary> 1933: The Nazi regime in Germany initiates the persecution of LGBTQ+ individuals, leading to arrests, imprisonment, and violence.</summary>
+
 <p padding="5px">
 <img src="assets/images/Nazi_plunder_Istitute.jpg" alt="German students and Nazi SA plunder the library of Dr. Magnus Hirschfeld, Director of the Institute for Sexual Research in Berlin" width="30%" align="right">
+
+<p></details>
+
 During the Nazi regime, a student group aligned with the regime marched to the Institute for Sexual Science, looting its library and archives, followed by the burning of books and files. Within months, the institute was compelled to close. Henry Gerber, affected by these events, left Germany and relocated to France. The Nazi regime continued its relentless campaign against male homosexuality from 1933 to 1945, resulting in over 100,000 arrests and approximately 50% of them being convicted, often leading to imprisonment in concentration camps. In June 1935, the Nazis intensified their efforts by amending Paragraph 175, effectively banning sexual relationships between men. The campaign further escalated in 1936 under the leadership of SS leader Heinrich Himmler. <br>
 <a href="https://picryl.com/media/institut-fur-sexualwissenschaft-bibliothek-1933-4207a6"> Link to source and Copyright rules</a>
 </p></details>
