@@ -367,6 +367,7 @@
 .signup-button {
   color: #ea3387;
   width: 200px;
+  cursor: pointer;
   height: 2rem;
   display: flex;
   align-self: center;

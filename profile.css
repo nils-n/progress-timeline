@@ -310,6 +310,7 @@
 .profile-button {
   color: #ea3387;
   width: 300px;
+  cursor: pointer;
   height: 2rem;
   display: flex;
   align-self: center;
@@ -353,6 +354,7 @@
 .profile-button1 {
   color: #ea3387;
   width: 300px;
+  cursor: pointer;
   height: 2rem;
   display: flex;
   align-self: center;
