@@ -97,7 +97,7 @@ The "Don't Ask, Don't Tell" (DADT) policy, which suppressed the rights of gay, l
 
 <details><summary>2020: The Supreme Court of the United States rules in Bostock v. Clayton County that federal employment discrimination protections extend to LGBTQ+ individuals.</summary>
 <p padding="5px">
-<img src="assets/images/_Bostock_v._Clayton.jpeg" alt="Gerald Bostock at the U.S. Supreme Court on October 8, 2019" align="left" width="40%">
+<img src="assets/images/Bostock_v._Clayton.jpeg" alt="Gerald Bostock at the U.S. Supreme Court on October 8, 2019" align="left" width="40%">
 The Civil Rights Act in the United States was designed to safeguard employees against discrimination, but its application varied across states, with only 21 providing comprehensive protection. However, when Gerald Bostock expressed interest in a gay softball league, he was terminated from his job in Clayton County, Georgia. The subsequent court ruling established that it is unlawful for employers to discriminate against individuals based on their transgender status or sexual orientation, as protected by Title VII and the Civil Rights Act of 1964. This landmark victory represents a significant milestone for the LGBTQ+ community, affirming that people should not be judged based on their identity or whom they love. <br>
 <a href="https://commons.wikimedia.org/wiki/File:Gerald_Bostock_Supreme_Court_October_8_2019.jp">Source and Copyright rules </a>
 </p></details>
