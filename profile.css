@@ -81,7 +81,6 @@
 .profile-login {
   border-width: 0px;
   margin-right: var(--dl-space-space-twounits);
-  text-decoration: none;
 }
 .profile-register {
   text-decoration: none;
@@ -382,7 +381,8 @@
 }
 .profile-image3 {
   width: 1000px;
-  height: 1000px;
+  height: 500px;
+  z-index: -0;
   align-self: flex-end;
   object-fit: cover;
   object-position: top;
