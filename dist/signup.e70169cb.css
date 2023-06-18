@@ -399,6 +399,7 @@
 
 .signup-button {
   color: #ea3387;
+  cursor: pointer;
   margin-left: Unit;
   padding-top: var(--dl-space-space-halfunit);
   border-color: var(--dl-color-primary-bg);
@@ -437,6 +438,7 @@
 
 .signup-button1 {
   color: #ea3387;
+  cursor: pointer;
   margin-left: Unit;
   padding-top: var(--dl-space-space-halfunit);
   border-color: var(--dl-color-primary-bg);
@@ -529,6 +531,7 @@
 
   .signup-button {
     color: var(--dl-color-primary-pink);
+    cursor: pointer;
     margin-top: 0;
     margin-right: var(--dl-space-space-halfunit);
     background-color: var(--dl-color-primary-bg);
