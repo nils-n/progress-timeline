@@ -38,26 +38,15 @@
   justify-content: space-between;
   background-color: #D9D9D9;
 }
-.testimonial-card-root-class-name {
-  background-color: #ea3336;
-}
-.testimonial-card-root-class-name1 {
-  background-color: var(--dl-color-primary-pink);
-}
-.testimonial-card-root-class-name2 {
-  background-color: var(--dl-color-primary-pink);
-}
-.testimonial-card-root-class-name3 {
-  background-color: var(--dl-color-primary-pink);
-}
-.testimonial-card-root-class-name4 {
-  background-color: var(--dl-color-primary-pink);
-}
-.testimonial-card-root-class-name5 {
-  background-color: var(--dl-color-primary-pink);
-}
 .testimonial-card-root-class-name6 {
-  background-color: var(--dl-color-primary-pink);
+  width: 12%;
+  min-width: 130px;
+  background-color: #E40303;
+}
+@media(max-width: 991px) {
+  .testimonial-card-root-class-name6 {
+    min-width: 130px;
+  }
 }
 @media(max-width: 767px) {
   .testimonial-card-testimonial-card {
