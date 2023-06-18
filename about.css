@@ -1,0 +1,223 @@
+.navigation-links-nav {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.navigation-links-navlink {
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 767px) {
+  .navigation-links-nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .navigation-links-navlink {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}
+
+.about-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--dl-color-gray-bg-light);
+}
+.about-header {
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  align-items: center;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-twounits);
+  justify-content: space-between;
+  background-color: var(--dl-color-gray-bg-light);
+}
+.about-navlink {
+  display: contents;
+}
+.about-image {
+  width: 150px;
+  object-fit: contain;
+  text-decoration: none;
+}
+.about-nav {
+  display: flex;
+}
+.about-nav1 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.about-navlink1 {
+  text-decoration: none;
+}
+.about-btn-group {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.about-login {
+  border-width: 0px;
+  margin-right: var(--dl-space-space-twounits);
+  text-decoration: none;
+}
+.about-register {
+  text-decoration: none;
+}
+.about-burger-menu {
+  display: none;
+}
+.about-icon {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+.about-mobile-menu {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  padding: 32px;
+  z-index: 100;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.about-nav2 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.about-container1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--dl-space-space-threeunits);
+  justify-content: space-between;
+}
+.about-menu-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-icon2 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+.about-navlink2 {
+  display: contents;
+}
+.about-image1 {
+  width: 150px;
+  object-fit: contain;
+  text-decoration: none;
+}
+.about-login1 {
+  border-width: 0px;
+  margin-right: var(--dl-space-space-twounits);
+  text-decoration: none;
+}
+.about-register1 {
+  text-decoration: none;
+}
+.about-navigation-links {
+  text-decoration: none;
+}
+@media(max-width: 991px) {
+  .about-image {
+    left: 80px;
+  }
+  .about-mobile-menu {
+    width: 772px;
+    display: none;
+    background-color: var(--dl-color-gray-bg-light);
+  }
+  .about-container1 {
+    margin-top: var(--dl-space-space-threeunits);
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .about-image1 {
+    left: 80px;
+    padding-top: 0px;
+  }
+  .about-login1 {
+    margin-top: var(--dl-space-space-twounits);
+  }
+  .about-register1 {
+    margin-top: var(--dl-space-space-twounits);
+  }
+}
+@media(max-width: 767px) {
+  .about-header {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .about-image {
+    left: 40px;
+  }
+  .about-nav {
+    display: none;
+  }
+  .about-nav1 {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .about-navlink1 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .about-btn-group {
+    display: none;
+  }
+  .about-burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-mobile-menu {
+    display: none;
+  }
+  .about-image1 {
+    left: 40px;
+  }
+}
+@media(max-width: 479px) {
+  .about-header {
+    padding: var(--dl-space-space-unit);
+  }
+  .about-image {
+    left: 20px;
+    width: 80px;
+  }
+  .about-mobile-menu {
+    display: none;
+    padding: 16px;
+  }
+  .about-image1 {
+    left: 20px;
+    width: 80px;
+  }
+}

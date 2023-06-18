@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="english">
+<html lang="en">
   <head>
-    <title>exported project</title>
+    <title>Progress Timeline</title>
+    <meta property="og:title" content="Progress Timeline" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -11,8 +12,8 @@
     </style>
     <style data-tag="default-style-sheet">
       html {
-        font-family: Inter;
-        font-size: 16px;
+        font-family: Gentium Book Plus;
+        font-size: 24px;
       }
 
       body {
@@ -29,7 +30,7 @@
     </style>
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
       data-tag="font"
     />
     <link
@@ -37,359 +38,545 @@
       href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One:wght@400&amp;display=swap"
       data-tag="font"
     />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div>
-      <link href="./vertical-draft.css" rel="stylesheet" />
+      <link href="./home.css" rel="stylesheet" />
 
-      <div class="vertical-draft-container">
-        <div class="vertical-draft-vertical-draft">
-          <img
-            src="public/external/rectangle8293-q17m.svg"
-            alt="Rectangle8293"
-            class="vertical-draft-rectangle8"
-          />
-          <img
-            src="public/external/ellipse122917-kfe-400h.png"
-            alt="Ellipse122917"
-            class="vertical-draft-ellipse12"
-          />
-          <div class="vertical-draft-rain-bow">
+      <div class="home-container">
+        <header data-role="Header" class="home-header">
+          <a href="index.html" class="home-navlink">
             <img
-              src="public/external/vector133222-88oi.svg"
-              alt="Vector133222"
-              class="vertical-draft-vector13"
+              alt="image"
+              src="public/rainbow-1500h.png"
+              class="home-image"
             />
-            <img
-              src="public/external/vector143222-z9s.svg"
-              alt="Vector143222"
-              class="vertical-draft-vector14"
-            />
-            <img
-              src="public/external/vector13vector14483242-2xf.svg"
-              alt="Vector13Vector14483242"
-              class="vertical-draft-vector1-vector1448"
-            />
-            <img
-              src="public/external/vector13vector14973242-ap8o.svg"
-              alt="Vector13Vector14973242"
-              class="vertical-draft-vector1-vector1497"
-            />
-            <img
-              src="public/external/vector13vector141453242-39x.svg"
-              alt="Vector13Vector141453242"
-              class="vertical-draft-vector1-vector14145"
-            />
-            <img
-              src="public/external/vector13vector141933242-0b8.svg"
-              alt="Vector13Vector141933242"
-              class="vertical-draft-vector1-vector14193"
-            />
-            <img
-              src="public/external/vector13vector142423242-ibba.svg"
-              alt="Vector13Vector142423242"
-              class="vertical-draft-vector1-vector14242"
-            />
-            <img
-              src="public/external/vector13vector142903242-13a8.svg"
-              alt="Vector13Vector142903242"
-              class="vertical-draft-vector1-vector14290"
-            />
-            <img
-              src="public/external/vector13vector143383242-r9wp.svg"
-              alt="Vector13Vector143383242"
-              class="vertical-draft-vector1-vector14338"
-            />
-            <img
-              src="public/external/vector13vector143853242-x82.svg"
-              alt="Vector13Vector143853242"
-              class="vertical-draft-vector1-vector14385"
-            />
-            <img
-              src="public/external/vector13vector144333242-091.svg"
-              alt="Vector13Vector144333242"
-              class="vertical-draft-vector1-vector14433"
-            />
-            <img
-              src="public/external/vector13vector144813242-ziio.svg"
-              alt="Vector13Vector144813242"
-              class="vertical-draft-vector1-vector14481"
-            />
-            <img
-              src="public/external/vector13vector145293242-8ouj.svg"
-              alt="Vector13Vector145293242"
-              class="vertical-draft-vector1-vector14529"
-            />
-            <img
-              src="public/external/vector13vector145763242-mtloa.svg"
-              alt="Vector13Vector145763242"
-              class="vertical-draft-vector1-vector14576"
-            />
-            <img
-              src="public/external/vector13vector146243242-0xy.svg"
-              alt="Vector13Vector146243242"
-              class="vertical-draft-vector1-vector14624"
-            />
-            <img
-              src="public/external/vector13vector146713242-sguc.svg"
-              alt="Vector13Vector146713242"
-              class="vertical-draft-vector1-vector14671"
-            />
-            <img
-              src="public/external/vector13vector147183242-qpq.svg"
-              alt="Vector13Vector147183242"
-              class="vertical-draft-vector1-vector14718"
-            />
-            <img
-              src="public/external/vector13vector147653242-wbg.svg"
-              alt="Vector13Vector147653242"
-              class="vertical-draft-vector1-vector14765"
-            />
-            <img
-              src="public/external/vector13vector148123242-q0u5.svg"
-              alt="Vector13Vector148123242"
-              class="vertical-draft-vector1-vector14812"
-            />
-            <img
-              src="public/external/vector13vector148593242-cugm.svg"
-              alt="Vector13Vector148593242"
-              class="vertical-draft-vector1-vector14859"
-            />
-            <img
-              src="public/external/vector13vector149063242-hhrj.svg"
-              alt="Vector13Vector149063242"
-              class="vertical-draft-vector1-vector14906"
-            />
-            <img
-              src="public/external/vector13vector149533242-62rl.svg"
-              alt="Vector13Vector149533242"
-              class="vertical-draft-vector1-vector14953"
-            />
+          </a>
+          <div class="home-nav">
+            <nav
+              class="navigation-links-nav navigation-links-root-class-name10"
+            >
+              <a href="about.html" class="navigation-links-navlink">
+                <span>About Us</span>
+              </a>
+            </nav>
           </div>
-          <span class="vertical-draft-text"><span>1969</span></span>
-          <span class="vertical-draft-text02"><span>2004</span></span>
-          <img
-            src="public/external/line312911-akjc.svg"
-            alt="Line312911"
-            class="vertical-draft-line31"
-          />
-          <img
-            src="public/external/line322912-v8da.svg"
-            alt="Line322912"
-            class="vertical-draft-line32"
-          />
-          <img
-            src="public/external/line343243-dk6d.svg"
-            alt="Line343243"
-            class="vertical-draft-line34"
-          />
-          <img
-            src="public/external/ellipse202913-u08p-200w.png"
-            alt="Ellipse202913"
-            class="vertical-draft-ellipse20"
-          />
-          <span class="vertical-draft-text04"><span>1982</span></span>
-          <span class="vertical-draft-text06">
-            <span>
-              <span>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the
+          <div class="home-container01">
+            <div class="home-btn-group">
+              <a
+                href="https://nils-n.github.io/progress-timeline/testingbackend.html"
+                id="link-to-login"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-login button"
+              >
+                Login
+              </a>
+              <a href="signup.html" class="home-register button">Register</a>
+            </div>
+          </div>
+          <div data-role="BurgerMenu" class="home-burger-menu">
+            <svg viewBox="0 0 1024 1024" class="home-icon">
+              <path
+                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+              ></path>
+            </svg>
+          </div>
+          <div data-role="MobileMenu" class="home-mobile-menu">
+            <div class="home-nav1">
+              <div class="home-container02">
+                <div data-role="CloseMobileMenu" class="home-menu-close">
+                  <svg viewBox="0 0 1024 1024" class="home-icon2">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    ></path>
+                  </svg>
+                </div>
+                <a href="index.html" class="home-navlink1">
+                  <img
+                    alt="image"
+                    src="public/rainbow-1500h.png"
+                    class="home-image1"
+                  />
+                </a>
+                <a
+                  href="https://nils-n.github.io/progress-timeline/testingbackend.html"
+                  id="link-to-login"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-login1 button"
+                >
+                  Login
+                </a>
+                <a href="signup.html" class="home-register1 button">Register</a>
+              </div>
+              <a href="about.html" class="home-navlink2"></a>
+              <nav
+                class="navigation-links-nav navigation-links-root-class-name11"
+              >
+                <a href="about.html" class="home-navlink2"></a>
+                <a href="about.html" class="navigation-links-navlink">
+                  <span>About Us</span>
+                </a>
+              </nav>
+            </div>
+          </div>
+        </header>
+        <div class="hero-container-hero-container">
+          <div class="hero-container-container">
+            <h1 class="hero-container-text"><span>PROGRESS</span></h1>
+            <p class="hero-container-text1">
+              <span class="hero-container-text2">
+                The history of LGBTQ+ Rights Movement
               </span>
               <br />
-              <span>
-                industry's standard dummy text ever since the 1500s, when an
-                unknown printer took a galley of type and crambled it to make a
-                type specimen book. It has survived not only five centuries, but
-                also the leap into electronic
-              </span>
-              <br />
-              <span>typesetting, remaining essentially unchanged.</span>
-            </span>
-          </span>
-          <span class="vertical-draft-text13">
-            <span>
-              <span>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the
-              </span>
-              <br />
-              <span>
-                industry's standard dummy text ever since the 1500s, when an
-                unknown printer took a galley of type and crambled it to make a
-                type specimen book. It has survived not only five centuries, but
-                also the leap into electronic
-              </span>
-              <br />
-              <span>typesetting, remaining essentially unchanged.</span>
-            </span>
-          </span>
-          <span class="vertical-draft-text20"><span>PROGRESS</span></span>
-          <span class="vertical-draft-text22">
-            <span>
-              <span>The history of LBTQ+</span>
-              <br />
-              <span>RIGHTS MOVEMENT</span>
-            </span>
-          </span>
-          <img
-            src="public/external/line112914-pm49.svg"
-            alt="Line112914"
-            class="vertical-draft-line11"
-          />
-          <img
-            src="public/external/line212914-idbj.svg"
-            alt="Line212914"
-            class="vertical-draft-line21"
-          />
-          <img
-            src="public/external/line122914-1mt9.svg"
-            alt="Line122914"
-            class="vertical-draft-line12"
-          />
-          <img
-            src="public/external/line222915-tq7m.svg"
-            alt="Line222915"
-            class="vertical-draft-line22"
-          />
-          <img
-            src="public/external/ellipse152915-99m-200h.png"
-            alt="Ellipse152915"
-            class="vertical-draft-ellipse15"
-          />
-          <img
-            src="public/external/ellipse182915-3w5-200w.png"
-            alt="Ellipse182915"
-            class="vertical-draft-ellipse18"
-          />
-          <span class="vertical-draft-text27"><span>DISOBEDIENCE</span></span>
-          <span class="vertical-draft-text29"><span>COMMUNICATION</span></span>
-          <span class="vertical-draft-text31">
-            <span>
-              <span>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the
-              </span>
-              <br />
-              <span>
-                industry's standard dummy text ever since the 1500s, when an
-                unknown printer took a galley of type and crambled it to make a
-                type specimen book. It has survived not only five centuries, but
-                also the leap into electronic
-              </span>
-              <br />
-              <span>typesetting, remaining essentially unchanged.</span>
-            </span>
-          </span>
-          <span class="vertical-draft-text38"><span>RESEARCH</span></span>
-          <img
-            src="public/external/line202916-o0m5.svg"
-            alt="Line202916"
-            class="vertical-draft-line20"
-          />
-          <img
-            src="public/external/line333243-9hyn.svg"
-            alt="Line333243"
-            class="vertical-draft-line33"
-          />
-          <span class="vertical-draft-text40"><span>1974</span></span>
-          <img
-            src="public/external/ellipse152916-ztn3-200h.png"
-            alt="Ellipse152916"
-            class="vertical-draft-ellipse151"
-          />
-          <img
-            src="public/external/ellipse162916-pwth-300h.png"
-            alt="Ellipse162916"
-            class="vertical-draft-ellipse16"
-          />
-          <span class="vertical-draft-text42">
-            <span>
-              <span>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the
-              </span>
-              <br />
-              <span>
-                industry's standard dummy text ever since the 1500s, when an
-                unknown printer took a galley of type and crambled it to make a
-                type specimen book. It has survived not only five centuries, but
-                also the leap into electronic
-              </span>
-              <br />
-              <span>typesetting, remaining essentially unchanged.</span>
-            </span>
-          </span>
-          <span class="vertical-draft-text49"><span>LEGAL RIGHTS</span></span>
-          <img
-            src="public/external/line242917-v5rr.svg"
-            alt="Line242917"
-            class="vertical-draft-line24"
-          />
-          <img
-            src="public/external/line252917-8x56.svg"
-            alt="Line252917"
-            class="vertical-draft-line25"
-          />
-          <img
-            src="public/external/line262917-hipw.svg"
-            alt="Line262917"
-            class="vertical-draft-line26"
-          />
-          <span class="vertical-draft-text51"><span>1997</span></span>
-          <img
-            src="public/external/ellipse192917-u157j-200h.png"
-            alt="Ellipse192917"
-            class="vertical-draft-ellipse19"
-          />
-          <img
-            src="public/external/ellipse212917-8dyc-400h.png"
-            alt="Ellipse212917"
-            class="vertical-draft-ellipse21"
-          />
-          <img
-            src="public/external/line232914-jwf.svg"
-            alt="Line232914"
-            class="vertical-draft-line23"
-          />
-          <span class="vertical-draft-text53">
-            <span>
-              <span>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the
-              </span>
-              <br />
-              <span>
-                industry's standard dummy text ever since the 1500s, when an
-                unknown printer took a galley of type and crambled it to make a
-                type specimen book. It has survived not only five centuries, but
-                also the leap into electronic
-              </span>
-              <br />
-              <span>typesetting, remaining essentially unchanged.</span>
-            </span>
-          </span>
-          <span class="vertical-draft-text60"><span>MARRIAGE</span></span>
-          <img
-            src="public/external/ellipse152917-738g-300h.png"
-            alt="Ellipse152917"
-            class="vertical-draft-ellipse152"
-          />
-          <img
-            src="public/external/ellipse102915-uufa-400h.png"
-            alt="Ellipse102915"
-            class="vertical-draft-ellipse10"
-          />
-          <img
-            src="public/external/rectangle173243-5l9q.svg"
-            alt="Rectangle173243"
-            class="vertical-draft-rectangle17"
-          />
-          <span class="vertical-draft-text62"><span>Share</span></span>
-          <span class="vertical-draft-text64"><span>ABOUT</span></span>
-          <span class="vertical-draft-text66"><span>LOGIN</span></span>
+            </p>
+            <div class="hero-container-container1">
+              <button
+                id="share-story-button"
+                type="button"
+                class="hero-container-button button"
+              >
+                <span>Your Story</span>
+              </button>
+              <button
+                id="share-link-button"
+                type="button"
+                class="hero-container-button1 button"
+              >
+                <span>Share Link</span>
+              </button>
+            </div>
+          </div>
         </div>
+        <div class="home-login-container">
+          <form class="home-form">
+            <input
+              type="text"
+              id="login-name"
+              value="Name"
+              required=""
+              placeholder="Enter Name"
+              class="home-textinput input"
+            />
+            <input
+              type="email"
+              id="login-email"
+              name="Email"
+              required=""
+              placeholder="Enter Email"
+              class="home-textinput1 input"
+            />
+            <div class="home-container03">
+              <button
+                id="login-submit-btn"
+                type="submit"
+                class="home-button button"
+              >
+                Log In
+              </button>
+            </div>
+          </form>
+        </div>
+        <main class="home-main-container">
+          <div class="home-container04">
+            <div class="home-container05">
+              <span class="home-text">
+                Welcome to our site, a timeline journey through the significant
+                milestones in gay rights history. As you navigate this site,
+                you'll experience a timeline detailing pivotal moments that
+                shaped the LGBTQ+ rights movement. It's more than just dates and
+                events; it's a celebration of courage, resilience, and progress
+                towards equality. Dive in to explore the past, understand the
+                present, and inspire a more inclusive future. Here's to freedom,
+                love, and the power of being ourselves. Enjoy the journey!
+              </span>
+            </div>
+            <div class="home-container06">
+              <div class="home-container07">
+                <div class="app-component-container">
+                  <button
+                    id="filter-stories"
+                    type="button"
+                    class="app-component-button button"
+                  >
+                    <span>Filter Timeline</span>
+                  </button>
+                </div>
+                <select id="filter" class="home-select button">
+                  <option value="all">All</option>
+                  <option value="artist">Artist</option>
+                  <option value="science">Science</option>
+                  <option value="political">Political</option>
+                  <option value="1960">1960s</option>
+                  <option value="1970">1960s</option>
+                  <option value="1980">1980s</option>
+                  <option value="1990">1990s</option>
+                  <option value="2010">2010s</option>
+                  <option value="2020">2020s</option>
+                </select>
+              </div>
+            </div>
+            <div class="home-filter-container"></div>
+            <div class="home-timeline-l-container">
+              <div class="home-year-container">
+                <h2 class="home-text01 h2">1967</h2>
+              </div>
+              <div class="home-line-container">
+                <div class="home-line-container1">
+                  <img
+                    alt="Ellipse152915"
+                    src="public/external/ellipse192917-o77j-200h.png"
+                    class="home-ellipse15"
+                  />
+                  <div class="home-separator"></div>
+                </div>
+                <div class="home-image-container">
+                  <img
+                    alt="image"
+                    src="https://play.teleporthq.io/static/svg/default-img.svg"
+                    class="home-image2"
+                  />
+                </div>
+              </div>
+              <div class="home-event-text-container">
+                <div class="home-container08">
+                  <span class="home-text02">Resistance</span>
+                  <span class="home-text03">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a gal
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="home-timeline-r-container">
+              <div class="home-year-container1">
+                <h2 class="home-text04">1967</h2>
+              </div>
+              <div class="home-line-container2">
+                <div class="home-image-container1">
+                  <img
+                    alt="image"
+                    src="https://play.teleporthq.io/static/svg/default-img.svg"
+                    class="home-image3"
+                  />
+                </div>
+                <div class="home-container09">
+                  <div class="home-line-container3">
+                    <img
+                      alt="Ellipse152915"
+                      src="public/external/yellow-200h.png"
+                      class="home-ellipse151"
+                    />
+                    <div class="home-separator1"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="home-event-text-container1">
+                <div class="home-container10">
+                  <span class="home-text05">
+                    <span class="home-text06">Disobedience</span>
+                    <br />
+                  </span>
+                  <span class="home-text08">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a gal
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="home-timeline-l-container1">
+              <div class="home-year-container2">
+                <h2 class="home-text09 h2">1967</h2>
+              </div>
+              <div class="home-line-container4">
+                <div class="home-line-container5">
+                  <img
+                    alt="Ellipse152915"
+                    src="public/external/ellipse192917-o77j-200h.png"
+                    class="home-ellipse152"
+                  />
+                  <div class="home-separator2"></div>
+                </div>
+                <div class="home-image-container2">
+                  <img
+                    alt="image"
+                    src="https://play.teleporthq.io/static/svg/default-img.svg"
+                    class="home-image4"
+                  />
+                </div>
+              </div>
+              <div class="home-event-text-container2">
+                <div class="home-container11">
+                  <span class="home-text10">Resistance</span>
+                  <span class="home-text11">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a gal
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="home-timeline-r-container1">
+              <div class="home-year-container3">
+                <h2 class="home-text12">1967</h2>
+              </div>
+              <div class="home-line-container6">
+                <div class="home-image-container3">
+                  <img
+                    alt="image"
+                    src="https://play.teleporthq.io/static/svg/default-img.svg"
+                    class="home-image5"
+                  />
+                </div>
+                <div class="home-line-container7">
+                  <img
+                    alt="Ellipse152915"
+                    src="public/external/ellipse182915-1ox-200w.png"
+                    class="home-ellipse153"
+                  />
+                  <div class="home-separator3"></div>
+                </div>
+              </div>
+              <div class="home-event-text-container3">
+                <div class="home-container12">
+                  <span class="home-text13">LEGALize</span>
+                  <span class="home-text14">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a gal
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <div class="home-vertical-draft">
+          <img
+            alt="Rectangle8293"
+            src="public/external/rectangle8293-9dl8.svg"
+            class="home-rectangle8"
+          />
+          <img
+            alt="Ellipse122917"
+            src="public/external/ellipse122917-4c1-400h.png"
+            class="home-ellipse12"
+          />
+          <span class="home-text15">1969</span>
+          <span class="home-text16"><span>2004</span></span>
+          <img
+            alt="Line312911"
+            src="public/external/line312911-sas9.svg"
+            class="home-line31"
+          />
+          <img
+            alt="Line322912"
+            src="public/external/line322912-8uj.svg"
+            class="home-line32"
+          />
+          <img
+            alt="Line343243"
+            src="public/external/line343243-mkzr.svg"
+            class="home-line34"
+          />
+          <img
+            alt="Ellipse202913"
+            src="public/external/ellipse202913-261b-200w.png"
+            class="home-ellipse20"
+          />
+          <span class="home-text18"><span>1982</span></span>
+          <span class="home-text20">
+            <span>
+              <span>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the
+              </span>
+              <br />
+              <span>
+                industry's standard dummy text ever since the 1500s, when an
+                unknown printer took a galley of type and crambled it to make a
+                type specimen book. It has survived not only five centuries, but
+                also the leap into electronic
+              </span>
+              <br />
+              <span>typesetting, remaining essentially unchanged.</span>
+            </span>
+          </span>
+          <span class="home-text27">
+            <span>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the
+            </span>
+            <br />
+            <span>
+              industry's standard dummy text ever since the 1500s, when an
+              unknown printer took a galley of type and crambled it to make a
+              type specimen book. It has survived not only five centuries, but
+              also the leap into electronic
+            </span>
+            <br />
+            <span>typesetting, remaining essentially unchanged.</span>
+          </span>
+          <img
+            alt="Line112914"
+            src="public/external/line112914-4yi4.svg"
+            class="home-line11"
+          />
+          <img
+            alt="Line212914"
+            src="public/external/line212914-uaxd.svg"
+            class="home-line21"
+          />
+          <img
+            alt="Line222915"
+            src="public/external/line222915-t09h.svg"
+            class="home-line22"
+          />
+          <img
+            alt="Ellipse152915"
+            src="public/external/ellipse152915-m1s-200h.png"
+            class="home-ellipse154"
+          />
+          <img
+            alt="Ellipse182915"
+            src="public/external/ellipse182915-1ox-200w.png"
+            class="home-ellipse18"
+          />
+          <span class="home-text33">DISOBEDIENCE</span>
+          <span class="home-text34"><span>COMMUNICATION</span></span>
+          <span class="home-text36">
+            <span>
+              <span>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the
+              </span>
+              <br />
+              <span>
+                industry's standard dummy text ever since the 1500s, when an
+                unknown printer took a galley of type and crambled it to make a
+                type specimen book. It has survived not only five centuries, but
+                also the leap into electronic
+              </span>
+              <br />
+              <span>typesetting, remaining essentially unchanged.</span>
+            </span>
+          </span>
+          <span class="home-text43"><span>RESEARCH</span></span>
+          <img
+            alt="Line202916"
+            src="public/external/line202916-xif.svg"
+            class="home-line20"
+          />
+          <img
+            alt="Line333243"
+            src="public/external/line333243-mkii.svg"
+            class="home-line33"
+          />
+          <span class="home-text45">1974</span>
+          <img
+            alt="Ellipse152916"
+            src="public/external/ellipse152916-x2b-200h.png"
+            class="home-ellipse155"
+          />
+          <img
+            alt="Ellipse162916"
+            src="public/external/ellipse162916-lma-300h.png"
+            class="home-ellipse16"
+          />
+          <span class="home-text46">
+            <span>
+              <span>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the
+              </span>
+              <br />
+              <span>
+                industry's standard dummy text ever since the 1500s, when an
+                unknown printer took a galley of type and crambled it to make a
+                type specimen book. It has survived not only five centuries, but
+                also the leap into electronic
+              </span>
+              <br />
+              <span>typesetting, remaining essentially unchanged.</span>
+            </span>
+          </span>
+          <span class="home-text53"><span>LEGAL RIGHTS</span></span>
+          <img
+            alt="Line242917"
+            src="public/external/line242917-cbk.svg"
+            class="home-line24"
+          />
+          <img
+            alt="Line252917"
+            src="public/external/line252917-r3pc.svg"
+            class="home-line25"
+          />
+          <img
+            alt="Line262917"
+            src="public/external/line262917-gu4.svg"
+            class="home-line26"
+          />
+          <span class="home-text55"><span>1997</span></span>
+          <img
+            alt="Ellipse192917"
+            src="public/external/ellipse192917-o77j-200h.png"
+            class="home-ellipse19"
+          />
+          <img
+            alt="Ellipse212917"
+            src="public/external/ellipse212917-33ej-400h.png"
+            class="home-ellipse21"
+          />
+          <img
+            alt="Line232914"
+            src="public/external/line232914-vik9.svg"
+            class="home-line23"
+          />
+          <span class="home-text57">
+            <span>
+              <span>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the
+              </span>
+              <br />
+              <span>
+                industry's standard dummy text ever since the 1500s, when an
+                unknown printer took a galley of type and crambled it to make a
+                type specimen book. It has survived not only five centuries, but
+                also the leap into electronic
+              </span>
+              <br />
+              <span>typesetting, remaining essentially unchanged.</span>
+            </span>
+          </span>
+          <span class="home-text64"><span>MARRIAGE</span></span>
+          <img
+            alt="Ellipse152917"
+            src="public/external/ellipse152917-vl78-300h.png"
+            class="home-ellipse156"
+          />
+          <img
+            alt="Ellipse102915"
+            src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/6645f63e-96b7-449b-8597-66d1bab778e9/24e66068-1500-406b-a400-ca203565d3dc?org_if_sml=118998"
+            class="home-ellipse10"
+          />
+        </div>
+        <span>Text</span>
+        <div class="home-container13"></div>
       </div>
     </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
   </body>
 </html>

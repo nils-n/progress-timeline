@@ -1,0 +1,14 @@
+.component1-container {
+  display: flex;
+  position: relative;
+}
+.component1-text {
+  border-color: transparent;
+  border-width: 1px;
+  text-decoration: none;
+}
+@media(max-width: 767px) {
+  .component1-text {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}
