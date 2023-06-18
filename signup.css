@@ -238,8 +238,10 @@
 }
 .signup-image2 {
   width: 1000px;
+  height: 1000px;
   align-self: flex-end;
   object-fit: cover;
+  object-position: top;
 }
 @media(max-width: 991px) {
   .signup-image {
