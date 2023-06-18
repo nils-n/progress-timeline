@@ -146,6 +146,13 @@
 .profile-navigation-links {
   text-decoration: none;
 }
+.profile-image2 {
+  width: 1000px;
+  height: 1000px;
+  align-self: flex-end;
+  object-fit: cover;
+  object-position: top;
+}
 @media(max-width: 991px) {
   .profile-image {
     left: 80px;
