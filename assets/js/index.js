@@ -1,5 +1,4 @@
-import { createUserDocumentFromAuth, firebaseAuth } from "./firebase";
-import { userSignUp, userSignIn, userSignOut } from "./auth";
+import { userSignUp, userSignIn, userSignOut, checkAuthState2 } from "./auth";
 import { createStory, displayStories, handleLikeButton } from "./stories";
 import { filterContent, sortContent } from "./content";
 
@@ -22,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Set up event listeners and initial setup
-checkAuthState();
+checkAuthState2();
 
 signUpBtn.addEventListener("click", userSignUp);
 loginBtn.addEventListener("click", userSignIn);
