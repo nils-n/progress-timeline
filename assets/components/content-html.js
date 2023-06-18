@@ -1,5 +1,5 @@
 export const html = `
-<div class="home-timeline-l-container">
+<div data-date="${doc.decade}" class="home-timeline-l-container">
 <div class="home-year-container">
   <h2 class="home-text04 h2">${doc.decade}</h2>
 </div>

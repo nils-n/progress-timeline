@@ -1,7 +1,8 @@
 import { collection, getDocs } from "firebase/firestore";
 import { firebaseDB } from "../../config/firebase-config";
 
-const filterBtn = document.getElementById("filter");
+const filterBtn = document.getElementById("filter-btn");
+const sortBtn = document.getElementById("sort-btn");
 const contentContainer = document.getElementById("demo-content-container");
 
 async function filterContent() {
@@ -35,7 +36,7 @@ async function filterContent() {
       contentElement.classList.add("content-box");
 
       const html = ` 
-      <div class="home-timeline-l-container">
+      <div data-date="${doc.decade}" class="home-timeline-l-container">
       <div class="home-year-container">
         <h2 class="home-text04 h2">${doc.decade}</h2>
       </div>
@@ -173,4 +174,32 @@ async function filterContent() {
   }
 }
 
+// Sort Content
+function sortContent() {
+  const isAscending = sortBtn.classList.contains("asc");
+
+  const order = isAscending ? "ascending" : "descending";
+  isAscending ? sortBtn.classList.remove("asc") : sortBtn.classList.add("asc");
+
+  const content = Array.from(
+    contentContainer.querySelectorAll(".home-timeline-l-container")
+  );
+
+  content.sort((a, b) => {
+    const dateA = parseInt(a.dataset.date);
+    const dateB = parseInt(b.dataset.date);
+
+    if (order === "ascending") {
+      return dateA - dateB;
+    } else if (order === "descending") {
+      return dateB - dateA;
+    }
+  });
+
+  contentContainer.innerHTML = "";
+
+  content.forEach((data) => contentContainer.appendChild(data));
+}
+
 filterBtn.addEventListener("change", filterContent);
+sortBtn.addEventListener("click", sortContent);
