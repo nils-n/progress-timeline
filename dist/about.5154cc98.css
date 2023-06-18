@@ -1,0 +1,254 @@
+.navigation-links-nav {
+  flex-direction: row;
+  flex: none;
+  align-items: center;
+  display: flex;
+}
+
+.navigation-links-navlink {
+  text-decoration: none;
+}
+
+@media (width <= 767px) {
+  .navigation-links-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navigation-links-navlink {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}
+
+.about-container {
+  background-color: var(--dl-color-gray-bg-light);
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  overflow: auto;
+}
+
+.about-header {
+  max-width: var(--dl-size-size-maxwidth);
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-twounits);
+  background-color: var(--dl-color-gray-bg-light);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.about-navlink {
+  display: contents;
+}
+
+.about-image {
+  object-fit: contain;
+  width: 150px;
+  text-decoration: none;
+}
+
+.about-nav {
+  display: flex;
+}
+
+.about-nav1 {
+  flex-direction: row;
+  flex: none;
+  align-items: center;
+  display: flex;
+}
+
+.about-navlink1 {
+  text-decoration: none;
+}
+
+.about-btn-group {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.about-login {
+  margin-right: var(--dl-space-space-twounits);
+  border-width: 0;
+  text-decoration: none;
+}
+
+.about-register {
+  text-decoration: none;
+}
+
+.about-burger-menu {
+  display: none;
+}
+
+.about-icon {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+
+.about-mobile-menu {
+  z-index: 100;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  padding: 32px;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about-nav2 {
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+}
+
+.about-container1 {
+  margin-bottom: var(--dl-space-space-threeunits);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.about-menu-close {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.about-icon2 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+
+.about-navlink2 {
+  display: contents;
+}
+
+.about-image1 {
+  object-fit: contain;
+  width: 150px;
+  text-decoration: none;
+}
+
+.about-login1 {
+  margin-right: var(--dl-space-space-twounits);
+  border-width: 0;
+  text-decoration: none;
+}
+
+.about-register1, .about-navigation-links {
+  text-decoration: none;
+}
+
+.about-image2 {
+  object-fit: cover;
+  object-position: top;
+  align-self: flex-end;
+  width: 1000px;
+  height: 1000px;
+}
+
+@media (width <= 991px) {
+  .about-image {
+    left: 80px;
+  }
+
+  .about-mobile-menu {
+    background-color: var(--dl-color-gray-bg-light);
+    width: 772px;
+    display: none;
+  }
+
+  .about-container1 {
+    margin-top: var(--dl-space-space-threeunits);
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-image1 {
+    padding-top: 0;
+    left: 80px;
+  }
+
+  .about-login1, .about-register1 {
+    margin-top: var(--dl-space-space-twounits);
+  }
+}
+
+@media (width <= 767px) {
+  .about-header {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+
+  .about-image {
+    left: 40px;
+  }
+
+  .about-nav {
+    display: none;
+  }
+
+  .about-nav1 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-navlink1 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+
+  .about-btn-group {
+    display: none;
+  }
+
+  .about-burger-menu {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .about-mobile-menu {
+    display: none;
+  }
+
+  .about-image1 {
+    left: 40px;
+  }
+}
+
+@media (width <= 479px) {
+  .about-header {
+    padding: var(--dl-space-space-unit);
+  }
+
+  .about-image {
+    width: 80px;
+    left: 20px;
+  }
+
+  .about-mobile-menu {
+    padding: 16px;
+    display: none;
+  }
+
+  .about-image1 {
+    width: 80px;
+    left: 20px;
+  }
+}
+
+/*# sourceMappingURL=about.5154cc98.css.map */
