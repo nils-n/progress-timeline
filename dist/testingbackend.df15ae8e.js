@@ -609,7 +609,7 @@ const createStory = async (title, content, decade, publishDate)=>{
         const newStory = {
             title,
             content,
-            author: user.uid,
+            author: user.email,
             likeCounter: 0,
             decade,
             publishDate,
@@ -655,9 +655,10 @@ const displayStories = async ()=>{
             const isLikedByUser = user && storyData.likedBy && storyData.likedBy.includes(user.uid);
             const storyElement = document.createElement("div");
             storyElement.innerHTML = `
+        <h2>${storyData.decade}</h2>
         <h2>${storyData.title}</h2>
         <p>${storyData.content}</p>
-        <p>Author: ${storyData.author}</p>
+        <p>Author: ${storyData.author || "Unknown"}</p>
         <p class="like-counter">Like Count: ${storyData.likeCounter}</p>
         <button class="like-button" data-story-id="${storyDoc.id}">
           ${isLikedByUser ? "Unlike" : "Like"}
