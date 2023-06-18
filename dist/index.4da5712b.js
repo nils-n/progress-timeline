@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"f3Xap":[function(require,module,exports) {
+})({"h0cJm":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "0907ca6d3464ddca";
+module.bundle.HMR_BUNDLE_ID = "82fe11904da5712b";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -573,8 +573,28 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     });
 }
 
-},{}],"j4kuM":[function(require,module,exports) {
+},{}],"4WWUW":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "firebaseConfig", ()=>firebaseConfig);
+parcelHelpers.export(exports, "app", ()=>app);
+parcelHelpers.export(exports, "firebaseAuth", ()=>firebaseAuth);
+parcelHelpers.export(exports, "firebaseDB", ()=>firebaseDB);
+var _app = require("firebase/app");
+var _firestore = require("firebase/firestore");
+var _auth = require("firebase/auth");
+const firebaseConfig = {
+    apiKey: "AIzaSyD7w6h9rZgPzHXjxn1XAAEvsvEyokkhx0c",
+    authDomain: "testing-node-auth.firebaseapp.com",
+    projectId: "testing-node-auth",
+    storageBucket: "testing-node-auth.appspot.com",
+    messagingSenderId: "834539674456",
+    appId: "1:834539674456:web:717fcc42c8ceb22a40e32d"
+};
+const app = (0, _app.initializeApp)(firebaseConfig);
+const firebaseAuth = (0, _auth.getAuth)(app);
+const firebaseDB = (0, _firestore.getFirestore)(app);
 
-},{}]},["f3Xap","j4kuM"], "j4kuM", "parcelRequire2d45")
+},{"firebase/app":"aM3Fo","firebase/firestore":"8A4BC","firebase/auth":"79vzg","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["h0cJm","4WWUW"], "4WWUW", "parcelRequire2d45")
 
-//# sourceMappingURL=askdjfbg.3464ddca.js.map
+//# sourceMappingURL=index.4da5712b.js.map

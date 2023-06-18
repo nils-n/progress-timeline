@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"f3Xap":[function(require,module,exports) {
+})({"dJ6ct":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "0907ca6d3464ddca";
+module.bundle.HMR_BUNDLE_ID = "6949e2dc24a0c4ef";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -573,8 +573,58 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     });
 }
 
-},{}],"j4kuM":[function(require,module,exports) {
+},{}],"h3KiY":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "userSignUp", ()=>userSignUp);
+parcelHelpers.export(exports, "userSignIn", ()=>userSignIn);
+parcelHelpers.export(exports, "userSignOut", ()=>userSignOut);
+parcelHelpers.export(exports, "checkAuthState2", ()=>checkAuthState2);
+var _auth = require("firebase/auth");
+var _firebaseConfig = require("../../config/firebase-config");
+const accountBtn = document.getElementById("account-btn");
+const checkAuthState = async ()=>{
+    (0, _auth.onAuthStateChanged)((0, _firebaseConfig.firebaseAuth), (user)=>{
+        if (user) accountBtn.textContent = user.displayName;
+        else accountBtn.textContent = "Login";
+    });
+};
+checkAuthState();
+const userSignUp = async ()=>{
+    const signUpEmail = document.getElementById("signup-email").value;
+    const signUpPassword = document.getElementById("signup-password").value;
+    try {
+        const { user  } = await createUserWithEmailAndPassword((0, _firebaseConfig.firebaseAuth), signUpEmail, signUpPassword);
+        createUserDocumentFromAuth(user);
+        alert("You have signed up successfully!");
+    } catch (error) {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode + errorMessage);
+    }
+};
+const userSignIn = async ()=>{
+    const signInEmail = document.getElementById("login-email").value;
+    const signInPassword = document.getElementById("login-password").value;
+    try {
+        signInWithEmailAndPassword((0, _firebaseConfig.firebaseAuth), signInEmail, signInPassword);
+        alert("You have signed in successfully!");
+    } catch (error) {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode + errorMessage);
+    }
+};
+const userSignOut = async ()=>{
+    await signOut((0, _firebaseConfig.firebaseAuth));
+};
+const checkAuthState2 = async ()=>{
+    (0, _auth.onAuthStateChanged)((0, _firebaseConfig.firebaseAuth), (user)=>{
+        if (user) displayStories();
+        else alert("no user");
+    });
+};
 
-},{}]},["f3Xap","j4kuM"], "j4kuM", "parcelRequire2d45")
+},{"firebase/auth":"79vzg","../../config/firebase-config":"4WWUW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["dJ6ct","h3KiY"], "h3KiY", "parcelRequire2d45")
 
-//# sourceMappingURL=progress-timeline.3464ddca.js.map
+//# sourceMappingURL=index.24a0c4ef.js.map

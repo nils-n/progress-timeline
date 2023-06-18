@@ -5,7 +5,6 @@ const accountBtn = document.getElementById("account-btn");
 
 const checkAuthState = async () => {
   onAuthStateChanged(firebaseAuth, (user) => {
-    console.log(user);
     if (user) {
       accountBtn.textContent = user.displayName;
     } else {
@@ -60,7 +59,6 @@ export const userSignOut = async () => {
 export const checkAuthState2 = async () => {
   onAuthStateChanged(firebaseAuth, (user) => {
     if (user) {
-      console.log(user);
       displayStories();
     } else {
       alert("no user");

@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"dguPQ":[function(require,module,exports) {
+})({"68HwT":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "74f5cb0081ad8518";
+module.bundle.HMR_BUNDLE_ID = "9559a66ea5535e9f";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -573,8 +573,43 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     });
 }
 
-},{}],"fLPrp":[function(require,module,exports) {
+},{}],"1E7ZB":[function(require,module,exports) {
+var _firebase = require("./firebase");
+var _auth = require("./auth");
+var _stories = require("./stories");
+var _content = require("./content");
+const signUpBtn = document.getElementById("sign-up");
+const loginBtn = document.getElementById("login");
+const logoutBtn = document.getElementById("logout");
+const createStoryBtn = document.getElementById("create-story");
+const googleBtn = document.getElementById("google");
+// Wait for DOMContentLoaded event
+document.addEventListener("DOMContentLoaded", ()=>{
+    // Add event listener for each like button
+    const likeButtons = document.querySelectorAll(".like-button");
+    likeButtons.forEach((likeButton)=>{
+        likeButton.addEventListener("click", ()=>{
+            const storyId = likeButton.getAttribute("data-story-id");
+            (0, _stories.handleLikeButton)(storyId);
+        });
+    });
+});
+// Set up event listeners and initial setup
+checkAuthState();
+signUpBtn.addEventListener("click", (0, _auth.userSignUp));
+loginBtn.addEventListener("click", (0, _auth.userSignIn));
+logoutBtn.addEventListener("click", (0, _auth.userSignOut));
+googleBtn.addEventListener("click", signInWithGoogle);
+filterBtn.addEventListener("change", (0, _content.filterContent));
+sortBtn.addEventListener("click", (0, _content.sortContent));
+createStoryBtn.addEventListener("click", ()=>{
+    const title = document.getElementById("story-title").value;
+    const content = document.getElementById("story-content").value;
+    const decade = document.getElementById("story-decade").value;
+    const publishDate = document.getElementById("story-publish-date").value;
+    (0, _stories.createStory)(title, content, decade, publishDate);
+});
 
-},{}]},["dguPQ","fLPrp"], "fLPrp", "parcelRequire2d45")
+},{"./firebase":"38sjH","./auth":"h3KiY","./stories":"fD13P","./content":"g7QPh"}]},["68HwT","1E7ZB"], "1E7ZB", "parcelRequire2d45")
 
-//# sourceMappingURL=signup.81ad8518.js.map
+//# sourceMappingURL=index.a5535e9f.js.map
