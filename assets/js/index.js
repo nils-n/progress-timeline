@@ -1,5 +1,5 @@
 import { createUserDocumentFromAuth, firebaseAuth } from "./firebase";
-import { userSignUp, userSignIn, userSignOut, checkAuthState } from "./auth";
+import { userSignUp, userSignIn, userSignOut } from "./auth";
 import { createStory, displayStories, handleLikeButton } from "./stories";
 import { filterContent, sortContent } from "./content";
 
