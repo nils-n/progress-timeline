@@ -5,6 +5,7 @@ import {
   getDocs,
   collection,
   updateDoc,
+  increment,
 } from "firebase/firestore";
 import {
   createUserWithEmailAndPassword,
@@ -114,10 +115,14 @@ const displayStories = async () => {
         <button class="like-button" data-story-id="${storyDoc.id}">Like</button>
       `;
       storiesContainer.appendChild(storyElement);
+    });
 
-      const likeButton = storyElement.querySelector(".like-button");
-      likeButton.addEventListener("click", () => {
-        handleLikeButton(storyDoc.id);
+    // Add event listeners for like buttons
+    const likeButtons = document.querySelectorAll(".like-button");
+    likeButtons.forEach((likeButton) => {
+      likeButton.addEventListener("click", async (event) => {
+        const storyId = event.target.getAttribute("data-story-id");
+        await handleLikeButton(storyId);
       });
     });
   } catch (error) {
@@ -131,16 +136,9 @@ const handleLikeButton = async (storyId) => {
   const storyRef = doc(firebaseDB, "stories", storyId);
 
   try {
-    const storyDoc = await getDoc(storyRef);
-    const storyData = storyDoc.data();
-    const updatedLikeCounter = storyData.likeCounter + 1;
-    await updateDoc(storyRef, { likeCounter: updatedLikeCounter });
-
-    // Update like counter in DOM
-    const likeCounterElement = document.querySelector(
-      `[data-story-id="${storyId}"] .like-counter`
-    );
-    likeCounterElement.textContent = `Like Count: ${updatedLikeCounter}`;
+    await updateDoc(storyRef, {
+      likeCounter: increment(1),
+    });
 
     alert("Liked the story!");
   } catch (error) {
@@ -148,6 +146,19 @@ const handleLikeButton = async (storyId) => {
     alert("Failed to update like counter. Please try again.");
   }
 };
+
+// Wait for DOMContentLoaded event
+document.addEventListener("DOMContentLoaded", () => {
+  // Add event listener for each like button
+  const likeButtons = document.querySelectorAll(".like-button");
+  likeButtons.forEach((likeButton) => {
+    likeButton.addEventListener("click", () => {
+      const storyId = likeButton.getAttribute("data-story-id");
+      handleLikeButton(storyId);
+    });
+  });
+});
+
 
 // check user auth state
 const checkAuthState = async () => {
