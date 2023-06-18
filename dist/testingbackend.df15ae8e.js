@@ -651,13 +651,17 @@ const displayStories = async ()=>{
         const storiesSnapshot = await (0, _firestore.getDocs)((0, _firestore.collection)((0, _firebaseConfig.firebaseDB), "stories"));
         storiesSnapshot.forEach((storyDoc)=>{
             const storyData = storyDoc.data();
+            const user = (0, _firebaseConfig.firebaseAuth).currentUser;
+            const isLikedByUser = user && storyData.likedBy && storyData.likedBy.includes(user.uid);
             const storyElement = document.createElement("div");
             storyElement.innerHTML = `
         <h2>${storyData.title}</h2>
         <p>${storyData.content}</p>
         <p>Author: ${storyData.author}</p>
         <p class="like-counter">Like Count: ${storyData.likeCounter}</p>
-        <button class="like-button" data-story-id="${storyDoc.id}">Like</button>
+        <button class="like-button" data-story-id="${storyDoc.id}">
+          ${isLikedByUser ? "Unlike" : "Like"}
+        </button>
       `;
             storiesContainer.appendChild(storyElement);
         });
@@ -678,10 +682,24 @@ const displayStories = async ()=>{
 const handleLikeButton = async (storyId)=>{
     const storyRef = (0, _firestore.doc)((0, _firebaseConfig.firebaseDB), "stories", storyId);
     try {
-        await (0, _firestore.updateDoc)(storyRef, {
-            likeCounter: (0, _firestore.increment)(1)
-        });
-        alert("Liked the story!");
+        const storySnapshot = await (0, _firestore.getDoc)(storyRef);
+        const storyData = storySnapshot.data();
+        const user = (0, _firebaseConfig.firebaseAuth).currentUser;
+        if (user && storyData.likedBy && storyData.likedBy.includes(user.uid)) {
+            // User has already liked the story, perform unlike action
+            await (0, _firestore.updateDoc)(storyRef, {
+                likeCounter: storyData.likeCounter - 1,
+                likedBy: (0, _firestore.arrayRemove)(user.uid)
+            });
+            alert("Unliked the story!");
+        } else {
+            // User has not liked the story, perform like action
+            await (0, _firestore.updateDoc)(storyRef, {
+                likeCounter: storyData.likeCounter + 1,
+                likedBy: (0, _firestore.arrayUnion)(user.uid)
+            });
+            alert("Liked the story!");
+        }
     } catch (error) {
         console.error("Error updating like counter:", error);
         alert("Failed to update like counter. Please try again.");
