@@ -197,6 +197,8 @@ function displayStoryForm() {
   storyFormContainer.style.display = "flex";
 }
 
+console.log(firebaseAuth);
+
 // SUBMIT STORY
 async function submitYourStory(e) {
   e.preventDefault();

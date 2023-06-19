@@ -12,7 +12,7 @@ async function logout() {
 const checkAuthState = async () => {
   onAuthStateChanged(firebaseAuth, (user) => {
     if (user) {
-      profilePageBtn.textContent = user.displayName;
+      profilePageBtn.textContent = user.displayName || user.email;
       accountLoginBtn.addEventListener("click", logout);
       profilePageBtn.style.display = "flex";
       accountLoginBtn.textContent = "Logout";
