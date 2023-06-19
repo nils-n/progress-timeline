@@ -72,6 +72,15 @@ button:hover {
   cursor: pointer;
 }
 
+a {
+  margin-inline: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 10px;
+}
+
+a:hover {
+  background: lightblue;
+}
 .button {
   font-size: 20px;
   font-family: Rubik Mono One;

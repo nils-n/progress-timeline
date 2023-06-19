@@ -241,33 +241,10 @@ async function submitYourStory(e) {
   closeModal(storyFormContainer);
 }
 
-// LOGOUT
-async function logout() {
-  await signOut(firebaseAuth);
-}
-
-// CHECK AUTHENTICATION
-const checkAuthState = async () => {
-  onAuthStateChanged(firebaseAuth, (user) => {
-    if (user) {
-      profilePageBtn.textContent = user.displayName;
-      accountLoginBtn.addEventListener("click", logout);
-      profilePageBtn.style.display = "flex";
-      accountLoginBtn.textContent = "Logout";
-    } else {
-      accountLoginBtn.textContent = "Login";
-      accountLoginBtn.removeEventListener("click", logout);
-      profilePageBtn.style.display = "none";
-    }
-  });
-};
-
 function closeModal(element) {
   element.style.display = "none";
 }
 // CLOSE USER STORYS MODAL
-
-checkAuthState();
 
 overlay.addEventListener("click", () => closeModal(overlay));
 
