@@ -72,6 +72,31 @@ button:hover {
   cursor: pointer;
 }
 
+#stories-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background: linear-gradient(
+    124deg,
+    #ff2400,
+    #e81d1d,
+    #e8b71d,
+    #e3e81d,
+    #1de840,
+    #1ddde8,
+    #2b1de8,
+    #dd00f3,
+    #dd00f3
+  );
+}
+
+.story-profile {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+}
+
 a {
   margin-inline: 0.25rem;
   padding: 0.25rem;
