@@ -1,4 +1,23 @@
-# progress-timeline
+#  Equality Engineers
+
+
+This website aims to be a place of stories of the LGTBQ+ community - stories that we find in the history records, but in particular also stories of the website users. We offer users a place to educate themselves about the LGTBQ+ history, and give them the opportunity to place their particular story in the timeline that has never made its way into the history books. The ultimate aim is to be a social place where users can feel free to share their feelings, expressing their support by like buttons, and foster the value of listening to each other in a loving atmosphere.
+
+
+Link to the live website : [Equality Engineers on Netlify](https://progress-timeline.netlify.app/index.html)
+
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black) ![Node](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white )
+
+
+![GitHub top language](https://img.shields.io/github/languages/top/nils-n/progress-timeline?logo=GitHub&style=flat-square) ![GitHub contributors](https://img.shields.io/github/contributors/nils-n/progress-timeline?color=oo&logo=Github) ![GitHub last commit](https://img.shields.io/github/last-commit/nils-n/progress-timeline?logo=Github)
+
+
+<table style='width:80%; content-align:center'>
+    <tr>
+       <td> <img src="./assets/documentation/website-preview.png"; alt="hero image, example screenshots of the app" >  </td>
+    </tr>
+</table>
 
 ## *Love and compassion are necessities, not luxuries. Without them, humanity cannot survive* - __Dalai Lama__
 
