@@ -1,6 +1,7 @@
-import { collection, getDocs } from "firebase/firestore";
+import { collection, doc, getDocs, setDoc } from "firebase/firestore";
 import { firebaseAuth, firebaseDB } from "../../config/firebase-config";
 import { onAuthStateChanged, signOut } from "firebase/auth";
+import { generateUniqueID } from "./helpers";
 
 const filterBtn = document.getElementById("filter-btn");
 const sortBtn = document.getElementById("sort-btn");
@@ -216,15 +217,45 @@ function displayStoryForm() {
 
 async function submitYourStory(e) {
   e.preventDefault();
+  const user = firebaseAuth.currentUser;
+  if (!user) {
+    alert("You need to be logged in to create a story.");
+    return;
+  }
+
   const title = document.getElementById("story-title").value;
   const content = document.getElementById("story-content").value;
   const date = document.getElementById("story-date-input").value;
 
-  const data = {
+  //   CONVERT INPUT TO JUST GET DECADE
+  const selectedDate = new Date(date);
+  const decade = selectedDate.getFullYear();
+
+  const newStory = {
     title,
     content,
     date,
+    decade,
+    author: user.displayName || "anon",
+    likeCounter: 0,
+    createdAt: new Date(),
   };
+
+  if (user) {
+    try {
+      const storyRef = doc(firebaseDB, "stories", generateUniqueID());
+      await setDoc(storyRef, newStory);
+
+      alert("Story created successfully!");
+    } catch (error) {
+      console.error("Error creating story: ", error);
+      alert("Failed to create story. Please try again.");
+    }
+  } else {
+    alert("You need to be logged in to create a story.");
+  }
+
+  closeStoryFormModal();
 }
 
 async function logout() {
@@ -235,12 +266,12 @@ const checkAuthState = async () => {
   onAuthStateChanged(firebaseAuth, (user) => {
     if (user) {
       profilePageBtn.textContent = user.displayName;
-      //   accountLoginBtn.href = "profile.html";
-      //   accountLoginBtn.removeEventListener("click", handleClick);
       accountLoginBtn.addEventListener("click", logout);
       profilePageBtn.style.display = "flex";
+      accountLoginBtn.textContent = "Logout";
     } else {
       accountLoginBtn.textContent = "Login";
+      accountLoginBtn.removeEventListener("click", logout);
       profilePageBtn.style.display = "none";
     }
   });
