@@ -1,10 +1,18 @@
 import { collection, getDocs } from "firebase/firestore";
-import { firebaseDB } from "../../config/firebase-config";
+import { firebaseAuth, firebaseDB } from "../../config/firebase-config";
+import { onAuthStateChanged, signOut } from "firebase/auth";
 
 const filterBtn = document.getElementById("filter-btn");
 const sortBtn = document.getElementById("sort-btn");
+const storyFormContainer = document.getElementById("story-UI-container");
 const contentContainer = document.getElementById("demo-content-container");
+const shareStoryBtn = document.getElementById("share-story-button");
+const submitStoryBtn = document.getElementById("submit-story-btn");
+const dontSubmitStoryBtn = document.getElementById("dont-submit-story-btn");
+const accountLoginBtn = document.getElementById("login-logout-btn");
+const profilePageBtn = document.getElementById("profile-page-btn");
 
+// FILTER CONTENT
 async function filterContent() {
   let category = filterBtn.value;
 
@@ -174,7 +182,7 @@ async function filterContent() {
   }
 }
 
-// Sort Content
+// SORT CONTENT
 function sortContent() {
   const isAscending = sortBtn.classList.contains("asc");
 
@@ -201,5 +209,51 @@ function sortContent() {
   content.forEach((data) => contentContainer.appendChild(data));
 }
 
+// DISPLAY USER STORY FORM
+function displayStoryForm() {
+  storyFormContainer.style.display = "flex";
+}
+
+async function submitYourStory(e) {
+  e.preventDefault();
+  const title = document.getElementById("story-title").value;
+  const content = document.getElementById("story-content").value;
+  const date = document.getElementById("story-date-input").value;
+
+  const data = {
+    title,
+    content,
+    date,
+  };
+}
+
+async function logout() {
+  await signOut(firebaseAuth);
+}
+
+const checkAuthState = async () => {
+  onAuthStateChanged(firebaseAuth, (user) => {
+    if (user) {
+      profilePageBtn.textContent = user.displayName;
+      //   accountLoginBtn.href = "profile.html";
+      //   accountLoginBtn.removeEventListener("click", handleClick);
+      accountLoginBtn.addEventListener("click", logout);
+      profilePageBtn.style.display = "flex";
+    } else {
+      accountLoginBtn.textContent = "Login";
+      profilePageBtn.style.display = "none";
+    }
+  });
+};
+
+function closeStoryFormModal() {
+  storyFormContainer.style.display = "none";
+}
+
+checkAuthState();
+
+dontSubmitStoryBtn.addEventListener("click", closeStoryFormModal);
+storyFormContainer.addEventListener("submit", submitYourStory);
+shareStoryBtn.addEventListener("click", displayStoryForm);
 filterBtn.addEventListener("change", filterContent);
 sortBtn.addEventListener("click", sortContent);
