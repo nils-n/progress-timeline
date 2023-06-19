@@ -1,6 +1,7 @@
 import { collection, doc, getDocs, setDoc } from "firebase/firestore";
 import { firebaseAuth, firebaseDB } from "../../config/firebase-config";
 import { onAuthStateChanged, signOut } from "firebase/auth";
+import contetnDoc from "../contents.json";
 import { generateUniqueID, renderStoryDiv } from "./helpers";
 
 const filterBtn = document.getElementById("filter-btn");
@@ -259,7 +260,35 @@ userStoryBtnsRight.forEach((btn) =>
 dontSubmitStoryBtn.addEventListener("click", () =>
   closeModal(storyFormContainer)
 );
+
+const addContentBtn = document.getElementById("add-content");
+async function addContentFunc() {
+  const { timeline } = contetnDoc;
+
+  try {
+    timeline.forEach(async (document) => {
+      const storyRef = doc(firebaseDB, "content", generateUniqueID());
+
+      const newContent = {
+        category: document.category,
+        content: document.content,
+        date: document.date,
+        decade: document.decade,
+        imageUrl: document.imageUrl,
+        title: document.title,
+      };
+      await setDoc(storyRef, newContent);
+    });
+
+    console.log("Array saved to Firestore successfully!");
+  } catch (error) {
+    console.error("Error saving array to Firestore:", error);
+  }
+}
+
 storyFormContainer.addEventListener("submit", submitYourStory);
+addContentBtn.addEventListener("click", addContentFunc);
+
 shareStoryBtn.addEventListener("click", displayStoryForm);
 filterBtn.addEventListener("change", filterContent);
 sortBtn.addEventListener("click", sortContent);
