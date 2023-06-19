@@ -221,7 +221,7 @@ async function submitYourStory(e) {
     content,
     date,
     decade,
-    author: user.displayName || "anon",
+    author: user.email,
     likeCounter: 0,
     createdAt: new Date(),
   };

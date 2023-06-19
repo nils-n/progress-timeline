@@ -55,9 +55,11 @@ submitChangesBtn.addEventListener("click", async (event) => {
 export const checkAuthState = async () => {
   onAuthStateChanged(firebaseAuth, (user) => {
     if (user) {
-      accountBtn.textContent = user.displayName;
+      console.log("User is logged in:", user);
+
       getUserData(user.uid);
     } else {
+      console.log("user is not logged in");
       accountBtn.textContent = "Login";
     }
   });
