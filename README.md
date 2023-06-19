@@ -28,6 +28,7 @@ Link to the live website : [Equality Engineers on Netlify](https://progress-time
     </tr>
 </table>
 
+
 <br>
 
 _Love and compassion are necessities, not luxuries. Without them, humanity cannot survive_
@@ -49,6 +50,12 @@ __Dalai Lama__
     - [Benefits:](#benefits)
   - [Tech](#tech)
   - [Credits](#credits)
+  - [Features](#features)
+    - [Main Page](#main-page)
+    - [Login / Signup Page](#login--signup-page)
+    - [Post own Story on Timeline](#post-own-story-on-timeline)
+    - [Responsiveness](#responsiveness)
+    - [About Us](#about-us)
 
 
 ## Criteria
@@ -100,6 +107,8 @@ By giving the general public more education regarding the LGBTQ+ movement it wil
 ## Tech
 In the tech section, we provide information about the technology stack, dependencies, and any technical details related to the project.
 
+--- 
+
 
 ## Credits
 We would like to give credit to the following individuals, organizations, and resources that have contributed to the project or provided inspiration:
@@ -136,7 +145,131 @@ We would like to give credit to the following individuals, organizations, and re
 
 - 🙌 Facilitator : Kera Kudmore 
 
+--- 
 
+
+## Features 
+
+The website consists of a Main Page, a Signup/Login Page, and an 'About-us' Page
+
+
+### Main Page 
+
+The main page with a timeline of historical events of the LBTQ+ rights history. 
+
+- introductory text what this website is about 
+- 2 CTA Buttons to allow users (that are logged in) to post their own story to the timeline 
+- Navbar to and "About Us" "Sign up"
+- Main content is the timeline" 
+  -  "Filter" Button to filter the timeline by topic (`Arts` `Politcs`, `Science`) and time ( `1960s`, `1970s`, `1980s`, ...)
+  -  A "Sort" button to reverse the time order. After each button press, timeline is then displayed from Past -> Present , or reverse from Present -> Past
+
+<table style='width:80%'>
+    <tr>
+        <th style='text-align:center'> FEATURE : MAIN PAGE </th>
+    </tr>
+    <tr>
+       <td> <img src="./assets/documentation/features/main-page-overview.png">  </td>
+    </tr>
+
+</table>
+
+--- 
+
+### Login / Signup Page  
+
+The Login page consists of a form where the user can login in our sign up. The user has two options : 
+
+- enter their details (Name, Email ,Password) and click on "Sign Up" / 'Login' Button
+-  sign in by using their google account by clicking on the button "Sign in With Google".
+- When the user is logged in, their email is diplayed on the top left of the screen. 
+- When the user is logged in,a logout button is diplayed on the top left of the screen where the user can sign out. 
+
+
+<table style='width:80%'>
+    <tr>
+        <th style='text-align:center'> FEATURE : LOGIN /SIGNUP PAGE </th>
+    </tr>
+    <tr>
+       <td> <img src="./assets/documentation/features/login-1.png">  </td>
+    </tr>
+      <tr>
+       <td> <img src="./assets/documentation/features/login-3.png">  </td>
+    </tr>
+</table>
+
+--- 
+
+### Post own Story on Timeline
+
+When a user is logged in, they can either explore the timeline 
+
+- reading posts from that other user posted in a specific time , liking posts from others 
+- posting their own story and adding their story to the timeline 
+
+<table style='width:80%'>
+    <tr>
+        <th style='text-align:center'> FEATURE : ADD OWN STORY TO TIMELINE </th>
+    </tr>
+    <tr>
+       <td> <img src="./assets/documentation/features/own-story-1.png">  </td>
+    </tr>
+      <tr>
+       <td> <img src="./assets/documentation/features/post-story-2.png">  </td>
+    </tr>
+     <tr>
+       <td> <img src="./assets/documentation/features/post-story-4.png">  </td>
+    </tr>
+      <tr>
+       <td> <img src="./assets/documentation/features/post-story-3.png">  </td>
+    </tr>
+
+</table>
+
+
+--- 
+
+### Responsiveness
+
+The website is fully responsive and all pages should display correctly on different screen sizes. 
+
+
+<table style='width:80%'>
+    <tr>
+        <th style='text-align:center'> FEATURE : RESPONSIVENESS </th>
+    </tr>
+    <tr>
+       <td> <img src="./assets/documentation/features/responsive-1.png">  </td>
+    </tr>
+    <tr>
+       <td> <img src="./assets/documentation/features/responsive-2.png">  </td>
+    </tr>
+     <tr>
+       <td> <img src="./assets/documentation/features/responsive-3.png">  </td>
+    </tr>
+</table>
+
+--- 
+
+
+### About Us 
+
+The About Us page is a small summary of the main contributors to this project. 
+- We are all current or past students of the [Code Institute](https://codeinstitute.net/) 
+- this website was created during the June 2023 Hackathon "🌈  Pride Representation"
+
+
+<table style='width:80%'>
+    <tr>
+        <th style='text-align:center'> FEATURE : ABOUT US  </th>
+    </tr>
+    <tr>
+       <td> <img src="./assets/documentation/features/about-us-1.png">  </td>
+    </tr>
+</table>
+
+
+----
 
 This Repository will be dedicated to timeline of LGBTQ+, where we will do our best to represent impact they have made to our world throughout history and how world has impacted them. There is numerous facts of history, what has happened to people, who think, believe or love in different way, not according to society standards of that time. And no matter how world was cruel to them, they still loved and shared it to world. There is enormous number of famous quotes, but at this point i remember this one:
 
