@@ -13,6 +13,7 @@ const checkAuthState = async () => {
   onAuthStateChanged(firebaseAuth, (user) => {
     if (user) {
       profilePageBtn.textContent = user.displayName || user.email;
+      profilePageBtn.href = `/profile.html`;
       accountLoginBtn.addEventListener("click", logout);
       profilePageBtn.style.display = "flex";
       accountLoginBtn.textContent = "Logout";
