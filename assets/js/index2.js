@@ -13,6 +13,7 @@ const dontSubmitStoryBtn = document.getElementById("dont-submit-story-btn");
 const accountLoginBtn = document.getElementById("login-logout-btn");
 const profilePageBtn = document.getElementById("profile-page-btn");
 const loader = document.getElementById("loader");
+const sortIconImage = document.getElementById("sort-default");
 const overlay = document.getElementById("overlay");
 const userStoryBtns = Array.from(
   contentContainer.querySelectorAll(".home-button6")
@@ -59,11 +60,7 @@ async function filterContent() {
       </div>
       <div class="home-line-container">
         <div class="home-line-container1">
-          <img
-            alt="Ellipse152915"
-            src="public/external/ellipse192917-o77j-200h.png"
-            class="home-ellipse15"
-          />
+      
           <div class="home-separator"></div>
         </div>
         <div class="home-image-container">
@@ -117,6 +114,9 @@ function sortContent() {
 
   const order = isAscending ? "ascending" : "descending";
   isAscending ? sortBtn.classList.remove("asc") : sortBtn.classList.add("asc");
+  isAscending
+    ? (sortIconImage.style.transform = "rotate(180deg)")
+    : (sortIconImage.style.transform = "rotate(0deg)");
 
   const content = Array.from(
     contentContainer.querySelectorAll(".home-timeline-l-container")
