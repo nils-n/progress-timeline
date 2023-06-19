@@ -11,6 +11,7 @@ const googleBtn = document.getElementById("google");
 // Wait for DOMContentLoaded event
 document.addEventListener("DOMContentLoaded", () => {
   // Add event listener for each like button
+  displayStories();
   const likeButtons = document.querySelectorAll(".like-button");
   likeButtons.forEach((likeButton) => {
     likeButton.addEventListener("click", () => {
