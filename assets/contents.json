@@ -1,0 +1,94 @@
+{
+  "timeline-entries": [
+    {
+      "category": "politics",
+      "content": "Bill Clinton signed the Defense of Marriage Act (DOMA), which defined marriage as exclusively between one man and one woman, granting states the power to reject recognition of same-sex marriages. Consequently, this resulted in the denial of federal protections, privileges, access to employment benefits for partners, inheritance rights, immigration and residency rights, and complications with joint tax returns. In summary, a single stroke of a pen by one individual eliminated the rights of millions of people, effectively erasing their ability to enjoy equal treatment and opportunities in various aspects of life.",
+      "date": "21-09-96",
+      "decade": "1990",
+      "imageUrl": "./assets/images/Bill_Clinton_signing.jpeg",
+      "title": "Bill Clinton Signing"
+    },
+    {
+      "category": "politics",
+      "content": "The Supreme Court of the United States strikes down sodomy laws in Lawrence v. Texas, decriminalizing same-sex sexual activity",
+      "date": "26-06-03",
+      "decade": "2000",
+      "imageUrl": "./assets/images/Lawrance_v._Texas.jpeg",
+      "title": "Lawrence v. Texas"
+    },
+    {
+      "category": "politics",
+      "content": "The “Don’t Ask, Don’t Tell” (DADT) policy, which prohibited openly gay individuals from serving in the U.S. military, is repealed.",
+      "date": "21-12-93",
+      "decade": "1990",
+      "imageUrl": "./assets/images/DADT_repeal.jpeg",
+      "title": "Don't ask, don't tell"
+    },
+    {
+      "category": "politics",
+      "content": "The Stonewall Inn was a well-known gay bar where individuals could gather to socialize, dance, and enjoy the jukebox. The establishment had Mafia protection through regular payoffs, as the Mafia had invested in the bar. The police raided the bar, suspecting involvement in bootlegging liquor. Patrons were required to present identification, and those who were not arrested were escorted out. A crowd began to gather outside, and as more people arrived, they were met with thrown beer bottles. Gradually, the situation escalated into a riot, with some arrested individuals being freed by the enraged crowd. The following night, although smaller confrontations between the LGBTQ+ community and the police occurred, the riot had subsided. Those who were present became members of the Gay Liberation Front, continuing to fight for the rights and equality of the queer community.",
+      "date": "21-06-69",
+      "decade": "1960",
+      "imageUrl": "./assets/images/The_Plaque_at_Stonewall_Inn.jpeg",
+      "title": "The Plaque at the Stonewall In"
+    },
+    {
+      "category": "artist",
+      "content": "Frida Kahlo, the Mexican painter, left an indelible mark on the art world and LGBTQ+ representation. Known for her vibrant self-portraits, Kahlo explored themes of identity, gender, and sexuality. Her art often depicted her own experiences and challenges, including her bisexuality and her relationships with both men and women. Kahlo's work challenged societal norms and celebrated individuality and self-expression. She became an icon for embracing one's true self and for the powerful representation of queer identities in art. Frida Kahlo's unique artistic style and her unapologetic exploration of her own truth continue to inspire and resonate with audiences around the world.",
+      "date": "13-07-54",
+      "decade": "1950",
+      "imageUrl": "./assets/images/frida-kahlo-7464591_960_720.jpeg",
+      "title": "Frida Kahlo"
+    },
+    {
+      "category": "artist",
+      "content": "David Bowie, the legendary British musician and actor, left an indelible mark on both the music industry and LGBTQ+ representation. Known for his chameleon-like personas and boundary-pushing artistry, Bowie challenged conventional norms of gender and sexuality. His iconic androgynous style and exploration of fluid identities through his music and stage presence opened doors for queer expression and acceptance. Bowie's alter ego Ziggy Stardust became an emblem for the LGBTQ+ community, embracing nonconformity and encouraging self-expression. Through his art, Bowie transcended boundaries, inspiring generations to embrace their true selves and celebrating the beauty of individuality. His influence on music and LGBTQ+ culture is immeasurable.",
+      "date": "20-04-87",
+      "decade": "1980",
+      "imageUrl": "./assets/images/David_Bowie_(1987).jpeg",
+      "title": "David Bowie"
+    },
+    {
+      "category": "artist",
+      "content": "Marsha P. Johnson was an influential transgender rights activist and key figure in the LGBTQ+ liberation movement. As a prominent participant in the 1969 Stonewall uprising, Johnson's activism played a pivotal role in igniting the fight for LGBTQ+ rights. She co-founded Street Transvestite Action Revolutionaries (STAR), a group that provided support and advocacy for homeless transgender youth. Johnson's tireless efforts and advocacy made her a beacon of hope and resilience for marginalized communities. Her visibility, courage, and unwavering dedication to justice and equality continue to inspire and empower LGBTQ+ individuals today. Marsha P. Johnson's legacy as an icon and trailblazer will forever be celebrated .",
+      "date": "24-06-73",
+      "decade": "1970",
+      "imageUrl": "./assets/images/Marsha_P._Johnson_in_the_1973_NYC_Gay_Pride_Parade.jpeg",
+      "title": "Marsha P. Johnson"
+    },
+    {
+      "category": "artist",
+      "content": "Laverne Cox, the talented American actress and transgender rights advocate, has had a profound impact on the entertainment industry and LGBTQ+ visibility. Cox rose to prominence for her groundbreaking portrayal of Sophia Burset in the hit series 'Orange Is the New Black'. As a prominent transgender actress, she has used her platform to advocate for trans rights, raise awareness about the challenges faced by the trans community, and promote greater inclusivity in media. Cox's activism, eloquence, and grace have made her a powerful voice for trans representation and an inspiration for countless individuals, leaving a lasting legacy in the fight for LGBTQ+ equality.",
+      "date": "20-04-87",
+      "decade": "1980",
+      "imageUrl": "./assets/images/Laverne_Cox_at_SF_Trans_March_20150626.jpeg",
+      "title": "Lavarne Cox at Trans March 2015"
+    },
+    {
+      "category": "science",
+      "content": "Alan Turing, the brilliant British mathematician and computer scientist, played a pivotal role in the development of modern computing and artificial intelligence. Turing's contributions to codebreaking during World War II, notably his work on the Enigma machine, helped shorten the war and saved countless lives. As an openly gay man in a time when homosexuality was criminalized, Turing faced persecution and tragedy. His legacy as a visionary scientist, pioneer of computer science, and symbol of resilience in the face of adversity continues to inspire and shape our world.",
+      "date": "23-06-1912",
+      "decade": "1910",
+      "imageUrl": "./assets/images/Alan_Turing_in_1935.jpeg",
+      "title": "Alan Turing"
+    },
+    {
+      "category": "science",
+      "content": "dummycontent",
+      "date": "01-01-01",
+      "decade": "1980",
+      "imageUrl": "./assets/images/DADT_repeal.jpeg",
+      "title": "dummy"
+    }
+  ],
+  "template": [
+    {
+      "category": "science",
+      "content": "dummycontent",
+      "date": "01-01-01",
+      "decade": "1980",
+      "imageUrl": "./assets/images/DADT_repeal.jpeg",
+      "title": "dummy"
+    }
+  ]
+}
