@@ -3,7 +3,7 @@ export const generateUniqueID = () => {
 };
 
 export function renderStoryDiv(doc) {
-  return (modalHtml = `
+  return `
   <div class="home-testimonial">
     <svg viewBox="0 0 1024 1024" class="home-icon08">
       <path
@@ -45,5 +45,5 @@ export function renderStoryDiv(doc) {
       ${doc.author}
       </span>
     </div>
-  </div>`);
+  </div>`;
 }
