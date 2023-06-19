@@ -11,9 +11,13 @@ const shareStoryBtn = document.getElementById("share-story-button");
 const dontSubmitStoryBtn = document.getElementById("dont-submit-story-btn");
 const accountLoginBtn = document.getElementById("login-logout-btn");
 const profilePageBtn = document.getElementById("profile-page-btn");
+const loader = document.getElementById("loader");
 const overlay = document.getElementById("overlay");
 const userStoryBtns = Array.from(
   contentContainer.querySelectorAll(".home-button6")
+);
+const userStoryBtnsRight = Array.from(
+  contentContainer.querySelectorAll(".home-button7")
 );
 
 // FILTER CONTENT
@@ -140,13 +144,19 @@ async function renderUserStories(e) {
   const storiesContainer = document.getElementById("user-story-modal");
   storiesContainer.innerHTML = "";
   const header = document.createElement("h2");
-  header.textContent = "Stories of the 90s";
+  header.textContent = `Stories of the ${decadeFilter}`;
   header.classList.add("home-text08");
   header.id = "your-stories-left";
   storiesContainer.appendChild(header);
 
+  const loader = document.createElement("div");
+  loader.id = "loader";
+
+  storiesContainer.appendChild(loader);
+
   try {
     const storiesSnapshot = await getDocs(collection(firebaseDB, "stories"));
+    storiesContainer.removeChild(loader);
 
     const totalStories = [];
     storiesSnapshot.forEach((storyDoc) => totalStories.push(storyDoc.data()));
@@ -260,7 +270,11 @@ function closeModal(element) {
 checkAuthState();
 
 overlay.addEventListener("click", () => closeModal(overlay));
+
 userStoryBtns.forEach((btn) =>
+  btn.addEventListener("click", renderUserStories)
+);
+userStoryBtnsRight.forEach((btn) =>
   btn.addEventListener("click", renderUserStories)
 );
 dontSubmitStoryBtn.addEventListener("click", () =>
