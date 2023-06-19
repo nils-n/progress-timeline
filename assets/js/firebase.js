@@ -18,6 +18,7 @@ import {
   signInWithPopup,
 } from "firebase/auth";
 import "firebase/database";
+import { firebaseAuth, firebaseDB } from "../../config/firebase-config";
 
 export {
   doc,
