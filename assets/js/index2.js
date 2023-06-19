@@ -1,12 +1,28 @@
-import { collection, getDocs } from "firebase/firestore";
-import { firebaseDB } from "../../config/firebase-config";
+import { collection, doc, getDocs, setDoc } from "firebase/firestore";
+import { firebaseAuth, firebaseDB } from "../../config/firebase-config";
+import { onAuthStateChanged, signOut } from "firebase/auth";
+import { generateUniqueID, renderStoryDiv } from "./helpers";
 
 const filterBtn = document.getElementById("filter-btn");
 const sortBtn = document.getElementById("sort-btn");
-const contentContainer = document.getElementById("demo-content-container");
+const storyFormContainer = document.getElementById("story-UI-container");
+const contentContainer = document.getElementById("content-wrapper");
+const shareStoryBtn = document.getElementById("share-story-button");
+const dontSubmitStoryBtn = document.getElementById("dont-submit-story-btn");
+const accountLoginBtn = document.getElementById("login-logout-btn");
+const profilePageBtn = document.getElementById("profile-page-btn");
+const loader = document.getElementById("loader");
+const overlay = document.getElementById("overlay");
+const userStoryBtns = Array.from(
+  contentContainer.querySelectorAll(".home-button6")
+);
+const userStoryBtnsRight = Array.from(
+  contentContainer.querySelectorAll(".home-button7")
+);
 
+// FILTER CONTENT
 async function filterContent() {
-  let category = filterBtn.value;
+  const category = filterBtn.value;
 
   try {
     const contentDocuments = [];
@@ -36,9 +52,9 @@ async function filterContent() {
       contentElement.classList.add("content-box");
 
       const html = ` 
-      <div data-date="${doc.decade}" class="home-timeline-l-container">
+      <div data-date=${doc.decade} class="home-timeline-l-container">
       <div class="home-year-container">
-        <h2 class="home-text04 h2">${doc.decade}</h2>
+        <h2 class="home-text05 h2">${doc.decade}</h2>
       </div>
       <div class="home-line-container">
         <div class="home-line-container1">
@@ -58,108 +74,19 @@ async function filterContent() {
         </div>
       </div>
       <div class="home-event-text-container">
-        <div class="home-container10">
-          <span class="home-text05">${doc.title}</span>
-          <span class="home-text06">
+        <div class="home-container12">
+          <span class="home-text06">${doc.title}</span>
+          <span class="home-text07">
           ${doc.content}
           </span>
         </div>
       </div>
-      <div class="home-user-modal-container">
-        <h2 class="home-text07">Your storIES</h2>
-        <div class="home-testimonial-card">
-          <div class="home-testimonial">
-            <svg viewBox="0 0 1024 1024" class="home-icon08">
-              <path
-                d="M225 448c123.712 0 224 100.29 224 224 0 123.712-100.288 224-224 224s-224-100.288-224-224l-1-32c0-247.424 200.576-448 448-448v128c-85.474 0-165.834 33.286-226.274 93.726-11.634 11.636-22.252 24.016-31.83 37.020 11.438-1.8 23.16-2.746 35.104-2.746zM801 448c123.71 0 224 100.29 224 224 0 123.712-100.29 224-224 224s-224-100.288-224-224l-1-32c0-247.424 200.576-448 448-448v128c-85.474 0-165.834 33.286-226.274 93.726-11.636 11.636-22.254 24.016-31.832 37.020 11.44-1.8 23.16-2.746 35.106-2.746z"
-              ></path>
-            </svg>
-            <span class="home-text08">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              In lorem lorem, malesuada in metus vitae, scelerisque
-              accumsan ipsum.
-            </span>
-            <div class="home-like-container">
-              <div class="home-container11">
-                <span class="home-text09">
-                  <span class="home-text10">15</span>
-                  <span></span>
-                  <br />
-                </span>
-                <span class="home-text13">Likes</span>
-              </div>
-              <div class="home-container12">
-                <button
-                  id="filter-stories"
-                  type="button"
-                  class="home-button3 button"
-                >
-                  Like
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="home-container13">
-            <div class="home-container14">
-              <img
-                alt="profile"
-                src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE0fHxwb3J0cmFpdHxlbnwwfHx8fDE2MjYzNzg5NzI&amp;ixlib=rb-1.2.1&amp;w=200"
-                class="home-image3"
-              />
-              <span class="home-text14">Test User</span>
-            </div>
-          </div>
-        </div>
-        <div class="home-testimonial-card1">
-          <div class="home-testimonial1">
-            <svg viewBox="0 0 1024 1024" class="home-icon10">
-              <path
-                d="M225 448c123.712 0 224 100.29 224 224 0 123.712-100.288 224-224 224s-224-100.288-224-224l-1-32c0-247.424 200.576-448 448-448v128c-85.474 0-165.834 33.286-226.274 93.726-11.634 11.636-22.252 24.016-31.83 37.020 11.438-1.8 23.16-2.746 35.104-2.746zM801 448c123.71 0 224 100.29 224 224 0 123.712-100.29 224-224 224s-224-100.288-224-224l-1-32c0-247.424 200.576-448 448-448v128c-85.474 0-165.834 33.286-226.274 93.726-11.636 11.636-22.254 24.016-31.832 37.020 11.44-1.8 23.16-2.746 35.106-2.746z"
-              ></path>
-            </svg>
-            <span class="home-text15">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              In lorem lorem, malesuada in metus vitae, scelerisque
-              accumsan ipsum.
-            </span>
-            <div class="home-like-container1">
-              <div class="home-container15">
-                <span class="home-text16">
-                  <span class="home-text17">15</span>
-                  <span></span>
-                  <br />
-                </span>
-                <span class="home-text20">Likes</span>
-              </div>
-              <div class="home-container16">
-                <button
-                  id="filter-stories"
-                  type="button"
-                  class="home-button4 button"
-                >
-                  Like
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="home-container17">
-            <div class="home-container18">
-              <img
-                alt="profile"
-                src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE0fHxwb3J0cmFpdHxlbnwwfHx8fDE2MjYzNzg5NzI&amp;ixlib=rb-1.2.1&amp;w=200"
-                class="home-image4"
-              />
-              <span class="home-text21">Test User</span>
-            </div>
-          </div>
-        </div>
-      </div>
       <button
-        id="filter-stories-right"
+      data-date=${doc.decade}
         type="button"
-        class="home-button5 button"
+        class="home-button6 button"
       >
-        Show YOUR STORIES
+        User Stories in ${doc.decade}
       </button>
       </div>
       `;
@@ -168,13 +95,22 @@ async function filterContent() {
 
       contentContainer.appendChild(contentElement);
     });
+
+    // RE-ADD BUTTON FUNCTION TO DYNAMIC BUTTONS
+    const userStoryBtns = Array.from(
+      contentContainer.querySelectorAll(".home-button6")
+    );
+
+    userStoryBtns.forEach((btn) => {
+      btn.addEventListener("click", renderUserStories);
+    });
   } catch (error) {
     console.error("Error retrieving content:", error);
     alert("Failed to retrieve content. Please try again.");
   }
 }
 
-// Sort Content
+// SORT CONTENT
 function sortContent() {
   const isAscending = sortBtn.classList.contains("asc");
 
@@ -201,5 +137,127 @@ function sortContent() {
   content.forEach((data) => contentContainer.appendChild(data));
 }
 
+// RENDER STORIES
+async function renderUserStories(e) {
+  const decadeFilter = parseInt(e.target.dataset.date);
+  overlay.style.display = "flex";
+  const storiesContainer = document.getElementById("user-story-modal");
+  storiesContainer.innerHTML = "";
+  const header = document.createElement("h2");
+  header.textContent = `Stories of the ${decadeFilter}`;
+  header.classList.add("home-text08");
+  header.id = "your-stories-left";
+  storiesContainer.appendChild(header);
+
+  const loader = document.createElement("div");
+  loader.id = "loader";
+
+  storiesContainer.appendChild(loader);
+
+  try {
+    const storiesSnapshot = await getDocs(collection(firebaseDB, "stories"));
+    storiesContainer.removeChild(loader);
+
+    const totalStories = [];
+    storiesSnapshot.forEach((storyDoc) => totalStories.push(storyDoc.data()));
+
+    const filteredStories = totalStories.filter((story) => {
+      const decade = Math.floor(story.decade / 10) * 10;
+      return decade === decadeFilter;
+    });
+
+    filteredStories.forEach((story) => {
+      const user = firebaseAuth.currentUser;
+      // const isLikedByUser =
+      // user && storyData.likedBy && storyData.likedBy.includes(user.uid);
+      console.log(story);
+      const storyElement = document.createElement("div");
+      storyElement.classList.add("home-testimonial-card");
+
+      storyElement.innerHTML = renderStoryDiv(story);
+      storiesContainer.appendChild(storyElement);
+    });
+
+    // Add event listeners for like buttons
+    const likeButtons = document.querySelectorAll(".like-button");
+    likeButtons.forEach((likeButton) => {
+      likeButton.addEventListener("click", async (event) => {
+        const storyId = event.target.getAttribute("data-story-id");
+        await handleLikeButton(storyId);
+      });
+    });
+  } catch (error) {
+    console.error("Error retrieving stories:", error);
+    alert("Failed to retrieve stories. Please try again.");
+  }
+}
+
+// DISPLAY USER STORY FORM
+function displayStoryForm() {
+  storyFormContainer.style.display = "flex";
+}
+
+// SUBMIT STORY
+async function submitYourStory(e) {
+  e.preventDefault();
+  const user = firebaseAuth.currentUser;
+  if (!user) {
+    alert("You need to be logged in to create a story.");
+    return;
+  }
+
+  const title = document.getElementById("story-title").value;
+  const content = document.getElementById("story-content").value;
+  const date = document.getElementById("story-date-input").value;
+
+  //   CONVERT INPUT TO JUST GET DECADE
+  const selectedDate = new Date(date);
+  const decade = selectedDate.getFullYear();
+
+  const newStory = {
+    title,
+    content,
+    date,
+    decade,
+    author: user.displayName || "anon",
+    likeCounter: 0,
+    createdAt: new Date(),
+  };
+
+  if (user) {
+    try {
+      const storyRef = doc(firebaseDB, "stories", generateUniqueID());
+      await setDoc(storyRef, newStory);
+
+      alert("Story created successfully!");
+    } catch (error) {
+      console.error("Error creating story: ", error);
+      alert("Failed to create story. Please try again.");
+    }
+  } else {
+    alert("You need to be logged in to create a story.");
+  }
+
+  closeModal(storyFormContainer);
+}
+
+function closeModal(element) {
+  element.style.display = "none";
+}
+// CLOSE USER STORYS MODAL
+
+overlay.addEventListener("click", () => closeModal(overlay));
+
+userStoryBtns.forEach((btn) =>
+  btn.addEventListener("click", renderUserStories)
+);
+userStoryBtnsRight.forEach((btn) =>
+  btn.addEventListener("click", renderUserStories)
+);
+dontSubmitStoryBtn.addEventListener("click", () =>
+  closeModal(storyFormContainer)
+);
+storyFormContainer.addEventListener("submit", submitYourStory);
+shareStoryBtn.addEventListener("click", displayStoryForm);
 filterBtn.addEventListener("change", filterContent);
 sortBtn.addEventListener("click", sortContent);
