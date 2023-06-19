@@ -1,5 +1,14 @@
-#  Equality Engineers
+<table style='width:80%; content-align:center'>
+    <tr>
+       <td> <img src="https://res.cloudinary.com/djdefbnij/image/upload/v1685616402/pride2023banner_s33wvv.jpg"; alt="hero image, example screenshots of the app" >  </td>
+    </tr>
+</table>
 
+
+
+# 🌈  Pride Representation 🥳
+
+## Team 5 : Equality Engineers
 
 This website aims to be a place of stories of the LGTBQ+ community - stories that we find in the history records, but in particular also stories of the website users. We offer users a place to educate themselves about the LGTBQ+ history, and give them the opportunity to place their particular story in the timeline that has never made its way into the history books. The ultimate aim is to be a social place where users can feel free to share their feelings, expressing their support by like buttons, and foster the value of listening to each other in a loving atmosphere.
 
@@ -7,7 +16,7 @@ This website aims to be a place of stories of the LGTBQ+ community - stories tha
 Link to the live website : [Equality Engineers on Netlify](https://progress-timeline.netlify.app/index.html)
 
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black) ![Node](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white )
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black) ![Node](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white )
 
 
 ![GitHub top language](https://img.shields.io/github/languages/top/nils-n/progress-timeline?logo=GitHub&style=flat-square) ![GitHub contributors](https://img.shields.io/github/contributors/nils-n/progress-timeline?color=oo&logo=Github) ![GitHub last commit](https://img.shields.io/github/last-commit/nils-n/progress-timeline?logo=Github)
@@ -19,8 +28,85 @@ Link to the live website : [Equality Engineers on Netlify](https://progress-time
     </tr>
 </table>
 
-## *Love and compassion are necessities, not luxuries. Without them, humanity cannot survive* - __Dalai Lama__
+<br>
 
+_Love and compassion are necessities, not luxuries. Without them, humanity cannot survive_
+__Dalai Lama__
+
+<br>
+<br>
+<br>
+
+
+- [🌈  Pride Representation 🥳](#--pride-representation-)
+  - [Team 5 : Equality Engineers](#team-5--equality-engineers)
+  - [Criteria](#criteria)
+  - [Intro](#intro)
+  - [Goal](#goal)
+    - [Problem Statement:](#problem-statement)
+    - [Objectives:](#objectives)
+    - [Target audiences:](#target-audiences)
+    - [Benefits:](#benefits)
+  - [Tech](#tech)
+  - [Credits](#credits)
+
+
+## Criteria
+In this section, we will briefly discuss how our team addressed the applicable criteria:
+
+- ✨ What Framework was used?
+  - *[Firebase](https://firebase.google.com/) and [node](https://nodejs.org/)*:  to store signed-up user and their stories (CRUD), and to store the timeline events for dynamically rendering the content of the page 
+  - *[Figma](https://www.figma.com/) and [TeleportHQ](https://teleporthq.io/)* UI design  created in Figma for different viewport sizes (4 breakpoints). Designs then exported into TeleportHQ to create the HTML/CSS. 
+  - The content of HTML was the dynamically rendered using vanilla JS
+- ✨ How innovative is the idea and project?
+  - Many websites  about the topic of the LBTQ+ history focus on specific events or have a slightly un-inspiring educational tone, or focus on a specific event or category
+  - This website makes use of latest web technologies to create a unique user experience, including interactive elements that create a fun learning journey and social interactions. 
+  - We also have a unique approach to combine social interactions (such as adding an own story point to the timeline, like buttons) with education about may lesser know facts about the LGBTQ+ rights history
+  - We use modern UX/UI design approaches to create a overall positive user experience - we emphasize positive aspects of the sometimes dark LBTQ+ history to inspire the users by great people/muscians of the history that repsonded with love to hate.
+- ✨ Was the README Template used and expanded upon?
+  - yes
+- ✨ Was the GitHub Project used to plan and execute the project?
+  - We used a project kanban to keep track of user stories/epics, distribute tasks and keep track of progress, see [GitHub Project Board Kanban](https://github.com/users/nils-n/projects/7)
+- ✨ Is the project completed and deployed?
+    - yes an MVP was created and deployed on [Netlify](https://www.netlify.com/) - with many features left for future extension
+
+## Intro 
+This project aims to be a helpful resource to the LGBTQ+ movement. in order to fight prejudices and intolerance towards marginalized groups in our society we find that knowledge and education, together with love and support, are the best tools. The website of this project serves as both a source of knowledge about the hardships and obstacles that the movement has had to overcome thoughout modern history, as well as a platform for making LGBTQ+ voices heard and for offering support and inspiration to the members of the LGBTQ+ community.
+
+Due to the importance of both education and support for this cause this project stretches over a few themes: namely Empowering Queer Voices and Fostering Inclusive Allyship by giving the users the incredibly valuable possibility of sharing their stories, and to be heard by others, who in turn can offer support and advice through the comment feature; and through knowledge and education by the LGBTQ+ timeline which offers an easy-to-grasp overview of the movement as well as more in-depth descriptions it helps to serve Advocacy and Activism for the community. 
+
+
+## Goal
+
+### Problem Statement: 
+
+Prejudices can cause stigmas which are hard to overcome as a member of the LGBTQ+ community. It can lead to people feeling isolated and can have serious consequences. People need access to supportive social structures where they can feel seen and understood. 
+
+### Objectives:
+
+1. This website can through its LGBTQ+ timeline feature educate and inspire people so as to fight prejudices and help marginalized people feel part of the community.
+
+2. Through the story feature users can empower themselves by posting their LGBTQ+ stories, sharing their experiences with others and help inspire other users with everyday examples of the joys and hardships that permeates the lives of people in the LGBTQ+ community. The comment feature can further help the users to a feeling of being part of something bigger than themselves and is a powerful way to connect people to offer support and advice to one another.
+
+### Target audiences:
+
+The primary target audience is people of all ages who are in some way part of the LGBTQ+ community. Secondary target audiences are knowledge seeking individuals or organizations such as schools or other learning institutions. 
+
+### Benefits:
+
+By giving the general public more education regarding the LGBTQ+ movement it will increase the understanding and acceptance of this marginalized group. Furthermore, the story and comment sections of the website can contribute with a safe environment which is essential to the well-being and in the identity-building process of people. 
+
+
+## Tech
+In the tech section, we provide information about the technology stack, dependencies, and any technical details related to the project.
+
+
+## Credits
+We would like to give credit to the following individuals, organizations, and resources that have contributed to the project or provided inspiration:
+- 🙌 [Contributor 1]
+- 🙌 [Contributor 2]
+- 🌐 [External Resource 1]
+- 🌐 [External Resource 2]
 
 This Repository will be dedicated to timeline of LGBTQ+, where we will do our best to represent impact they have made to our world throughout history and how world has impacted them. There is numerous facts of history, what has happened to people, who think, believe or love in different way, not according to society standards of that time. And no matter how world was cruel to them, they still loved and shared it to world. There is enormous number of famous quotes, but at this point i remember this one:
 
@@ -237,56 +323,3 @@ Susan Stryker is a prominent transgender historian, filmmaker, and gender theori
 <a href="https://commons.wikimedia.org/wiki/File:George_Chauncey_(2000).jpg">Source and Copyright Rules</a>
 </p></details>
 
-
-
-## 🌈 Pride Representation 🥳
-![Pride Representation Banner](https://res.cloudinary.com/djdefbnij/image/upload/v1685616402/pride2023banner_s33wvv.jpg)
-
-
-## Criteria
-In this section, we will briefly discuss how our team addressed the applicable criteria:
-
-- ✨ What Framework was used?
-- ✨ How innovative is the idea and project?
-- ✨ Was the README Template used and expanded upon?
-- ✨ Was the GitHub Project used to plan and execute the project?
-- ✨ Is the project completed and deployed?
-
-
-## Intro 
-This project aims to be a helpful resource to the LGBTQ+ movement. in order to fight prejudices and intolerance towards marginalized groups in our society we find that knowledge and education, together with love and support, are the best tools. The website of this project serves as both a source of knowledge about the hardships and obstacles that the movement has had to overcome thoughout modern history, as well as a platform for making LGBTQ+ voices heard and for offering support and inspiration to the members of the LGBTQ+ community.
-
-Due to the importance of both education and support for this cause this project stretches over a few themes: namely Empowering Queer Voices and Fostering Inclusive Allyship by giving the users the incredibly valuable possibility of sharing their stories, and to be heard by others, who in turn can offer support and advice through the comment feature; and through knowledge and education by the LGBTQ+ timeline which offers an easy-to-grasp overview of the movement as well as more in-depth descriptions it helps to serve Advocacy and Activism for the community. 
-
-
-## Goal
-
-### Problem Statement: 
-
-Prejudices can cause stigmas which are hard to overcome as a member of the LGBTQ+ community. It can lead to people feeling isolated and can have serious consequences. People need access to supportive social structures where they can feel seen and understood. 
-
-### Objectives:
-
-1. This website can through its LGBTQ+ timeline feature educate and inspire people so as to fight prejudices and help marginalized people feel part of the community.
-
-2. Through the story feature users can empower themselves by posting their LGBTQ+ stories, sharing their experiences with others and help inspire other users with everyday examples of the joys and hardships that permeates the lives of people in the LGBTQ+ community. The comment feature can further help the users to a feeling of being part of something bigger than themselves and is a powerful way to connect people to offer support and advice to one another.
-
-### Target audiences:
-
-The primary target audience is people of all ages who are in some way part of the LGBTQ+ community. Secondary target audiences are knowledge seeking individuals or organizations such as schools or other learning institutions. 
-
-### Benefits:
-
-By giving the general public more education regarding the LGBTQ+ movement it will increase the understanding and acceptance of this marginalized group. Furthermore, the story and comment sections of the website can contribute with a safe environment which is essential to the well-being and in the identity-building process of people. 
-
-
-## Tech
-In the tech section, we provide information about the technology stack, dependencies, and any technical details related to the project.
-
-
-## Credits
-We would like to give credit to the following individuals, organizations, and resources that have contributed to the project or provided inspiration:
-- 🙌 [Contributor 1]
-- 🙌 [Contributor 2]
-- 🌐 [External Resource 1]
-- 🌐 [External Resource 2]
