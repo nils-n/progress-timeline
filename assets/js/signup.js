@@ -9,9 +9,12 @@ import { firebaseAuth, firebaseDB } from "../../config/firebase-config";
 const googleSignUpButton = document.getElementById("signup-google-btn");
 const emailSignInButton = document.getElementById("signup-submit-btn");
 
-const userSignUp = async () => {
+const userSignUp = async (e) => {
+  e.preventDefault();
   const signUpEmail = document.getElementById("signup-email").value;
   const signUpPassword = document.getElementById("signup-password").value;
+  const signUpName = document.getElementById("signup-name").value;
+  const signUpUserName = document.getElementById("signup-name").value;
 
   try {
     const { user } = await createUserWithEmailAndPassword(
@@ -19,7 +22,15 @@ const userSignUp = async () => {
       signUpEmail,
       signUpPassword
     );
-    createUserDocumentFromAuth(user);
+
+    const userDocument = {
+      ...user,
+      displayName: signUpUserName || "anon",
+      name: signUpName,
+    };
+
+    console.log(userDocument);
+    createUserDocumentFromAuth(userDocument);
 
     alert("You have signed up successfully!");
   } catch (error) {
@@ -34,6 +45,8 @@ const signInWithGoogle = async () => {
   try {
     const result = await signInWithPopup(firebaseAuth, provider);
     const user = result.user;
+
+    createUserDocumentFromAuth(user);
     alert("You have signed in with Google successfully!");
   } catch (error) {
     const errorCode = error.code;
@@ -50,15 +63,21 @@ export const createUserDocumentFromAuth = async (userAuth) => {
   const userSnapShot = await getDoc(userDocRef);
 
   if (!userSnapShot.exists()) {
-    const { email } = userAuth;
+    const { email, displayName, name } = userAuth;
 
     const createAt = new Date();
 
+    const newDocument = {
+      createAt,
+      email,
+      name: displayName || name,
+      userName: displayName,
+      image:
+        "https://ih1.redbubble.net/image.2112861038.5445/st,small,507x507-pad,600x600,f8f8f8.jpg",
+    };
+
     try {
-      await setDoc(userDocRef, {
-        email,
-        createAt,
-      });
+      await setDoc(userDocRef, newDocument);
     } catch (err) {
       console.log(`error creating user`, err.message);
     }

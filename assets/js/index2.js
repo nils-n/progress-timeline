@@ -68,7 +68,7 @@ async function filterContent() {
         <div class="home-image-container">
           <img
             alt="image"
-            src="https://play.teleporthq.io/static/svg/default-img.svg"
+            src="${doc.imageUrl}"
             class="home-image2"
           />
         </div>
@@ -196,6 +196,8 @@ async function renderUserStories(e) {
 function displayStoryForm() {
   storyFormContainer.style.display = "flex";
 }
+
+console.log(firebaseAuth);
 
 // SUBMIT STORY
 async function submitYourStory(e) {
