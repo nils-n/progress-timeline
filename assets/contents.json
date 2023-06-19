@@ -93,7 +93,6 @@
       "content": "Ellen DeGeneres, the beloved American comedian, actress, and TV host, has been a trailblazer for LGBTQ+ representation in the entertainment industry. After coming out as a lesbian in 1997, she faced significant backlash, but her authenticity and resilience paved the way for greater visibility and acceptance. Her groundbreaking sitcom 'Ellen' became the first prime-time show to feature an openly gay lead character. Since then, DeGeneres has become a powerful advocate for LGBTQ+ rights and a symbol of love, inclusivity, and kindness. Her immense popularity and influential platform have helped shape public perceptions and promote understanding, making her an icon for the LGBTQ+ community.",
       "date": "08-09-03",
       "decade": "2000",
-
       "imageUrl": "https://github.com/nils-n/progress-timeline/blob/main/assets/images/Ellen_DeGeneres-2009.jpeg?raw=true",
       "title": "Ellen DeGeneres"
     },
@@ -106,6 +105,207 @@
       "title": "Alan Turing"
     },
     {
+
+      "title": "Billie Jean King",
+      "content": "Billie Jean King, a legendary tennis player, made history on September 20, 1973, when she defeated Bobby Riggs in the 'Battle of the Sexes' tennis match. This groundbreaking event championed gender equality in sports and had a profound impact on society. King's victory showcased women's athletic abilities and challenged the notion that men were superior in sports. She remains an iconic figure, inspiring generations of athletes to pursue their dreams without limitations.",
+      "date": "September 20, 1973",
+      "decade": "1970s",
+      "category": "Tennis",
+      "imageUrl": "https://example.com/billie-jean-king.jpg"
+    },
+    {
+      "title": "Martina Navratilova",
+      "content": "Martina Navratilova is one of the most accomplished tennis players in history. Dominating the sport throughout the 1980s, Navratilova won a record 18 Grand Slam singles titles, including a remarkable streak of six consecutive victories at Wimbledon. Her aggressive style of play revolutionized women's tennis and set new standards for athleticism. Navratilova's achievements and advocacy for LGBTQ+ rights have made her an influential figure both on and off the court.",
+      "date": "1978-1990",
+      "decade": "1980s",
+      "category": "Tennis",
+      "imageUrl": "https://example.com/martina-navratilova.jpg"
+    },
+    {
+      "title": "Greg Louganis",
+      "content": "Greg Louganis is widely regarded as one of the greatest divers in history. Despite facing numerous challenges and personal adversity, Louganis won a total of four Olympic gold medals in diving. His achievements at the 1984 and 1988 Olympics showcased his exceptional skills, precision, and grace. Louganis is not only remembered for his remarkable athletic accomplishments but also for his bravery in overcoming the stigma surrounding HIV/AIDS. He has become an influential advocate for LGBTQ+ rights in the sporting world.",
+      "date": "1984, 1988",
+      "decade": "1980s",
+      "category": "Diving",
+      "imageUrl": "https://example.com/greg-louganis.jpg"
+    },
+    {
+      "title": "Justin Fashanu",
+      "content": "In 1990, Justin Fashanu became the first openly gay male professional footballer. His announcement broke significant barriers in the sport and raised awareness about LGBTQ+ representation in football. Fashanu's courage and authenticity paved the way for future generations of LGBTQ+ athletes. Although his career faced challenges, his impact on the conversation around inclusivity and acceptance remains significant.",
+      "date": "1990",
+      "decade": "1990s",
+      "category": "Football",
+      "imageUrl": "https://example.com/justin-fashanu.jpg"
+    },
+    {
+      "title": "Orlando Cruz",
+      "content": "Orlando Cruz made history in 2012 when he became the first openly gay active professional boxer. By publicly sharing his sexual orientation, Cruz challenged stereotypes in a traditionally masculine sport and became an inspiration for LGBTQ+ athletes around the world. His bravery and resilience have made a lasting impact on the boxing community, promoting inclusivity and acceptance.",
+      "date": "2012",
+      "decade": "2010s",
+      "category": "Boxing",
+      "imageUrl": "https://example.com/orlando-cruz.jpg"
+    },
+    {
+      "title": "Megan Rapinoe",
+      "content": "Megan Rapinoe, a prominent figure in women's soccer, led the US women's national team to victory in the 2019 FIFA Women's World Cup. As the team's co-captain, Rapinoe not only showcased her exceptional skills on the field but also used her platform to advocate for LGBTQ+ rights and gender equality. Her unwavering dedication to social justice has made her an influential voice both within and outside the world of sports.",
+      "date": "2019",
+      "decade": "2010s",
+      "category": "Soccer",
+      "imageUrl": "https://example.com/megan-rapinoe.jpg"
+    },
+    {
+      "title": "Tom Daley",
+      "content": "Tom Daley, a British diver, has achieved remarkable success in the sport and become an influential figure for LGBTQ+ youth worldwide. With multiple Olympic medals to his name, including two bronze medals in 2012 and 2016, Daley has proven himself as one of the best divers of his generation. Throughout his career, he has fearlessly embraced his identity and used his platform to advocate for LGBTQ+ rights, becoming an inspiring role model for aspiring athletes.",
+      "date": "2012, 2016",
+      "decade": "2010s",
+      "category": "Diving",
+      "imageUrl": "https://example.com/tom-daley.jpg"
+    },
+    {
+      "title": "Gareth Thomas",
+      "content": "Gareth Thomas, a former Welsh rugby union player, made headlines in 2009 when he publicly came out as gay. By becoming the first openly gay professional rugby union player, Thomas challenged stereotypes and brought important conversations about inclusivity to the forefront. His bravery and advocacy have had a profound impact on the sporting community, paving the way for greater acceptance of LGBTQ+ athletes.",
+      "date": "2009",
+      "decade": "2000s",
+      "category": "Rugby",
+      "imageUrl": "https://example.com/gareth-thomas.jpg"
+    },
+    {
+      "title": "Sue Bird",
+      "content": "Sue Bird is widely recognized as one of the most accomplished players in the history of the Women's National Basketball Association (WNBA). Throughout her career, Bird has won multiple championships, solidifying her status as an all-time great. Alongside her exceptional basketball skills, she has been an outspoken advocate for LGBTQ+ rights in sports. Bird's leadership both on and off the court has made a lasting impact on the world of women's basketball.",
+      "date": "2004-present",
+      "decade": "2000s",
+      "category": "Basketball",
+      "imageUrl": "https://example.com/sue-bird.jpg"
+    },
+    {
+      "title": "Caster Semenya",
+      "content": "Caster Semenya, an Olympic gold medalist in track and field, has faced significant challenges and discrimination due to her gender identity. Despite controversy and legal battles surrounding regulations on testosterone levels in female athletes, Semenya has remained resilient. Her achievements on the track and her fight for equality have sparked important discussions about gender and inclusivity in sports.",
+      "date": "2009-2016",
+      "decade": "2010s",
+      "category": "Track and Field",
+      "imageUrl": "https://example.com/caster-semenya.jpg"
+    },
+    {
+      "title": "Alan Turing",
+      "content": "Alan Turing was a British mathematician, logician, and computer scientist who played a crucial role in the development of modern computing. During World War II, he was instrumental in breaking the German Enigma code, which significantly aided the Allied forces. Turing's work laid the foundation for the concept of a programmable computer and artificial intelligence. Despite his immense contributions, he faced persecution for his homosexuality, and tragically, he died at a young age. Turing's legacy as a pioneer in computing and his impact on LGBTQ+ rights continue to be recognized and celebrated today.",
+      "date": "1912-1954",
+      "decade": "20th century",
+      "category": "Computer Science",
+      "imageUrl": "https://example.com/alan-turing.jpg"
+    },
+    {
+      "title": "Sally Ride",
+      "content": "Sally Ride made history in 1983 as the first American woman to travel to space. As a physicist and astronaut, she broke barriers and inspired countless young people to pursue careers in science and space exploration. Ride's accomplishments not only highlighted her scientific prowess but also showcased the importance of gender and LGBTQ+ representation in STEM fields. Following her career at NASA, she dedicated herself to advancing science education and encouraging young girls to pursue their scientific dreams.",
+      "date": "1983",
+      "decade": "1980s",
+      "category": "Astronomy",
+      "imageUrl": "https://example.com/sally-ride.jpg"
+    },
+    {
+      "title": "Chien-Shiung Wu",
+      "content": "Chien-Shiung Wu was a Chinese-American physicist known for her groundbreaking work on the theory of beta decay, which helped disprove the principle of conservation of parity. Her experiments provided evidence that fundamental laws of physics violated the symmetry between left and right. Wu's work challenged long-held beliefs and contributed significantly to the field of nuclear physics. Throughout her career, she faced gender and racial discrimination, but her perseverance and scientific achievements have solidified her status as one of the most influential physicists of the 20th century.",
+      "date": "1937-1997",
+      "decade": "20th century",
+      "category": "Physics",
+      "imageUrl": "https://example.com/chien-shiung-wu.jpg"
+    },
+    {
+      "title": "Ben Barres",
+      "content": "Ben Barres was a neurobiologist and advocate for diversity in science. His research on the role of glial cells in the central nervous system made significant contributions to our understanding of brain development and function. Barres was the first openly transgender scientist in the National Academy of Sciences and used his platform to raise awareness about the challenges faced by LGBTQ+ individuals in academia. He was a strong advocate for gender equality and fought against discrimination in science. Barres' scientific achievements and activism continue to inspire future generations of scientists.",
+      "date": "1954-2017",
+      "decade": "20th century",
+      "category": "Neurobiology",
+      "imageUrl": "https://example.com/ben-barres.jpg"
+    },
+    {
+      "title": "Sara Josephine Baker",
+      "content": "Sara Josephine Baker was an American physician and public health pioneer. She played a crucial role in advancing child health and combating infectious diseases in New York City. Baker's work led to significant improvements in sanitation and the reduction of infant mortality rates. She was also openly lesbian and lived with her partner for many years. Baker's dedication to public health and her contributions to healthcare have left a lasting impact on society.",
+      "date": "1873-1945",
+      "decade": "20th century",
+      "category": "Medicine",
+      "imageUrl": "https://example.com/sara-josephine-baker.jpg"
+    },
+    {
+      "title": "Alan Turing",
+      "content": "Alan Turing was a British mathematician, logician, and computer scientist who played a crucial role in the development of modern computing. During World War II, he was instrumental in breaking the German Enigma code, which significantly aided the Allied forces. Turing's work laid the foundation for the concept of a programmable computer and artificial intelligence. Despite his immense contributions, he faced persecution for his homosexuality, and tragically, he died at a young age. Turing's legacy as a pioneer in computing and his impact on LGBTQ+ rights continue to be recognized and celebrated today.",
+      "date": "1912-1954",
+      "decade": "20th century",
+      "category": "Computer Science",
+      "imageUrl": "https://example.com/alan-turing.jpg"
+    },
+    {
+      "title": "Sally Ride",
+      "content": "Sally Ride made history in 1983 as the first American woman to travel to space. As a physicist and astronaut, she broke barriers and inspired countless young people to pursue careers in science and space exploration. Ride's accomplishments not only highlighted her scientific prowess but also showcased the importance of gender and LGBTQ+ representation in STEM fields. Following her career at NASA, she dedicated herself to advancing science education and encouraging young girls to pursue their scientific dreams.",
+      "date": "1983",
+      "decade": "1980s",
+      "category": "Astronomy",
+      "imageUrl": "https://example.com/sally-ride.jpg"
+    },
+    {
+      "title": "Chien-Shiung Wu",
+      "content": "Chien-Shiung Wu was a Chinese-American physicist known for her groundbreaking work on the theory of beta decay, which helped disprove the principle of conservation of parity. Her experiments provided evidence that fundamental laws of physics violated the symmetry between left and right. Wu's work challenged long-held beliefs and contributed significantly to the field of nuclear physics. Throughout her career, she faced gender and racial discrimination, but her perseverance and scientific achievements have solidified her status as one of the most influential physicists of the 20th century.",
+      "date": "1937-1997",
+      "decade": "20th century",
+      "category": "Physics",
+      "imageUrl": "https://example.com/chien-shiung-wu.jpg"
+    },
+    {
+      "title": "Ben Barres",
+      "content": "Ben Barres was a neurobiologist and advocate for diversity in science. His research on the role of glial cells in the central nervous system made significant contributions to our understanding of brain development and function. Barres was the first openly transgender scientist in the National Academy of Sciences and used his platform to raise awareness about the challenges faced by LGBTQ+ individuals in academia. He was a strong advocate for gender equality and fought against discrimination in science. Barres' scientific achievements and activism continue to inspire future generations of scientists.",
+      "date": "1954-2017",
+      "decade": "20th century",
+      "category": "Neurobiology",
+      "imageUrl": "https://example.com/ben-barres.jpg"
+    },
+    {
+      "title": "Sara Josephine Baker",
+      "content": "Sara Josephine Baker was an American physician and public health pioneer. She played a crucial role in advancing child health and combating infectious diseases in New York City. Baker's work led to significant improvements in sanitation and the reduction of infant mortality rates. She was also openly lesbian and lived with her partner for many years. Baker's dedication to public health and her contributions to healthcare have left a lasting impact on society.",
+      "date": "1873-1945",
+      "decade": "20th century",
+      "category": "Medicine",
+      "imageUrl": "https://example.com/sara-josephine-baker.jpg"
+    },
+    {
+      "title": "Harvey Milk",
+      "content": "Harvey Milk was an American politician and the first openly gay elected official in California. As a member of the San Francisco Board of Supervisors, Milk advocated for LGBTQ+ rights, social justice, and equality. His influential tenure was tragically cut short when he was assassinated in 1978, but his impact on the LGBTQ+ community and the fight for equal rights continues to resonate today. Milk's dedication to public service and his unwavering commitment to inclusivity have made him an iconic figure in LGBTQ+ history.",
+      "date": "1930-1978",
+      "decade": "20th century",
+      "category": "Politics",
+      "imageUrl": "https://example.com/harvey-milk.jpg"
+    },
+    {
+      "title": "Angela Davis",
+      "content": "Angela Davis is a political activist, scholar, and former member of the Communist Party USA. Throughout her career, Davis has been an outspoken advocate for civil rights, feminism, and LGBTQ+ rights. Her work has focused on combating institutionalized racism, mass incarceration, and other forms of systemic oppression. Davis's contributions to social justice and her steadfast commitment to equality have solidified her as a prominent figure in progressive politics.",
+      "date": "1944-present",
+      "decade": "21st century",
+      "category": "Politics",
+      "imageUrl": "https://example.com/angela-davis.jpg"
+    },
+    {
+      "title": "Tammy Baldwin",
+      "content": "Tammy Baldwin is an American politician who made history in 2012 as the first openly gay senator elected to the United States Senate. Representing the state of Wisconsin, Baldwin has been a strong advocate for affordable healthcare, economic fairness, and LGBTQ+ rights. Throughout her career, she has fought against discrimination and worked towards creating a more inclusive society. Baldwin's historic election and her continued efforts in Congress have paved the way for LGBTQ+ representation in politics.",
+      "date": "1962-present",
+      "decade": "21st century",
+      "category": "Politics",
+      "imageUrl": "https://example.com/tammy-baldwin.jpg"
+    },
+    {
+      "title": "Leo Varadkar",
+      "content": "Leo Varadkar is an Irish politician who made history in 2017 when he became the first openly gay Taoiseach (Prime Minister) of Ireland. Varadkar has been a vocal advocate for LGBTQ+ rights and has worked to advance equality and social progress in Ireland. His leadership has helped shape public opinion and policies, making Ireland a more inclusive and accepting country. Varadkar's achievements have had a significant impact on LGBTQ+ representation in politics globally.",
+      "date": "1979-present",
+      "decade": "21st century",
+      "category": "Politics",
+      "imageUrl": "https://example.com/leo-varadkar.jpg"
+    },
+    {
+      "title": "Christine Burns",
+      "content": "Christine Burns is a British political activist and one of the key figures in the fight for transgender rights. She played a pivotal role in advocating for the Gender Recognition Act 2004, which granted legal recognition to transgender individuals in the UK. Burns has worked tirelessly to challenge stereotypes, educate the public, and promote inclusivity and equality for transgender people. Her activism has had a lasting impact on transgender rights and paved the way for progress in the UK and beyond.",
+      "date": "1954-present",
+      "decade": "21st century",
+      "category": "Politics",
+      "imageUrl": "https://example.com/christine-burns.jpg"
+    },
+    {  
       "category": "science",
       "content": "Harald zur Hausen's contributions to science and his research on human papillomavirus (HPV) and its link to cervical cancer did not directly address the perspective that gay individuals created AIDS. However, his work, along with other scientists, has helped challenge and debunk the misconceptions and stigmatizing beliefs surrounding the origins and transmission of HIV/AIDS. By identifying HPV as a separate virus with its own associated health risks, zur Hausen's research has contributed to a more accurate understanding of different viruses and their respective impacts on public health. This has played a part in dispelling unfounded notions linking HIV/AIDS exclusively to the gay community and promoting a more inclusive and evidence-based perspective on the disease.",
       "date": "07-12-2008",
