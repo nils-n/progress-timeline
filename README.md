@@ -103,10 +103,40 @@ In the tech section, we provide information about the technology stack, dependen
 
 ## Credits
 We would like to give credit to the following individuals, organizations, and resources that have contributed to the project or provided inspiration:
-- 🙌 [Contributor 1]
-- 🙌 [Contributor 2]
-- 🌐 [External Resource 1]
-- 🌐 [External Resource 2]
+
+<table style='width:100%; content-align:center'>
+  <tr>
+       <th style='width:14%'> Backend Server  </th>
+       <th style='width:14%'> UX Design  </th>
+       <th style='width:14%'> UX Design / SCRUM Master </th>
+       <th style='width:14%'> Backend Server   </th>
+       <th style='width:14%'> UX / UI Design  </th>
+       <th style='width:14%'> Data Reseach / Readme </th>
+       <th style='width:14%'> Readme </th>
+    </tr> 
+    <tr>
+       <td style='text-align:center'> Niclas </td>
+       <td style='text-align:center'> Jad  </td>
+       <td style='text-align:center'> Nils</td>
+       <td style='text-align:center'> Darrach </td>
+       <td style='text-align:center'> Christian </td>
+       <td style='text-align:center'> Tomas </td>
+       <td style='text-align:center'> Martin </td>
+    </tr>
+    <tr>
+       <td style='text-align:center'> <img src="https://ca.slack-edge.com/T0L30B202-U03M22KFF46-11a1d1b943cd-512" ></td>
+       <td style='text-align:center'>  <img src="https://ca.slack-edge.com/T0L30B202-U02936E3N5C-e88ab1d40bab-512" ></td>
+       <td style='text-align:center'>  <img src="https://ca.slack-edge.com/T0L30B202-U04DA4ZBYQP-d6a19f923a1c-512" ></td>
+       <td style='text-align:center'>  <img src="https://ca.slack-edge.com/T0L30B202-U053H23P673-6de9e16f0259-512" ></td>
+       <td style='text-align:center'>  <img src="https://ca.slack-edge.com/T0L30B202-U04PE6X0RL5-ee7b350c4c2a-192" ></td>
+       <td style='text-align:center'>  <img src="https://ca.slack-edge.com/T0L30B202-U058M5AS1RV-gc06da59c044-512" ></td>
+       <td style='text-align:center'>  <img src="https://ca.slack-edge.com/T0L30B202-U04J398FB44-gf07707e07d9-512" ></td>
+    </tr>
+</table>
+
+- 🙌 Facilitator : Kera Kudmore 
+
+
 
 This Repository will be dedicated to timeline of LGBTQ+, where we will do our best to represent impact they have made to our world throughout history and how world has impacted them. There is numerous facts of history, what has happened to people, who think, believe or love in different way, not according to society standards of that time. And no matter how world was cruel to them, they still loved and shared it to world. There is enormous number of famous quotes, but at this point i remember this one:
 
