@@ -8,7 +8,6 @@ const sortBtn = document.getElementById("sort-btn");
 const storyFormContainer = document.getElementById("story-UI-container");
 const contentContainer = document.getElementById("content-wrapper");
 const shareStoryBtn = document.getElementById("share-story-button");
-const submitStoryBtn = document.getElementById("submit-story-btn");
 const dontSubmitStoryBtn = document.getElementById("dont-submit-story-btn");
 const accountLoginBtn = document.getElementById("login-logout-btn");
 const profilePageBtn = document.getElementById("profile-page-btn");
@@ -19,7 +18,7 @@ const userStoryBtns = Array.from(
 
 // FILTER CONTENT
 async function filterContent() {
-  let category = filterBtn.value;
+  const category = filterBtn.value;
 
   try {
     const contentDocuments = [];
@@ -79,6 +78,7 @@ async function filterContent() {
         </div>
       </div>
       <button
+      data-date=${doc.decade}
         type="button"
         class="home-button6 button"
       >
@@ -97,9 +97,9 @@ async function filterContent() {
       contentContainer.querySelectorAll(".home-button6")
     );
 
-    userStoryBtns.forEach((btn) =>
-      btn.addEventListener("click", renderUserStories)
-    );
+    userStoryBtns.forEach((btn) => {
+      btn.addEventListener("click", renderUserStories);
+    });
   } catch (error) {
     console.error("Error retrieving content:", error);
     alert("Failed to retrieve content. Please try again.");
@@ -134,7 +134,8 @@ function sortContent() {
 }
 
 // RENDER STORIES
-async function renderUserStories() {
+async function renderUserStories(e) {
+  const decadeFilter = parseInt(e.target.dataset.date);
   overlay.style.display = "flex";
   const storiesContainer = document.getElementById("user-story-modal");
   storiesContainer.innerHTML = "";
@@ -142,22 +143,30 @@ async function renderUserStories() {
   header.textContent = "Stories of the 90s";
   header.classList.add("home-text08");
   header.id = "your-stories-left";
+  storiesContainer.appendChild(header);
 
   try {
     const storiesSnapshot = await getDocs(collection(firebaseDB, "stories"));
-    storiesSnapshot.forEach((storyDoc) => {
-      const storyData = storyDoc.data();
+
+    const totalStories = [];
+    storiesSnapshot.forEach((storyDoc) => totalStories.push(storyDoc.data()));
+
+    const filteredStories = totalStories.filter((story) => {
+      const decade = Math.floor(story.decade / 10) * 10;
+      return decade === decadeFilter;
+    });
+
+    filteredStories.forEach((story) => {
       const user = firebaseAuth.currentUser;
       // const isLikedByUser =
       // user && storyData.likedBy && storyData.likedBy.includes(user.uid);
-
+      console.log(story);
       const storyElement = document.createElement("div");
       storyElement.classList.add("home-testimonial-card");
 
-      storyElement.innerHTML = renderStoryDiv(storyData);
+      storyElement.innerHTML = renderStoryDiv(story);
       storiesContainer.appendChild(storyElement);
     });
-    storiesContainer.insertBefore(header, storiesContainer.firstChild);
 
     // Add event listeners for like buttons
     const likeButtons = document.querySelectorAll(".like-button");
