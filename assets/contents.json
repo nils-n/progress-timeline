@@ -1,5 +1,5 @@
 {
-  "timeline-entries": [
+  "timeline": [
     {
       "category": "politics",
       "content": "Bill Clinton signed the Defense of Marriage Act (DOMA), which defined marriage as exclusively between one man and one woman, granting states the power to reject recognition of same-sex marriages. Consequently, this resulted in the denial of federal protections, privileges, access to employment benefits for partners, inheritance rights, immigration and residency rights, and complications with joint tax returns. In summary, a single stroke of a pen by one individual eliminated the rights of millions of people, effectively erasing their ability to enjoy equal treatment and opportunities in various aspects of life.",
@@ -93,6 +93,7 @@
       "content": "Ellen DeGeneres, the beloved American comedian, actress, and TV host, has been a trailblazer for LGBTQ+ representation in the entertainment industry. After coming out as a lesbian in 1997, she faced significant backlash, but her authenticity and resilience paved the way for greater visibility and acceptance. Her groundbreaking sitcom 'Ellen' became the first prime-time show to feature an openly gay lead character. Since then, DeGeneres has become a powerful advocate for LGBTQ+ rights and a symbol of love, inclusivity, and kindness. Her immense popularity and influential platform have helped shape public perceptions and promote understanding, making her an icon for the LGBTQ+ community.",
       "date": "08-09-03",
       "decade": "2000",
+
       "imageUrl": "https://github.com/nils-n/progress-timeline/blob/main/assets/images/Ellen_DeGeneres-2009.jpeg?raw=true",
       "title": "Ellen DeGeneres"
     },
@@ -151,7 +152,7 @@
       "content": "dummycontent",
       "date": "01-01-01",
       "decade": "1980",
-      "imageUrl": "https://github.com/nils-n/progress-timeline/blob/main/assets/images/DADT_repeal.jpeg",
+      "imageUrl": "https://github.com/nils-n/progress-timeline/blob/main/assets/images/DADT_repeal.jpeg?raw=true",
       "title": "dummy"
     }
   ]

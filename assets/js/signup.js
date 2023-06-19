@@ -3,11 +3,13 @@ import {
   GoogleAuthProvider,
   createUserWithEmailAndPassword,
   signInWithPopup,
+  signInWithEmailAndPassword,
 } from "firebase/auth";
 import { firebaseAuth, firebaseDB } from "../../config/firebase-config";
 
 const googleSignUpButton = document.getElementById("signup-google-btn");
 const emailSignInButton = document.getElementById("signup-submit-btn");
+const signInButton = document.getElementById("login");
 
 const userSignUp = async (e) => {
   e.preventDefault();
@@ -55,6 +57,22 @@ const signInWithGoogle = async () => {
   }
 };
 
+// user sign in
+export const userSignIn = async (e) => {
+  e.preventDefault();
+  const signInEmail = document.getElementById("login-email").value;
+  const signInPassword = document.getElementById("login-password").value;
+  console.log(signInEmail, signInPassword)
+  try {
+    signInWithEmailAndPassword(firebaseAuth, signInEmail, signInPassword);
+    alert("You have signed in successfully!");
+  } catch (error) {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    console.log(errorCode + errorMessage);
+  }
+};
+
 export const createUserDocumentFromAuth = async (userAuth) => {
   if (!userAuth) return;
 
@@ -88,3 +106,4 @@ export const createUserDocumentFromAuth = async (userAuth) => {
 
 googleSignUpButton.addEventListener("click", signInWithGoogle);
 emailSignInButton.addEventListener("click", userSignUp);
+signInButton.addEventListener("click", userSignIn);
