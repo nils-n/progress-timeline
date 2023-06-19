@@ -1,7 +1,7 @@
 import { collection, doc, getDocs, setDoc } from "firebase/firestore";
 import { firebaseAuth, firebaseDB } from "../../config/firebase-config";
 import { onAuthStateChanged, signOut } from "firebase/auth";
-import { generateUniqueID } from "./helpers";
+import { generateUniqueID, renderStoryDiv } from "./helpers";
 
 const filterBtn = document.getElementById("filter-btn");
 const sortBtn = document.getElementById("sort-btn");
@@ -12,6 +12,10 @@ const submitStoryBtn = document.getElementById("submit-story-btn");
 const dontSubmitStoryBtn = document.getElementById("dont-submit-story-btn");
 const accountLoginBtn = document.getElementById("login-logout-btn");
 const profilePageBtn = document.getElementById("profile-page-btn");
+const overlay = document.getElementById("overlay");
+const userStoryBtns = Array.from(
+  contentContainer.querySelectorAll(".home-button6")
+);
 
 // FILTER CONTENT
 async function filterContent() {
@@ -94,7 +98,7 @@ async function filterContent() {
     );
 
     userStoryBtns.forEach((btn) =>
-      btn.addEventListener("click", () => console.log("lol"))
+      btn.addEventListener("click", renderUserStories)
     );
   } catch (error) {
     console.error("Error retrieving content:", error);
@@ -129,11 +133,52 @@ function sortContent() {
   content.forEach((data) => contentContainer.appendChild(data));
 }
 
+// RENDER STORIES
+async function renderUserStories() {
+  overlay.style.display = "flex";
+  const storiesContainer = document.getElementById("user-story-modal");
+  storiesContainer.innerHTML = "";
+  const header = document.createElement("h2");
+  header.textContent = "Stories of the 90s";
+  header.classList.add("home-text08");
+  header.id = "your-stories-left";
+
+  try {
+    const storiesSnapshot = await getDocs(collection(firebaseDB, "stories"));
+    storiesSnapshot.forEach((storyDoc) => {
+      const storyData = storyDoc.data();
+      const user = firebaseAuth.currentUser;
+      // const isLikedByUser =
+      // user && storyData.likedBy && storyData.likedBy.includes(user.uid);
+
+      const storyElement = document.createElement("div");
+      storyElement.classList.add("home-testimonial-card");
+
+      storyElement.innerHTML = renderStoryDiv(storyData);
+      storiesContainer.appendChild(storyElement);
+    });
+    storiesContainer.insertBefore(header, storiesContainer.firstChild);
+
+    // Add event listeners for like buttons
+    const likeButtons = document.querySelectorAll(".like-button");
+    likeButtons.forEach((likeButton) => {
+      likeButton.addEventListener("click", async (event) => {
+        const storyId = event.target.getAttribute("data-story-id");
+        await handleLikeButton(storyId);
+      });
+    });
+  } catch (error) {
+    console.error("Error retrieving stories:", error);
+    alert("Failed to retrieve stories. Please try again.");
+  }
+}
+
 // DISPLAY USER STORY FORM
 function displayStoryForm() {
   storyFormContainer.style.display = "flex";
 }
 
+// SUBMIT STORY
 async function submitYourStory(e) {
   e.preventDefault();
   const user = firebaseAuth.currentUser;
@@ -174,13 +219,15 @@ async function submitYourStory(e) {
     alert("You need to be logged in to create a story.");
   }
 
-  closeStoryFormModal();
+  closeModal(storyFormContainer);
 }
 
+// LOGOUT
 async function logout() {
   await signOut(firebaseAuth);
 }
 
+// CHECK AUTHENTICATION
 const checkAuthState = async () => {
   onAuthStateChanged(firebaseAuth, (user) => {
     if (user) {
@@ -196,13 +243,20 @@ const checkAuthState = async () => {
   });
 };
 
-function closeStoryFormModal() {
-  storyFormContainer.style.display = "none";
+function closeModal(element) {
+  element.style.display = "none";
 }
+// CLOSE USER STORYS MODAL
 
 checkAuthState();
 
-dontSubmitStoryBtn.addEventListener("click", closeStoryFormModal);
+overlay.addEventListener("click", () => closeModal(overlay));
+userStoryBtns.forEach((btn) =>
+  btn.addEventListener("click", renderUserStories)
+);
+dontSubmitStoryBtn.addEventListener("click", () =>
+  closeModal(storyFormContainer)
+);
 storyFormContainer.addEventListener("submit", submitYourStory);
 shareStoryBtn.addEventListener("click", displayStoryForm);
 filterBtn.addEventListener("change", filterContent);

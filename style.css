@@ -30,9 +30,38 @@
   --dl-space-space-oneandhalfunits: 24px;
 }
 
+/* CUSTOM CSS */
+
+#overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+}
+
+#user-story-modal {
+  width: 95vw;
+  height: 90vh;
+  overflow: scroll;
+}
+
+.modal-container {
+  flex: 0 0 auto;
+  width: 100%;
+  display: none;
+  padding: 2rem;
+  flex-direction: column;
+  background-color: var(--dl-color-primary-teal);
+}
+
 button:hover {
   cursor: pointer;
 }
+
 .button {
   font-size: 20px;
   font-family: Rubik Mono One;
