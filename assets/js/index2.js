@@ -68,7 +68,7 @@ async function filterContent() {
         <div class="home-image-container">
           <img
             alt="image"
-            src="https://play.teleporthq.io/static/svg/default-img.svg"
+            src="${doc.imageUrl}"
             class="home-image2"
           />
         </div>
