@@ -313,19 +313,17 @@
   height: 2rem;
   display: flex;
   align-self: center;
+  text-align: center;
   transition: 0.3s;
-  align-items: center;
+  align-items: left;
   margin-left: Unit;
-  padding-top: var(--dl-space-space-halfunit);
   border-color: var(--dl-color-primary-bg);
   border-width: 0px;
   margin-right: var(--dl-space-space-unit);
-  padding-left: var(--dl-space-space-unit);
-  padding-right: var(--dl-space-space-unit);
   flex-direction: row;
-  padding-bottom: var(--dl-space-space-halfunit);
   justify-content: flex-start;
   background-color: var(--dl-color-primary-bg);
+  padding: 10px 30px;
 }
 .profile-button:hover {
   color: rgb(255, 0, 137);
@@ -361,14 +359,11 @@
   transition: 0.3s;
   align-items: center;
   margin-left: Unit;
-  padding-top: var(--dl-space-space-halfunit);
   border-color: var(--dl-color-primary-bg);
   border-width: 0px;
   margin-right: var(--dl-space-space-unit);
-  padding-left: var(--dl-space-space-unit);
-  padding-right: var(--dl-space-space-unit);
+  padding: 10px 30px;
   flex-direction: row;
-  padding-bottom: var(--dl-space-space-halfunit);
   background-color: var(--dl-color-primary-bg);
 }
 .profile-button1:hover {
@@ -411,6 +406,7 @@
   font-family: Rubik Mono One;
   margin-right: var(--dl-space-space-twounits);
   background-color: var(--dl-color-primary-bg);
+  padding: 10px 30px;
 }
 .profile-button3 {
   color: var(--dl-color-primary-pink);
@@ -419,6 +415,7 @@
   margin-top: var(--dl-space-space-unit);
   font-family: Rubik Mono One;
   background-color: var(--dl-color-primary-bg);
+  padding: 10px 30px;
 }
 .profile-button4 {
   color: var(--dl-color-primary-pink);
@@ -428,6 +425,7 @@
   margin-left: var(--dl-space-space-fourunits);
   margin-bottom: var(--dl-space-space-twounits);
   background-color: var(--dl-color-primary-bg);
+  padding: 10px 30px;
 }
 .profile-image3 {
   width: 1000px;
@@ -505,6 +503,7 @@
     margin-bottom: var(--dl-space-space-unit);
     justify-content: center;
     background-color: var(--dl-color-primary-bg);
+    padding: 10px 30px;
   }
 }
 @media(max-width: 767px) {
