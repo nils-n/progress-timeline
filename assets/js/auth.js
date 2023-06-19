@@ -14,6 +14,9 @@ const getUserData = async (userId) => {
       const nameInput = document.getElementById("signup-name");
       const emailInput = document.getElementById("signup-email");
       const usernameInput = document.getElementById("signup-username");
+      const image = document.querySelector(".profile-image2");
+
+      image.src = userData.image;
 
       // Update input fields with user data
       nameInput.value = userData.name;
@@ -117,4 +120,3 @@ export const checkAuthState2 = async () => {
     }
   });
 };
-
