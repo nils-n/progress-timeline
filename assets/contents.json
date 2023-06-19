@@ -85,7 +85,7 @@
       "content": "Audre Lorde, the African American writer, poet, and activist, made a profound impact on literature, feminism, and LGBTQ+ representation. Lorde's powerful and unapologetic writings delved into intersectional feminism, racism, and lesbian identity. Through her poetry and essays, she shed light on the experiences of marginalized communities, emphasizing the importance of embracing and celebrating one's unique identity. Lorde's work challenged societal norms and advocated for social justice and equality. As an openly lesbian woman of color, she became a prominent voice for the LGBTQ+ community, inspiring generations with her eloquence, courage, and unwavering commitment to creating a more inclusive and equitable world.",
       "date": "13-05-012",
       "decade": "2010",
-      "imageUrl": "https://cdn.britannica.com/68/202068-050-8A6F3B44/Audre-Lorde.jpg",
+      "imageUrl": "https://github.com/nils-n/progress-timeline/blob/main/assets/images/Audre_Lorde_und_May_Ayim.jpeg?raw=true",
       "title": "Audre Lorde, The Berlin Years."
     },
     {
@@ -93,7 +93,7 @@
       "content": "Ellen DeGeneres, the beloved American comedian, actress, and TV host, has been a trailblazer for LGBTQ+ representation in the entertainment industry. After coming out as a lesbian in 1997, she faced significant backlash, but her authenticity and resilience paved the way for greater visibility and acceptance. Her groundbreaking sitcom 'Ellen' became the first prime-time show to feature an openly gay lead character. Since then, DeGeneres has become a powerful advocate for LGBTQ+ rights and a symbol of love, inclusivity, and kindness. Her immense popularity and influential platform have helped shape public perceptions and promote understanding, making her an icon for the LGBTQ+ community.",
       "date": "08-09-03",
       "decade": "2000",
-      "imageUrl": "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcSjeEI4NvFLeVDQIQiTUzFOcOxO90KCZ0ZUhPd3M8TC3M4ZDNx9HvPwS0stnr_VPXDr9NC4iuQBTSrOjyw",
+      "imageUrl": "https://github.com/nils-n/progress-timeline/blob/main/assets/images/Ellen_DeGeneres-2009.jpeg?raw=true",
       "title": "Ellen DeGeneres"
     },
     {
@@ -105,6 +105,7 @@
       "title": "Alan Turing"
     },
     {
+
       "title": "Billie Jean King",
       "content": "Billie Jean King, a legendary tennis player, made history on September 20, 1973, when she defeated Bobby Riggs in the 'Battle of the Sexes' tennis match. This groundbreaking event championed gender equality in sports and had a profound impact on society. King's victory showcased women's athletic abilities and challenged the notion that men were superior in sports. She remains an iconic figure, inspiring generations of athletes to pursue their dreams without limitations.",
       "date": "September 20, 1973",
@@ -303,6 +304,46 @@
       "decade": "21st century",
       "category": "Politics",
       "imageUrl": "https://example.com/christine-burns.jpg"
+    },
+    {  
+      "category": "science",
+      "content": "Harald zur Hausen's contributions to science and his research on human papillomavirus (HPV) and its link to cervical cancer did not directly address the perspective that gay individuals created AIDS. However, his work, along with other scientists, has helped challenge and debunk the misconceptions and stigmatizing beliefs surrounding the origins and transmission of HIV/AIDS. By identifying HPV as a separate virus with its own associated health risks, zur Hausen's research has contributed to a more accurate understanding of different viruses and their respective impacts on public health. This has played a part in dispelling unfounded notions linking HIV/AIDS exclusively to the gay community and promoting a more inclusive and evidence-based perspective on the disease.",
+      "date": "07-12-2008",
+      "decade": "2000",
+      "imageUrl": "https://github.com/nils-n/progress-timeline/blob/main/assets/images/Harald_zur_Hausen-press_conference.jpeg?raw=true",
+      "title": "Harald zur Hausen"
+    },
+    {
+      "category": "science",
+      "content": "Susan Stryker is a prominent transgender historian, filmmaker, and gender theorist who has made substantial contributions to transgender studies and activism. Her work focuses on the intersection of gender, sexuality, and identity. Stryker co-directed the documentary film "Screaming Queens: The Riot at Compton's Cafeteria," which highlights the resistance of transgender women against police violence in 1966 San Francisco. She has also written influential texts on transgender history, including "Transgender History" which provides a comprehensive overview of the transgender experience throughout time. Stryker's scholarship has been instrumental in raising awareness, promoting understanding, and advocating for the rights of transgender individuals.",
+      "date": "07-12-94",
+      "decade": "1990",
+      "imageUrl": "https://github.com/nils-n/progress-timeline/blob/main/assets/images/Trans_March_San_Francisco_2017?raw=true",
+      "title": "Susan Stryker"
+    },
+    {
+      "category": "sport",
+      "content": "As of 27 May 2016 she was the reigning Olympic, World and European Games champion at flyweight, and won the entire set of amateur championships available to her – Olympic. She is openly lesbian, and was named the most influential LGBT person in Britain by The Independent in 2012 and has been included in the annual Powerlist, being recognised as one of the most influential black Britons. She also became the first openly LGBT person to win an Olympic boxing gold medal, after her win at the 2012 Summer Olympics.",
+      "date": "27-05-016",
+      "decade": "2010",
+      "imageUrl": "https://github.com/nils-n/progress-timeline/blob/main/assets/images/Nicola_Adams_-_Our_Greatest_Team_Parade.jpeg?raw=true",
+      "title": "Nicola Virginia Adams"
+    },
+    {
+      "category": "sport",
+      "content": "Amaechi became the first former NBA player to publicly come out as gay after doing so in his memoir Man in the Middle. Since then, he has been regarded as 'one of the world's most high-profile gay athletes'.",
+      "date": "01-02-07",
+      "decade": "2000",
+      "imageUrl": "https://github.com/nils-n/progress-timeline/blob/main/assets/images/John_Amaechi_OBE.jpeg?raw=true",
+      "title": "John Amaechi"
+    },
+    {
+      "category": "sport",
+      "content": "Buschbaum competed in women's pole vaulting before his gender transition, winning the title of German Youth Champion multiple times. In January 2008, Buschbaum announced that his new first name was 'Balian', after the blacksmith in the movie Kingdom of Heaven, and that he would undergo gender affirming surgery later that year.",
+      "date": "01-01-08",
+      "decade": "2000",
+      "imageUrl": "https://github.com/nils-n/progress-timeline/blob/main/assets/images/Balian_Buschbaum.jpeg?raw=true",
+      "title": "Lucy Bronze"
     }
   ],
   "template": [
