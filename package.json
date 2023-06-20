@@ -6,13 +6,13 @@
   "default": "index.html",
   "dependencies": {
     "firebase": "^9.22.2",
-    "parcel-bundler": "^1.6.1"
+    "parcel-bundler": "^1.12.5"
   },
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html "
   },
   "devDependencies": {
-    "parcel": "^2.9.2"
+    "parcel": "^2.8.3"
   }
 }
